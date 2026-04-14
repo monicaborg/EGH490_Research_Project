@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egh490"
+version = "0.1.0"
+description = "EGH490 Research Project — Explainable Automated Scoring of Conceptual Reasoning in Signals & Systems (QUT)"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+authors = [{ name = "Monica Borg", email = "n9802045@qut.edu.au" }]
+license = { text = "MIT" }
+
+# Versions pinned for reproducibility (Section 6.1 of the proposal).
+# Revisit only as a documented "major change" per Section 8.
+dependencies = [
+    "torch==2.2.2",
+    "transformers==4.44.2",
+    "tokenizers==0.19.1",
+    "datasets==2.20.0",
+    "accelerate==0.33.0",
+    "sentencepiece==0.2.0",           # XLNet / ALBERT tokenisers
+    "scikit-learn==1.5.1",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "scipy==1.13.1",
+    "lime==0.2.0.1",
+    "shap==0.46.0",
+    "matplotlib==3.9.2",
+    "seaborn==0.13.2",
+    "pyyaml==6.0.2",
+    "tqdm==4.66.5",
+    "rich==13.7.1",
+    "nltk==3.9.1",                    # tokenisation, hedging lexicons
+    "textstat==0.7.4",                # readability / structural complexity
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.2",
+    "pytest-cov==5.0.0",
+    "ruff==0.6.2",
+    "black==24.8.0",
+    "mypy==1.11.1",
+    "ipykernel==6.29.5",
+    "jupyterlab==4.2.4",
+]
+
+[project.scripts]
+egh490-train             = "egh490.cli.train:main"
+egh490-ensemble          = "egh490.cli.ensemble:main"
+egh490-explain           = "egh490.cli.explain:main"
+egh490-evaluate-xai      = "egh490.cli.evaluate_xai:main"
+egh490-analyse-patterns  = "egh490.cli.analyse_patterns:main"
+egh490-generate-synth    = "egh490.cli.generate_synthetic:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "SIM"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
