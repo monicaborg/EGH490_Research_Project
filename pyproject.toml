@@ -9,7 +9,7 @@ description = "EGH490 Research Project — Explainable Automated Scoring of Conc
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
 authors = [{ name = "Monica Borg", email = "n9802045@qut.edu.au" }]
-license = { text = "MIT" }
+license = "MIT"
 
 # Versions pinned for reproducibility (Section 6.1 of the proposal).
 # Revisit only as a documented "major change" per Section 8.
@@ -55,7 +55,9 @@ egh490-analyse-patterns  = "egh490.cli.analyse_patterns:main"
 egh490-generate-synth    = "egh490.cli.generate_synthetic:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
+include = ["egh490*"]
+exclude = ["tests*", "scripts*", "notebooks*", "configs*", "data*", "outputs*", "docs*"]
 
 [tool.ruff]
 line-length = 100
