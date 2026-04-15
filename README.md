@@ -9,7 +9,7 @@ This project replicates the transformer ensemble from Somers, Cunningham-Nelson
 explainable-AI techniques (LIME, SHAP, attention visualisation) on top, with
 fidelity and stability metrics adapted from Gunasekara & Saarela (2025).
 
-The Python package itself is named `egh490` so imports stay short and clean:
+The Python package is named `egh490`, so imports stay short and clean:
 
 ```python
 from egh490.models import Ensemble
@@ -40,7 +40,7 @@ Explanation pipelines:
 ```
 EGH490_Research_Project/
 ├── configs/            Hydra-style YAML configs (data, model, training, xai)
-├── src/egh490/
+├── egh490/             Python package (flat layout)
 │   ├── data/           Loading, synthetic generation, preprocessing, splits
 │   ├── models/         Base model wrappers, ensemble, training loop
 │   ├── xai/            LIME, SHAP, attention, fidelity & stability metrics
@@ -72,7 +72,7 @@ data** that mirrors the schema of the real corpus:
 
 Switching phases is a **config change only** — the training and XAI code paths
 are identical. This is enforced by the `DataModule` abstraction in
-`src/egh490/data/datamodule.py`.
+`egh490/data/datamodule.py`.
 
 ## Quickstart
 
@@ -110,7 +110,7 @@ python scripts/analyse_patterns.py --config configs/analysis.yaml
 
 ## Reproducibility
 
-- All random seeds fixed in `src/egh490/utils/seeding.py`.
+- All random seeds fixed in `egh490/utils/seeding.py`.
 - Library versions pinned in `pyproject.toml`.
 - Hugging Face model revisions pinned per base model in `configs/models/`.
 - Every run writes a manifest (`outputs/logs/<run_id>/manifest.json`)
@@ -123,7 +123,7 @@ python scripts/analyse_patterns.py --config configs/analysis.yaml
 No real student data is touched in this repository until the HREC application
 (Chief Investigator: Dr Sam Cunningham-Nelson, April 2026) is approved.
 `data/raw/` is `.gitignore`d and guarded by a runtime check in
-`src/egh490/data/real_corpus.py` that refuses to load without a
+`egh490/data/real_corpus.py` that refuses to load without a
 `ETHICS_APPROVED=1` environment flag plus an approval reference on disk.
 
 ## References
