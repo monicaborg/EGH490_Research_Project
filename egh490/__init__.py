@@ -1,23 +1,6 @@
-"""Cross-cutting utilities: seeding, logging, I/O, config loading.
+"""EGH490 Research Project: Explainable Automated Scoring of Conceptual
+Reasoning in Signals & Systems.
 
-Re-exports the public API so callers can write::
-
-    from egh490.utils import set_global_seed, get_logger, load_config
-
-instead of importing each helper from its individual module.
+See README.md for project scope, supervisors, and ethics statement.
+Version history is tracked via git tags, not in source code.
 """
-
-from egh490.utils.config import load_config
-from egh490.utils.io import load_json, load_yaml, save_json, save_yaml
-from egh490.utils.logging import get_logger
-from egh490.utils.seeding import set_global_seed
-
-__all__ = [
-    "get_logger",
-    "load_config",
-    "load_json",
-    "load_yaml",
-    "save_json",
-    "save_yaml",
-    "set_global_seed",
-]
