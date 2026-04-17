@@ -22,8 +22,7 @@ Why a wrapper rather than calling ``transformers`` directly everywhere?
    the XAI layer wires into it with no transformer-specific knowledge.
 
 The wrapper is inference-only at this stage. Fine-tuning lives in
-``egh490/models/trainer.py`` (built in the next slice) and will accept a
-``TransformerClassifier`` to train.
+``egh490/models/trainer.py`` and accepts a ``TransformerClassifier`` to train.
 """
 
 from __future__ import annotations
@@ -86,10 +85,13 @@ class TransformerClassifier:
         self.checkpoint = checkpoint
         self.num_labels = num_labels
         self.max_length = max_length
-        self.device = device or get_device()
+        self._initial_device = device or get_device()
 
         logger.info(
-            "Loading %s (num_labels=%d, device=%s)", checkpoint, num_labels, self.device
+            "Loading %s (num_labels=%d, device=%s)",
+            checkpoint,
+            num_labels,
+            self._initial_device,
         )
 
         self.tokenizer = AutoTokenizer.from_pretrained(checkpoint, revision=revision)
@@ -98,8 +100,29 @@ class TransformerClassifier:
             num_labels=num_labels,
             revision=revision,
         )
-        self.model.to(self.device)
+        self.model.to(self._initial_device)
         self.model.eval()
+
+    # ------------------------------------------------------------------ #
+    # Device handling
+    # ------------------------------------------------------------------ #
+
+    @property
+    def device(self) -> str:
+        """Return the device the model currently resides on.
+
+        Read dynamically from the model's parameters rather than cached from
+        construction time. HuggingFace's ``Trainer`` may silently move the
+        model between devices (e.g. CPU → MPS on Apple Silicon) during
+        training, and we need ``predict_proba`` to follow the model wherever
+        it ended up.
+        """
+        # ``next(...)`` grabs the first parameter; all parameters of a
+        # loaded HF model share a device, so this is a reliable probe.
+        try:
+            return str(next(self.model.parameters()).device)
+        except StopIteration:  # pragma: no cover — models always have params
+            return self._initial_device
 
     # ------------------------------------------------------------------ #
     # Inference
@@ -116,6 +139,7 @@ class TransformerClassifier:
             return np.empty((0, self.num_labels), dtype=np.float32)
 
         torch = self._torch
+        device = self.device  # resolve current device once per call
         probs: list[np.ndarray] = []
 
         with torch.no_grad():
@@ -127,7 +151,7 @@ class TransformerClassifier:
                     truncation=True,
                     max_length=self.max_length,
                     return_tensors="pt",
-                ).to(self.device)
+                ).to(device)
                 logits = self.model(**encoded).logits
                 batch_probs = torch.softmax(logits, dim=-1).cpu().numpy()
                 probs.append(batch_probs)
