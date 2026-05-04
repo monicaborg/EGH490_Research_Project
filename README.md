@@ -12,10 +12,38 @@ fidelity and stability metrics adapted from Gunasekara & Saarela (2025).
 The Python package is named `egh490`, so imports stay short and clean:
 
 ```python
-from egh490.models import Ensemble
-from egh490.xai import lime_explainer, shap_explainer
-from egh490.evaluation import fidelity, stability
+from egh490.models import TransformerClassifier, Trainer, Ensemble
+from egh490.data import DataModule
+from egh490.utils import set_global_seed, load_config, get_logger
 ```
+
+## Current status
+
+**53 passing tests. Full pipeline running end-to-end on synthetic data.
+Ethics approved (HREC #11077). Awaiting labelled dataset from supervisor.**
+
+| Layer | What's built | Tests |
+|-------|-------------|-------|
+| Utils | Config, seeding, logging, I/O, device auto-detect | 11 |
+| Data | DataModule with CSV loading, label encoding, 5-fold CV | 15 |
+| Models | TransformerClassifier wrapper for any HuggingFace model | 7 |
+| Trainer | Fine-tuning with early stopping, warmup, 5 metrics | 8 |
+| Ensemble | Hard + soft voting with confidence tie-breaking | 12 |
+| Scripts | `train.py` — end-to-end training with printed results | — |
+| **Total** | | **53** |
+
+All four base models verified on synthetic data:
+
+| Model | Checkpoint | Params | Synthetic acc | Time (98 examples) |
+|-------|-----------|--------|--------------|-------------------|
+| ELECTRA-small | `google/electra-small-discriminator` | 14M | 50% | 33s |
+| RoBERTa-base | `roberta-base` | 125M | 75% | 170s |
+| XLNet-base | `xlnet-base-cased` | 110M | 75% | 208s |
+| ALBERT-base-v2 | `albert-base-v2` | 12M | 90% | 197s |
+
+Synthetic accuracy is not meaningful — listed to confirm each architecture
+trains without error. Real data (~3500 responses) should produce 91–97%
+per Somers et al. (2021).
 
 ## Scope at a glance
 
@@ -39,92 +67,169 @@ Explanation pipelines:
 
 ```
 EGH490_Research_Project/
-├── configs/            Hydra-style YAML configs (data, model, training, xai)
+├── configs/            YAML configs (data, model, training, xai)
 ├── egh490/             Python package (flat layout)
-│   ├── data/           Loading, synthetic generation, preprocessing, splits
-│   ├── models/         Base model wrappers, ensemble, training loop
-│   ├── xai/            LIME, SHAP, attention, fidelity & stability metrics
-│   ├── evaluation/     CV harness, classification metrics, benchmarking
-│   ├── analysis/       Linguistic / conceptual pattern analysis, fairness
-│   └── utils/          Seeding, logging, I/O, device selection
-├── scripts/            CLI entry points (train, explain, evaluate, report)
-├── notebooks/          EDA, exploratory XAI, figure generation
-├── tests/              Smoke tests on synthetic data
-├── data/               Local data root (gitignored except README)
-│   ├── raw/            Real corpus (SSCI/CCU) — only after ethics approval
-│   ├── synthetic/      Generated placeholder responses for pipeline dev
-│   ├── processed/      Tokenised/cleaned artefacts
-│   └── splits/         Stratified 5-fold CV indices
-└── outputs/            Checkpoints, predictions, explanations, figures, logs
+│   ├── data/           DataModule, schema, CSV loading, k-fold splits
+│   │   ├── schema.py       Column names, label mappings, task config
+│   │   └── datamodule.py   Load CSV → encode labels → stratified k-fold
+│   ├── models/         Transformer wrapper, trainer, ensemble
+│   │   ├── base.py         TransformerClassifier (predict / predict_proba)
+│   │   ├── trainer.py      Fine-tuning via HuggingFace Trainer API
+│   │   └── ensemble.py     Majority vote with confidence tie-breaking
+│   ├── xai/            LIME, SHAP, attention (to be built)
+│   ├── evaluation/     CV harness, fidelity, stability (to be built)
+│   ├── analysis/       Pattern analysis, fairness audit (to be built)
+│   └── utils/          Seeding, logging, I/O, config loader, device
+│       ├── seeding.py      Deterministic seeds across Python/NumPy/PyTorch
+│       ├── config.py       YAML loader with defaults inheritance
+│       ├── io.py           YAML/JSON read/write helpers
+│       ├── logging.py      Consistent logger factory
+│       └── device.py       Auto-detect CPU / CUDA / MPS
+├── scripts/
+│   └── train.py        Train a single model on one fold (CLI)
+├── tests/              53 passing tests (unit + integration)
+├── data/
+│   ├── raw/            Real corpus — requires ETHICS_APPROVED=1
+│   └── synthetic/      100 synthetic responses for pipeline dev
+└── outputs/            Checkpoints, predictions, explanations, figures
 ```
-
-## Two-phase development strategy
-
-Because ethics approval for the real corpus is pending (Section 6.2 of the
-proposal), the pipeline is developed and validated first against **synthetic
-data** that mirrors the schema of the real corpus:
-
-| Phase | Data | Goal | Proposal milestone |
-|-------|------|------|-------------------|
-| 1 | `data/synthetic/` | End-to-end pipeline functional (item 5) | W7–W12 |
-| 2 | `data/raw/` (SSCI/CCU) | Replicate Somers et al. (2021) | W12–W14 |
-| 3 | either | XAI layer + fidelity/stability eval | W14–W28 |
-
-Switching phases is a **config change only** — the training and XAI code paths
-are identical. This is enforced by the `DataModule` abstraction in
-`egh490/data/datamodule.py`.
 
 ## Quickstart
 
 ```bash
-# 1. Clone and enter the repo
-git clone <your-repo-url> EGH490_Research_Project
+# 1. Clone and set up
+git clone https://github.com/monicaborg/EGH490_Research_Project.git
 cd EGH490_Research_Project
-
-# 2. Create environment
-python -m venv .venv && source .venv/bin/activate
+python3.11 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
-# 3. Generate synthetic data so the pipeline can be exercised end-to-end
-python scripts/generate_synthetic.py --out data/synthetic/ --n 600
+# 2. Run the test suite (53 tests, ~25 seconds)
+pytest -v
 
-# 4. Smoke-test training (tiny run on CPU)
-python scripts/train.py --config configs/smoke.yaml
+# 3. Train ELECTRA on synthetic data (fold 1, validity task)
+python scripts/train.py
 
-# 5. Full training on one base model (task=validity)
-python scripts/train.py --config configs/train_electra_validity.yaml
+# 4. Train with a different model
+python scripts/train.py --checkpoint roberta-base
+python scripts/train.py --checkpoint xlnet-base-cased
+python scripts/train.py --checkpoint albert-base-v2
 
-# 6. Build the ensemble from four trained checkpoints
-python scripts/ensemble.py --config configs/ensemble_validity.yaml
+# 5. Train on a specific fold or task
+python scripts/train.py --fold 3
+python scripts/train.py --task confidence
 
-# 7. Generate LIME/SHAP/attention explanations
-python scripts/explain.py --config configs/xai_lime.yaml
-python scripts/explain.py --config configs/xai_shap.yaml
+# 6. Use real data (when labelled dataset arrives)
+python scripts/train.py --csv data/raw/labelled_responses.csv
 
-# 8. Evaluate fidelity & stability (50 perturbation iters per instance)
-python scripts/evaluate_xai.py --config configs/xai_eval.yaml
-
-# 9. Run linguistic/conceptual pattern analysis
-python scripts/analyse_patterns.py --config configs/analysis.yaml
+# 7. Reduce memory usage for larger models
+python scripts/train.py --checkpoint xlnet-base-cased --batch-size 8
+python scripts/train.py --checkpoint roberta-base --batch-size 4
 ```
+
+## Training script options
+
+```
+python scripts/train.py [OPTIONS]
+
+Data:
+  --csv PATH              CSV file (default: data/synthetic/synthetic_responses.csv)
+  --task {validity,confidence}  Classification task (default: validity)
+  --fold N                CV fold to train, 1-indexed (default: 1)
+  --n-folds N             Number of folds (default: 5)
+
+Model:
+  --checkpoint NAME       HuggingFace model (default: google/electra-small-discriminator)
+  --max-length N          Max token length (default: 256)
+
+Training:
+  --epochs N              (default: 6)
+  --batch-size N          (default: 16)
+  --lr FLOAT              Learning rate (default: 2e-5)
+  --patience N            Early stopping patience (default: 2)
+  --seed N                (default: 20260413)
+
+Output:
+  --save-model            Save fine-tuned model to outputs/checkpoints/
+  --device {cpu,cuda,mps} Force device (default: auto-detect)
+```
+
+## Data schema
+
+The pipeline expects a CSV with these columns:
+
+| Column | Description | Used by |
+|--------|------------|---------|
+| `uid` | Unique response ID | Metadata |
+| `ccuname` | CCU identifier (ccu1–ccu6) | Analysis |
+| `time` | Submission timestamp | Metadata |
+| `q1mcr` | MCQ answer selected (a/b/c/d) | Analysis |
+| `q1txr` | **Free-text response** | **Model input** |
+| `q2mcr` | MCQ Q2 answer | Metadata |
+| `q3mcr` | MCQ Q3 answer | Metadata |
+| `validity` | correct / incorrect | **Label (task 1)** |
+| `confidence` | high / low | **Label (task 2)** |
+
+Column names are defined once in `egh490/data/schema.py`. If the real
+dataset uses different headers, only that file needs to change.
+
+## Two-phase development strategy
+
+The pipeline is developed against **synthetic data** and switches to the
+real corpus with a config change only:
+
+| Phase | Data | Goal | Status |
+|-------|------|------|--------|
+| 1 | `data/synthetic/` | End-to-end pipeline functional | ✅ Complete |
+| 2 | `data/raw/` (SSCI/CCU) | Replicate Somers et al. (2021) | ⏳ Awaiting labels |
+| 3 | either | XAI layer + fidelity/stability eval | ⬜ Next |
+
+## Memory and hardware
+
+Tested on MacBook (Apple Silicon, 16 GB RAM):
+
+| Model | Batch 16 | Batch 8 | Batch 4 |
+|-------|----------|---------|---------|
+| ELECTRA-small | ✅ comfortable | — | — |
+| ALBERT-base-v2 | ✅ comfortable | — | — |
+| RoBERTa-base | ⚠️ tight | ✅ recommended | — |
+| XLNet-base | ⚠️ near limit | ✅ recommended | ✅ safe |
+
+For RoBERTa and XLNet on larger datasets, reduce batch size. To maintain
+the effective batch of 16, use gradient accumulation:
+```bash
+python scripts/train.py --checkpoint xlnet-base-cased --batch-size 4
+```
+The `TrainingConfig` supports `gradient_accumulation_steps` to simulate
+larger effective batches within memory constraints. This does not affect
+final model accuracy.
 
 ## Reproducibility
 
 - All random seeds fixed in `egh490/utils/seeding.py`.
 - Library versions pinned in `pyproject.toml`.
 - Hugging Face model revisions pinned per base model in `configs/models/`.
-- Every run writes a manifest (`outputs/logs/<run_id>/manifest.json`)
-  capturing config hash, git SHA, package versions, and hardware.
-- 5-fold stratified splits deterministic given a seed; split indices saved
-  to `data/splits/` so every model sees the same folds.
+- 5-fold stratified splits deterministic given a seed.
+- Single-word responses removed per Somers et al. preprocessing.
+- Label encoding: validity (incorrect=0, correct=1),
+  confidence (low=0, high=1).
 
 ## Ethics
 
-No real student data is touched in this repository until the HREC application
-(Chief Investigator: Dr Sam Cunningham-Nelson, April 2026) is approved.
-`data/raw/` is `.gitignore`d and guarded by a runtime check in
-`egh490/data/real_corpus.py` that refuses to load without a
-`ETHICS_APPROVED=1` environment flag plus an approval reference on disk.
+HREC approval #11077 (approved 24/04/2026, expires 
+24/04/2031, CI: Dr Sam Cunningham-Nelson). `data/raw/` is `.gitignore`d
+and guarded by a runtime check requiring `ETHICS_APPROVED=1` plus an
+approval reference on disk.
+
+## What's next
+
+1. **Get labelled dataset from Sam** — critical path blocker
+2. **`scripts/train_all_folds.py`** — automate 5-fold CV for one model
+3. **`scripts/ensemble.py`** — combine 4 trained models, evaluate
+4. **Replicate Somers et al.** — compare metrics to published numbers
+5. **XAI layer** — LIME + SHAP on test fold responses
+6. **Fidelity + stability** — evaluate explanation quality
+7. **Pattern analysis + fairness audit**
+8. **Final report + oral defence**
 
 ## References
 
