@@ -117,15 +117,8 @@ class DataModule:
         # Convert text to string (handles any numeric entries)
         df[self.text_col] = df[self.text_col].astype(str)
 
-        # Drop single-word responses per Somers et al. preprocessing
-        before = len(df)
-        df = df[df[self.text_col].str.strip().str.contains(r"\s", regex=True)].copy()
-        dropped = before - len(df)
-        if dropped > 0:
-            logger.info(
-                "Removed %d single-word responses (per Somers et al. preprocessing)",
-                dropped,
-            )
+        # Single-word responses retained — consistent with training on the
+        # full realistic distribution; all responses were manually annotated.
 
         # Encode labels
         unknown = set(df[self.label_column].unique()) - set(self.label_map.keys())
