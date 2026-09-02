@@ -1,0 +1,19 @@
+{
+  "fidelity": {
+    "comprehensiveness": 0.1059533953666687,
+    "sufficiency": 0.930183756351471,
+    "n_instances": 10,
+    "k": 5
+  },
+  "coverage": {
+    "coverage": 1.0,
+    "n_covered": 10,
+    "n_total": 10,
+    "min_weight": 0.01
+  },
+  "stability": {
+    "mean_rank_correlation": 0.9039477985054567,
+    "n_instances": 5,
+    "n_repeats": 5
+  }
+}

@@ -74,6 +74,9 @@ class TrainingConfig:
     fp16: bool = False
     seed: int = 20260413
     output_dir: str = "outputs/checkpoints/_tmp"
+    # Per-class loss weights, e.g. [1.0, 6.8] to upweight a minority class.
+    # None disables weighting (standard unweighted cross-entropy).
+    class_weights: tuple[float, ...] | None = None
     # Metrics to log. "auc" is dropped automatically for >2-class tasks.
     metrics: tuple[str, ...] = field(
         default_factory=lambda: ("accuracy", "precision", "recall", "f1_macro", "auc")
@@ -330,7 +333,28 @@ class Trainer:
                 EarlyStoppingCallback(early_stopping_patience=cfg.early_stopping_patience)
             )
 
-        hf_trainer = HFTrainer(
+        trainer_cls = HFTrainer
+        extra_kwargs: dict[str, Any] = {}
+        if cfg.class_weights is not None:
+            import torch
+
+            weight_tensor = torch.tensor(cfg.class_weights, dtype=torch.float32)
+
+            class WeightedLossTrainer(HFTrainer):
+                def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
+                    labels = inputs.pop("labels")
+                    outputs = model(**inputs)
+                    logits = outputs.logits
+                    loss_fct = torch.nn.CrossEntropyLoss(
+                        weight=weight_tensor.to(logits.device)
+                    )
+                    loss = loss_fct(logits.view(-1, classifier.num_labels), labels.view(-1))
+                    return (loss, outputs) if return_outputs else loss
+
+            trainer_cls = WeightedLossTrainer
+            logger.info("Using class-weighted loss: weights=%s", cfg.class_weights)
+
+        hf_trainer = trainer_cls(
             model=classifier.model,
             args=args,
             train_dataset=train_ds,
@@ -341,6 +365,7 @@ class Trainer:
             if eval_ds is not None
             else None,
             callbacks=callbacks,
+            **extra_kwargs,
         )
 
         hf_trainer.train()

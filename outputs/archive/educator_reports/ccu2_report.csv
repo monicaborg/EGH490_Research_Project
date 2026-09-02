@@ -1,0 +1,21 @@
+ccu,student_response,mcq_answer,mcq_correct,marked_validity,marked_confidence,mcq_vs_reasoning_mismatch,model_predicted_validity,model_confidence_score,model_vs_groundtruth_mismatch,lime_top_supporting_words,lime_top_opposing_words,shap_top_supporting_words,shap_top_opposing_words
+ccu2,The Laplace transform turns into a fraction of the orginal frequency,,,,,,incorrect,0.999,,"of, the, into","fraction, transform, orginal","frequency, Laplace, turns","orginal, a, of"
+ccu2,Compression in time domain leads to expansion in frequency domain,,,,,,incorrect,0.999,,"to, in","domain, Compression, expansion","in, to, time","expansion, domain, Compression"
+ccu2,Oscillations are 8 times the fundamental frequency and are smaller in amplitude.,c,True,correct,high,False,correct,0.994,False,"smaller, amplitude, 8",,"smaller, amplitude, in","the, fundamental, are"
+ccu2,"Since the fundamental is visibly stronger, (b) or (c). Waveform does not completely cancel at the positive and negative peaks, the 8th harmonic is lower amplitude.",c,True,correct,high,False,correct,0.995,False,"lower, amplitude, 8th","or, the, completely","lower, amplitude, negative","the, is, and"
+ccu2,the selected periodic signal has low time to complete one period,,,,,,incorrect,1.0,,"to, one, periodic","low, has, period","the, signal, one","periodic, complete, selected"
+ccu2,Same signal but higher frequency ,,,,,,incorrect,0.999,,"Same, frequency, but",,"frequency, Same, signal","higher, but"
+ccu2,dont known,,,,,,incorrect,1.0,,dont,known,"dont, known",
+ccu2,both signals overlapping between t = 2 and t = 3,,,,,,incorrect,0.997,,"and, signals","t, 2, both","signals, and","both, 3, t ="
+ccu2,The wave repeats itself the most times in the given time interval.,,,,,,incorrect,1.0,,"interval, in, the",,"interval, the, The","times, itself"
+ccu2,More cycle per Period in the time domain ,,,,,,incorrect,0.999,,"time, the, in","Period, More","the, domain, in","More, cycle, per"
+ccu2,"Frequency is determined by the inverse of period. Since the period for graph a is the smallest, the frequency for this graph will be the highest. ",,,,,,incorrect,0.992,,"this, for, the","smallest, graph, frequency","this, the, the","smallest,, graph, inverse"
+ccu2,most periods in the shortest time,,,,,,incorrect,1.0,,"most, shortest, the",periods,"the, in, most",time
+ccu2,Signal A has the most frequent amount of oscillations from peak to trough,,,,,,incorrect,1.0,,"the, of, to","oscillations, trough, peak","the, of, A","amount, frequent, peak"
+ccu2,amplitude remain the same,,,,,,incorrect,1.0,,"the, remain, amplitude",,"the, same, remain",
+ccu2,"Has a high frequency, but same amplitude",,,,,,incorrect,0.969,,"a, frequency, but","amplitude, same, high","but, a","amplitude, same, Has"
+ccu2,will be the convolution of the two,,,,,,incorrect,1.0,,"the, of, convolution",,"convolution, two, the",
+ccu2,T repeated more times in the period. ,,,,,,incorrect,1.0,,"the, period, in",,"period, in, the","more, T, times"
+ccu2,the frequency is unchanging,b,False,incorrect,high,False,incorrect,1.0,False,"frequency, the, is",,"the, unchanging, frequency",
+ccu2,A has highest freq,,,,,,incorrect,1.0,,"A, has, highest",,"A, freq, highest",
+ccu2,More periods per cycle,,,,,,incorrect,1.0,,"per, cycle, periods",More,"cycle, per, periods",More

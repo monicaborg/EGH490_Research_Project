@@ -1,0 +1,718 @@
+[
+  {
+    "text": "The frequency shifting property means multiplying p(t) by cos(2at) splits the spectrum into two halves shifted by 2a in both directions.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.13315404951572418,
+      0.866845965385437
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "2a",
+        0.07789122347966877
+      ],
+      [
+        "frequency",
+        0.07748992188102105
+      ],
+      [
+        "2at",
+        0.0574658023828315
+      ],
+      [
+        "p",
+        0.04489055881742673
+      ],
+      [
+        "property",
+        0.041765338010929215
+      ],
+      [
+        "The",
+        -0.040653423730739026
+      ],
+      [
+        "directions",
+        0.03842845586923658
+      ],
+      [
+        "the",
+        -0.031115608247079297
+      ],
+      [
+        "shifting",
+        -0.027517158270152577
+      ],
+      [
+        "spectrum",
+        0.023884563188317446
+      ],
+      [
+        "both",
+        -0.022400242012895342
+      ],
+      [
+        "t",
+        0.01753655314471835
+      ],
+      [
+        "in",
+        -0.015854836933799275
+      ],
+      [
+        "multiplying",
+        0.008856397165029206
+      ],
+      [
+        "by",
+        0.0067034622617992866
+      ],
+      [
+        "means",
+        0.005906761396879561
+      ],
+      [
+        "cos",
+        0.003527594690349157
+      ],
+      [
+        "splits",
+        -0.0029412557417435744
+      ],
+      [
+        "shifted",
+        0.002848119070115172
+      ],
+      [
+        "two",
+        0.0023758906082642236
+      ]
+    ]
+  },
+  {
+    "text": "I think the output is h(t) evaluated at the points where x(t) is nonzero.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8488301634788513,
+      0.1511698067188263
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "think",
+        0.2580549210300633
+      ],
+      [
+        "I",
+        0.17625891192716628
+      ],
+      [
+        "output",
+        -0.08799547611098106
+      ],
+      [
+        "t",
+        -0.05911359812694358
+      ],
+      [
+        "the",
+        0.051283786460644666
+      ],
+      [
+        "is",
+        0.04437945053802986
+      ],
+      [
+        "where",
+        0.03618556719232655
+      ],
+      [
+        "x",
+        -0.028799783817296334
+      ],
+      [
+        "nonzero",
+        -0.027544783366777823
+      ],
+      [
+        "evaluated",
+        -0.024728185861904315
+      ],
+      [
+        "points",
+        -0.017727716476886035
+      ],
+      [
+        "h",
+        -0.015892227654706634
+      ],
+      [
+        "at",
+        0.0027549667528508777
+      ]
+    ]
+  },
+  {
+    "text": "I think you can sample any signal at any rate and just lose some quality like MP3 compression.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8461114764213562,
+      0.153888538479805
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "think",
+        0.031432734541157734
+      ],
+      [
+        "compression",
+        0.030477605817244856
+      ],
+      [
+        "I",
+        0.028309701062110525
+      ],
+      [
+        "like",
+        0.01896893051247513
+      ],
+      [
+        "and",
+        0.01834633337494685
+      ],
+      [
+        "some",
+        0.017848993258470544
+      ],
+      [
+        "MP3",
+        -0.016319147268142483
+      ],
+      [
+        "lose",
+        0.016106167573869554
+      ],
+      [
+        "just",
+        0.015065072545409704
+      ],
+      [
+        "you",
+        0.014952923068842631
+      ],
+      [
+        "sample",
+        -0.01396775733659666
+      ],
+      [
+        "rate",
+        -0.011156835791570823
+      ],
+      [
+        "signal",
+        -0.008276276100344981
+      ],
+      [
+        "can",
+        -0.005395765487247977
+      ],
+      [
+        "quality",
+        -0.004353260621648339
+      ],
+      [
+        "at",
+        0.0016181963098586066
+      ],
+      [
+        "any",
+        -0.0010338859048565218
+      ]
+    ]
+  },
+  {
+    "text": "I chose D because the frequency domain should look like a triangle since the rect has a flat top.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.852304220199585,
+      0.14769582450389862
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "top",
+        0.01893442223608909
+      ],
+      [
+        "I",
+        0.009512631722828449
+      ],
+      [
+        "has",
+        0.008873831443690503
+      ],
+      [
+        "because",
+        0.007733173315446658
+      ],
+      [
+        "should",
+        0.00717392839076278
+      ],
+      [
+        "domain",
+        -0.006159563611023237
+      ],
+      [
+        "chose",
+        0.005472800843162437
+      ],
+      [
+        "like",
+        0.005144713894357981
+      ],
+      [
+        "look",
+        0.004326362324222812
+      ],
+      [
+        "since",
+        0.003801526257184666
+      ],
+      [
+        "a",
+        0.0036406457263361658
+      ],
+      [
+        "flat",
+        0.0032448702685537955
+      ],
+      [
+        "frequency",
+        0.003117824085897615
+      ],
+      [
+        "D",
+        -0.00304365755168878
+      ],
+      [
+        "the",
+        0.001922718421906714
+      ],
+      [
+        "triangle",
+        0.0015876547996219285
+      ],
+      [
+        "rect",
+        -0.00030017761556324946
+      ]
+    ]
+  },
+  {
+    "text": "just multiplied them together pointwise.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8333472013473511,
+      0.16665276885032654
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "multiplied",
+        0.07006414288282257
+      ],
+      [
+        "pointwise",
+        0.031539224216787516
+      ],
+      [
+        "together",
+        0.016989817491705837
+      ],
+      [
+        "them",
+        -0.006672307374297214
+      ],
+      [
+        "just",
+        0.0013595833550111482
+      ]
+    ]
+  },
+  {
+    "text": "I just guessed A. I do not really understand Fourier series yet.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8317955136299133,
+      0.16820450127124786
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "yet",
+        0.05557930849603132
+      ],
+      [
+        "I",
+        0.04627843979235128
+      ],
+      [
+        "really",
+        0.0391881558730411
+      ],
+      [
+        "just",
+        0.03820722138590316
+      ],
+      [
+        "series",
+        -0.020506694546898564
+      ],
+      [
+        "Fourier",
+        -0.014022877378215642
+      ],
+      [
+        "not",
+        0.01251793301448991
+      ],
+      [
+        "understand",
+        0.007346498422462927
+      ],
+      [
+        "do",
+        0.005554136030513367
+      ],
+      [
+        "guessed",
+        0.0036571404055638144
+      ],
+      [
+        "A",
+        -0.002052364382290614
+      ]
+    ]
+  },
+  {
+    "text": "the frequency domain should mirror the time domain shape so it should also be rectangular.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8410932421684265,
+      0.15890681743621826
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "should",
+        0.11445546183403475
+      ],
+      [
+        "so",
+        0.06407017671371487
+      ],
+      [
+        "domain",
+        -0.06355773844516213
+      ],
+      [
+        "the",
+        0.05861973059065181
+      ],
+      [
+        "rectangular",
+        0.049964735185784835
+      ],
+      [
+        "it",
+        0.035892836977795765
+      ],
+      [
+        "also",
+        0.012214452233963249
+      ],
+      [
+        "be",
+        0.010985066944441728
+      ],
+      [
+        "mirror",
+        -0.006892356705007993
+      ],
+      [
+        "shape",
+        -0.005136493590573074
+      ],
+      [
+        "frequency",
+        -0.003570114158339578
+      ],
+      [
+        "time",
+        -0.0034407081136696685
+      ]
+    ]
+  },
+  {
+    "text": "Fourier series represents periodic signals as sums of sinusoids at integer multiples of the fundamental frequency.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.11238386482000351,
+      0.8876161575317383
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "integer",
+        0.07745402277473626
+      ],
+      [
+        "frequency",
+        0.05446418892342316
+      ],
+      [
+        "periodic",
+        0.042239627624380015
+      ],
+      [
+        "the",
+        -0.03892010601653574
+      ],
+      [
+        "series",
+        0.03510743666039932
+      ],
+      [
+        "fundamental",
+        0.02637236482483437
+      ],
+      [
+        "Fourier",
+        0.02493324961897973
+      ],
+      [
+        "sinusoids",
+        -0.020421134095765795
+      ],
+      [
+        "multiples",
+        0.017033132949521426
+      ],
+      [
+        "signals",
+        0.016580937505713832
+      ],
+      [
+        "represents",
+        0.016578504841953872
+      ],
+      [
+        "sums",
+        0.011576716717910576
+      ],
+      [
+        "at",
+        -0.009650262040205007
+      ],
+      [
+        "of",
+        0.009378878401921096
+      ],
+      [
+        "as",
+        0.003068043589742255
+      ]
+    ]
+  },
+  {
+    "text": "two rectangles convolved give a triangle. the duration is the sum of both pulse widths.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.11103982478380203,
+      0.8889601826667786
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "triangle",
+        0.2552897636736687
+      ],
+      [
+        "duration",
+        0.1803152362830223
+      ],
+      [
+        "widths",
+        -0.07835602794992966
+      ],
+      [
+        "pulse",
+        0.07427065768222392
+      ],
+      [
+        "is",
+        0.06785030811508615
+      ],
+      [
+        "sum",
+        0.0565386670099349
+      ],
+      [
+        "the",
+        0.05190607980418199
+      ],
+      [
+        "of",
+        0.0422244121375577
+      ],
+      [
+        "give",
+        -0.03712525130866298
+      ],
+      [
+        "rectangles",
+        0.03173606955130341
+      ],
+      [
+        "two",
+        0.027284081715863065
+      ],
+      [
+        "both",
+        -0.016401905459258428
+      ],
+      [
+        "a",
+        -0.009089622465851864
+      ],
+      [
+        "convolved",
+        0.006254171627613065
+      ]
+    ]
+  },
+  {
+    "text": "The Fourier series only works for infinite signals so this finite segment cannot be decomposed.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.77071213722229,
+      0.22928787767887115
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "so",
+        0.17376248724534443
+      ],
+      [
+        "series",
+        -0.10707750232936875
+      ],
+      [
+        "this",
+        0.09840575289735823
+      ],
+      [
+        "segment",
+        -0.08020488260257294
+      ],
+      [
+        "Fourier",
+        -0.0745171892550671
+      ],
+      [
+        "only",
+        0.06453945077770537
+      ],
+      [
+        "for",
+        -0.05444094835195913
+      ],
+      [
+        "The",
+        0.046134819225213786
+      ],
+      [
+        "signals",
+        -0.044773722825293974
+      ],
+      [
+        "finite",
+        -0.04257764640972955
+      ],
+      [
+        "be",
+        0.03705059464216168
+      ],
+      [
+        "works",
+        0.03570795848383707
+      ],
+      [
+        "decomposed",
+        0.03488705744523962
+      ],
+      [
+        "cannot",
+        0.016671735268962207
+      ],
+      [
+        "infinite",
+        -0.003764303931729692
+      ]
+    ]
+  }
+]
