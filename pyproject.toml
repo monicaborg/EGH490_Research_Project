@@ -9,7 +9,7 @@ description = "EGH490 Research Project — Explainable Automated Scoring of Conc
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
 authors = [{ name = "Monica Borg", email = "n9802045@qut.edu.au" }]
-license = "MIT"
+license = { text = "MIT" }
 
 # Versions pinned for reproducibility (Section 6.1 of the proposal).
 # Revisit only as a documented "major change" per Section 8.
@@ -46,18 +46,16 @@ dev = [
     "jupyterlab==4.2.4",
 ]
 
-[project.scripts]
-egh490-train             = "egh490.cli.train:main"
-egh490-ensemble          = "egh490.cli.ensemble:main"
-egh490-explain           = "egh490.cli.explain:main"
-egh490-evaluate-xai      = "egh490.cli.evaluate_xai:main"
-egh490-analyse-patterns  = "egh490.cli.analyse_patterns:main"
-egh490-generate-synth    = "egh490.cli.generate_synthetic:main"
+# Command-line workflows are provided as scripts under scripts/ rather than
+# as installed console entry points. Run them directly, e.g.:
+#     python scripts/train_all_models.py --csv data/...
+#     python scripts/explain.py --checkpoint outputs/... --csv data/...
+# The earlier egh490.cli.* entry points were removed in Semester 2 because
+# the flat scripts/ layout became the working interface and the egh490.cli
+# package was never built.
 
 [tool.setuptools.packages.find]
-where = ["."]
 include = ["egh490*"]
-exclude = ["tests*", "scripts*", "notebooks*", "configs*", "data*", "outputs*", "docs*"]
 
 [tool.ruff]
 line-length = 100
@@ -71,8 +69,8 @@ line-length = 100
 target-version = ["py310"]
 
 [tool.pytest.ini_options]
-    testpaths = ["tests"]
-    addopts = "-ra --strict-markers"
-    markers = [
-        "slow: tests that download models or run real inference (skip with -m 'not slow')",
-    ]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "slow: integration tests that download model weights",
+]
