@@ -1,0 +1,5282 @@
+[
+  {
+    "text": "two parts will overlap",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967148303985596,
+      0.0032851409632712603
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "two ",
+      "parts ",
+      "will ",
+      "overlap"
+    ],
+    "shap_values": [
+      0.0009925216436386108,
+      -0.00019587576389312744,
+      -0.0004212707281112671,
+      -3.0681490898132324e-05
+    ]
+  },
+  {
+    "text": "a convulution of the two",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9973249435424805,
+      0.0026749989483505487
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "a ",
+      "convulution ",
+      "of ",
+      "the ",
+      "two"
+    ],
+    "shap_values": [
+      -4.231929779052734e-06,
+      0.0010297596454620361,
+      -1.4029443264007568e-05,
+      -0.0011141225695610046,
+      0.0010574311017990112
+    ]
+  },
+  {
+    "text": " convolution in the time domain",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9964520335197449,
+      0.0035479713696986437
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      " ",
+      "convolution ",
+      "in ",
+      "the ",
+      "time ",
+      "domain"
+    ],
+    "shap_values": [
+      0.00036356598138809204,
+      0.0010013505816459656,
+      -0.0010420829057693481,
+      -0.0012698322534561157,
+      -0.0009521394968032837,
+      0.0019536763429641724
+    ]
+  },
+  {
+    "text": "it starts with overlap area that changes. then it becomes then area becomes the same, then it goes outside the shape, h(t)x(t-T)",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.031054198741912842,
+      0.9689458012580872
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "it ",
+      "starts ",
+      "with ",
+      "overlap ",
+      "area ",
+      "that ",
+      "changes. ",
+      "then ",
+      "it ",
+      "becomes ",
+      "then ",
+      "area ",
+      "becomes ",
+      "the ",
+      "same, ",
+      "then ",
+      "it ",
+      "goes ",
+      "outside ",
+      "the ",
+      "shape, ",
+      "h(",
+      "t)",
+      "x(",
+      "t-",
+      "T"
+    ],
+    "shap_values": [
+      -0.001463982101995498,
+      0.07378533198789228,
+      0.003918727416021284,
+      0.07821519008575706,
+      0.029828444501617923,
+      0.002500663118553348,
+      0.08363161543093156,
+      0.08107737661339343,
+      0.01936701004888164,
+      0.04312245769688161,
+      0.049193637758435216,
+      0.05279487289226381,
+      0.06787847352825338,
+      -0.0018987301373272203,
+      0.044597704807529226,
+      0.058461298802285455,
+      0.005113098057336174,
+      0.1070178259833483,
+      0.04135851966566406,
+      0.008162333921063691,
+      0.13083229361654958,
+      0.011531905322044622,
+      -0.007062947399390396,
+      -0.003884624798956793,
+      -0.001993546888115816,
+      -0.012151925140642561
+    ]
+  },
+  {
+    "text": "the only plot where the magnitude decreases by 0.5",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9509928226470947,
+      0.04900720715522766
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "the ",
+      "only ",
+      "plot ",
+      "where ",
+      "the ",
+      "magnitude ",
+      "decreases ",
+      "by ",
+      "0.",
+      "5"
+    ],
+    "shap_values": [
+      0.0363084077835083,
+      0.012901484966278076,
+      -0.02550792694091797,
+      0.04080241918563843,
+      0.019236240535974503,
+      -0.054349225014448166,
+      -0.07930352166295052,
+      -0.004044611006975174,
+      -0.011562742292881012,
+      0.02014216035604477
+    ]
+  },
+  {
+    "text": "d",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9970692992210388,
+      0.002930753631517291
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9970692992210388,
+    "tokens": [
+      "d"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "The output graph, will be the convolution of the two",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968280792236328,
+      0.0031719121616333723
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "The ",
+      "output ",
+      "graph, ",
+      "will ",
+      "be ",
+      "the ",
+      "convolution ",
+      "of ",
+      "the ",
+      "two"
+    ],
+    "shap_values": [
+      0.00550379604101181,
+      -0.0023070797324180603,
+      -0.005270376801490784,
+      0.0015507787466049194,
+      0.0013748034834861755,
+      -0.0021432042121887207,
+      0.0009153634309768677,
+      0.00021726638078689575,
+      -0.0016511008143424988,
+      0.002267695963382721
+    ]
+  },
+  {
+    "text": "a shift of x(t) of 1 (t-1) give the out put d ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6981956958770752,
+      0.3018042743206024
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "a ",
+      "shift ",
+      "of ",
+      "x(",
+      "t) ",
+      "of ",
+      "1 (",
+      "t-",
+      "1) ",
+      "give ",
+      "the ",
+      "out ",
+      "put ",
+      "d"
+    ],
+    "shap_values": [
+      -0.0035410076379776,
+      -0.0968385711312294,
+      0.004257429391145706,
+      -0.0400361530482769,
+      0.00017484277486801147,
+      -0.04419909417629242,
+      -0.07808805629611015,
+      -0.040417712181806564,
+      -0.0024436600506305695,
+      -0.001441318541765213,
+      -0.00416787713766098,
+      -0.012090146541595459,
+      0.008871689438819885,
+      0.011787638068199158
+    ]
+  },
+  {
+    "text": "d",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9970692992210388,
+      0.002930753631517291
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9970692992210388,
+    "tokens": [
+      "d"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "no change in output as, input is in the impulse response",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8072198033332825,
+      0.19278013706207275
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "no ",
+      "change ",
+      "in ",
+      "output ",
+      "as, ",
+      "input ",
+      "is ",
+      "in ",
+      "the ",
+      "impulse ",
+      "response"
+    ],
+    "shap_values": [
+      0.028064601123332977,
+      -0.021503858268260956,
+      -0.043303072452545166,
+      -0.056974053382873535,
+      -0.07554863393306732,
+      -0.03443271666765213,
+      -0.015639685094356537,
+      -0.014910757541656494,
+      0.011495031416416168,
+      -0.0021258294582366943,
+      0.03572864085435867
+    ]
+  },
+  {
+    "text": "0 below 0, 1 during interaction and 0 afterwards",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7838608622550964,
+      0.21613912284374237
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "0 ",
+      "below ",
+      "0, ",
+      "1 ",
+      "during ",
+      "interaction ",
+      "and ",
+      "0 ",
+      "afterwards"
+    ],
+    "shap_values": [
+      -0.015767473727464676,
+      -0.024101432412862778,
+      -0.03167252242565155,
+      -0.02436324954032898,
+      -0.012203659862279892,
+      -0.009121481329202652,
+      -0.027354836463928223,
+      -0.05525068938732147,
+      -0.012673929333686829
+    ]
+  },
+  {
+    "text": "because convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9966240525245667,
+      0.003375965403392911
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "because ",
+      "convolution"
+    ],
+    "shap_values": [
+      0.00016736984252929688,
+      8.654594421386719e-05
+    ]
+  },
+  {
+    "text": "Nani",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9973658919334412,
+      0.0026341404300183058
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9973658919334412,
+    "tokens": [
+      "Nani"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "..",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9969167113304138,
+      0.003083317307755351
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9969167113304138,
+    "tokens": [
+      ".."
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Convoloution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968550205230713,
+      0.0031449906527996063
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9968550205230713,
+    "tokens": [
+      "Convoloution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "note sure",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9970713257789612,
+      0.002928606467321515
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "note ",
+      "sure"
+    ],
+    "shap_values": [
+      0.0001844167709350586,
+      0.0005167722702026367
+    ]
+  },
+  {
+    "text": "both functions have a height of 1, and once ovelapped, have a height of 1, and a duration of 4t.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06298831105232239,
+      0.93701171875
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "both ",
+      "functions ",
+      "have ",
+      "a ",
+      "height ",
+      "of ",
+      "1, ",
+      "and ",
+      "once ",
+      "ovelapped, ",
+      "have ",
+      "a ",
+      "height ",
+      "of ",
+      "1, ",
+      "and ",
+      "a ",
+      "duration ",
+      "of ",
+      "4t"
+    ],
+    "shap_values": [
+      0.024270026377053,
+      0.03344327364175115,
+      0.047542050495394506,
+      0.06011073898116592,
+      0.022487731628643814,
+      0.01917573938408168,
+      0.0496518775325967,
+      0.07065873467945494,
+      0.09237715532799484,
+      0.17357068518322194,
+      0.04091617813537596,
+      0.04510110074625118,
+      0.10650170981170959,
+      0.010935799375147326,
+      0.05675216351664858,
+      0.038230463294894435,
+      0.010918444240815006,
+      0.03737937811820302,
+      0.0020391409198055044,
+      -0.01613352652930189
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "The when convolved the shift remains the same.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.98482745885849,
+      0.015172559767961502
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "The ",
+      "when ",
+      "convolved ",
+      "the ",
+      "shift ",
+      "remains ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      0.0018822476267814636,
+      -0.001316465437412262,
+      0.0008315816521644592,
+      -0.0008473619818687439,
+      -0.003066539764404297,
+      0.0004864335060119629,
+      -0.0022166743874549866,
+      0.004417188465595245
+    ]
+  },
+  {
+    "text": "The convolution of the two will produce a trapezoid shape, because they have different widths.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09890815615653992,
+      0.9010918140411377
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "The ",
+      "convolution ",
+      "of ",
+      "the ",
+      "two ",
+      "will ",
+      "produce ",
+      "a ",
+      "trapezoid ",
+      "shape, ",
+      "because ",
+      "they ",
+      "have ",
+      "different ",
+      "widths"
+    ],
+    "shap_values": [
+      -0.001010638297884725,
+      -0.013532000695704482,
+      0.004316082297009416,
+      0.01700281946978066,
+      0.03925957561295945,
+      0.09397979102504905,
+      0.028641061289818026,
+      0.016669039308908395,
+      0.34489431882684585,
+      0.18848260292725172,
+      0.007602032375871204,
+      0.014660054453997873,
+      0.0020593143126461655,
+      0.05021332373144105,
+      0.03874389882548712
+    ]
+  },
+  {
+    "text": "the overlapping area of the function can never exceed 1 but can be less than it",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.15996505320072174,
+      0.8400349020957947
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "the ",
+      "overlapping ",
+      "area ",
+      "of ",
+      "the ",
+      "function ",
+      "can ",
+      "never ",
+      "exceed ",
+      "1 ",
+      "but ",
+      "can ",
+      "be ",
+      "less ",
+      "than ",
+      "it"
+    ],
+    "shap_values": [
+      -0.012751307876897044,
+      0.06725557341997046,
+      0.06214255260420032,
+      0.011385606921976432,
+      0.00029554450884461403,
+      0.05300131408148445,
+      0.10978882604831597,
+      0.1306636030858499,
+      0.1685626533726463,
+      0.06348039477597922,
+      0.08054222805367317,
+      0.052113997749984264,
+      0.013087840110529214,
+      0.020514874457148835,
+      0.004098224977497011,
+      0.012223146302858368
+    ]
+  },
+  {
+    "text": "convolution, integral between intersection of area",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9956524968147278,
+      0.004347510635852814
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "convolution, ",
+      "integral ",
+      "between ",
+      "intersection ",
+      "of ",
+      "area"
+    ],
+    "shap_values": [
+      -0.018527165055274963,
+      0.026981055736541748,
+      -0.004206262528896332,
+      -0.00843387097120285,
+      0.009149864315986633,
+      -0.005681261420249939
+    ]
+  },
+  {
+    "text": "the area overlapping increases until the whole function get into impulse response then in decreases until the whole overlapping area become zero",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.030077138915657997,
+      0.9699228405952454
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "the ",
+      "area ",
+      "overlapping ",
+      "increases ",
+      "until ",
+      "the ",
+      "whole ",
+      "function ",
+      "get ",
+      "into ",
+      "impulse ",
+      "response ",
+      "then ",
+      "in ",
+      "decreases ",
+      "until ",
+      "the ",
+      "whole ",
+      "overlapping ",
+      "area ",
+      "become ",
+      "zero"
+    ],
+    "shap_values": [
+      -0.00914588975138031,
+      0.010561662609688938,
+      0.06873506984265987,
+      0.23139709026145283,
+      0.07270760991377756,
+      0.03260276356013492,
+      -0.011660112839308567,
+      0.04417555489635561,
+      0.017796174513932783,
+      0.025435746669245418,
+      0.010522400094487239,
+      0.0063307558230008,
+      0.035903356241760775,
+      0.036641614031395875,
+      0.17394302634784253,
+      0.09090947890217649,
+      0.0036568997020367533,
+      0.009504237285000272,
+      0.03553347110573668,
+      0.023096844350220636,
+      0.05866840836824849,
+      -0.0010231508349534124
+    ]
+  },
+  {
+    "text": "not sure. convulution?",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9912095069885254,
+      0.008790481835603714
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "not ",
+      "sure. ",
+      "convulution"
+    ],
+    "shap_values": [
+      0.0003118664026260376,
+      -0.0009962469339370728,
+      -0.0007742643356323242
+    ]
+  },
+  {
+    "text": "i dont know",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997542679309845,
+      0.002457299968227744
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "i ",
+      "dont ",
+      "know"
+    ],
+    "shap_values": [
+      0.0002713203430175781,
+      0.00042188167572021484,
+      0.0004793405532836914
+    ]
+  },
+  {
+    "text": "overlapping",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975786805152893,
+      0.0024213457945734262
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9975786805152893,
+    "tokens": [
+      "overlapping"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "the only plot where the magnitude decreases by 0.5",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9509928226470947,
+      0.04900720715522766
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "the ",
+      "only ",
+      "plot ",
+      "where ",
+      "the ",
+      "magnitude ",
+      "decreases ",
+      "by ",
+      "0.",
+      "5"
+    ],
+    "shap_values": [
+      0.0363084077835083,
+      0.012901484966278076,
+      -0.02550792694091797,
+      0.04080241918563843,
+      0.019236240535974503,
+      -0.054349225014448166,
+      -0.07930352166295052,
+      -0.004044611006975174,
+      -0.011562742292881012,
+      0.02014216035604477
+    ]
+  },
+  {
+    "text": "the only plot where the magnitude increases",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9969184994697571,
+      0.003081485629081726
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "the ",
+      "only ",
+      "plot ",
+      "where ",
+      "the ",
+      "magnitude ",
+      "increases"
+    ],
+    "shap_values": [
+      0.009097270667552948,
+      -0.002042628824710846,
+      -0.009224310517311096,
+      0.008457034826278687,
+      0.040348589420318604,
+      -0.022587105631828308,
+      -0.023500487208366394
+    ]
+  },
+  {
+    "text": "because it is the convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997466504573822,
+      0.002533499151468277
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "because ",
+      "it ",
+      "is ",
+      "the ",
+      "convolution"
+    ],
+    "shap_values": [
+      0.0014634281396865845,
+      0.0001376122236251831,
+      0.0001713186502456665,
+      -0.000974804162979126,
+      0.00029881298542022705
+    ]
+  },
+  {
+    "text": "You flip it about the y axis, shift it by t then integrate over a region of overlap",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.032015129923820496,
+      0.9679849147796631
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "You ",
+      "flip ",
+      "it ",
+      "about ",
+      "the ",
+      "y ",
+      "axis, ",
+      "shift ",
+      "it ",
+      "by ",
+      "t ",
+      "then ",
+      "integrate ",
+      "over ",
+      "a ",
+      "region ",
+      "of ",
+      "overlap"
+    ],
+    "shap_values": [
+      0.010004198178648949,
+      0.1634055885951966,
+      -0.017651865040534176,
+      -0.0045979090355103835,
+      0.03846991073805839,
+      0.04707225738093257,
+      0.1783749182941392,
+      0.13973932771477848,
+      -0.01275597525818739,
+      0.06778907937405165,
+      -0.011856561410240829,
+      0.15684500357019715,
+      0.062134662926837336,
+      0.07901927037892165,
+      -0.016944497110671364,
+      0.024621748671052046,
+      -0.01878493708500173,
+      0.07947086439526174
+    ]
+  },
+  {
+    "text": "because the input is multiplied by 1 within the system ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9965474605560303,
+      0.003452521516010165
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "because ",
+      "the ",
+      "input ",
+      "is ",
+      "multiplied ",
+      "by ",
+      "1 ",
+      "within ",
+      "the ",
+      "system"
+    ],
+    "shap_values": [
+      0.0017711371183395386,
+      0.0016095936298370361,
+      -0.002486974000930786,
+      -0.0007511824369430542,
+      -0.01941249892115593,
+      0.0020301155745983124,
+      -0.008403196930885315,
+      -0.0211380273103714,
+      -0.00545838475227356,
+      0.05243945121765137
+    ]
+  },
+  {
+    "text": "because",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9976153373718262,
+      0.0023847001139074564
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9976153373718262,
+    "tokens": [
+      "because"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "IDK",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968118071556091,
+      0.003188212402164936
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9968118071556091,
+    "tokens": [
+      "IDK"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "na",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997272789478302,
+      0.002727194456383586
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997272789478302,
+    "tokens": [
+      "na"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Because sdfgs",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9976029992103577,
+      0.002396954456344247
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Because ",
+      "sdfgs"
+    ],
+    "shap_values": [
+      0.0008621513843536377,
+      0.000370711088180542
+    ]
+  },
+  {
+    "text": "As x(t) goes over h(t) this would be the integral",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7687640190124512,
+      0.23123592138290405
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "As ",
+      "x(",
+      "t) ",
+      "goes ",
+      "over ",
+      "h(",
+      "t) ",
+      "this ",
+      "would ",
+      "be ",
+      "the ",
+      "integral"
+    ],
+    "shap_values": [
+      -0.017224181443452835,
+      -0.023774441331624985,
+      -0.001882791519165039,
+      -0.0620509535074234,
+      -0.028360936790704727,
+      -0.07380180433392525,
+      -0.043121423572301865,
+      0.01665564253926277,
+      -0.025490231812000275,
+      0.013828195631504059,
+      0.006568580865859985,
+      0.011048227548599243
+    ]
+  },
+  {
+    "text": "The when convolved the shift remains the same.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.98482745885849,
+      0.015172559767961502
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "The ",
+      "when ",
+      "convolved ",
+      "the ",
+      "shift ",
+      "remains ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      0.0018822476267814636,
+      -0.001316465437412262,
+      0.0008315816521644592,
+      -0.0008473619818687439,
+      -0.003066539764404297,
+      0.0004864335060119629,
+      -0.0022166743874549866,
+      0.004417188465595245
+    ]
+  },
+  {
+    "text": "idk",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968731999397278,
+      0.0031268037855625153
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9968731999397278,
+    "tokens": [
+      "idk"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "convolution, integral between intersection of area",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9956524968147278,
+      0.004347510635852814
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "convolution, ",
+      "integral ",
+      "between ",
+      "intersection ",
+      "of ",
+      "area"
+    ],
+    "shap_values": [
+      -0.018527165055274963,
+      0.026981055736541748,
+      -0.004206262528896332,
+      -0.00843387097120285,
+      0.009149864315986633,
+      -0.005681261420249939
+    ]
+  },
+  {
+    "text": "it seems like a convolution in the time domain of these two signals",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9965046048164368,
+      0.0034953735303133726
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "it ",
+      "seems ",
+      "like ",
+      "a ",
+      "convolution ",
+      "in ",
+      "the ",
+      "time ",
+      "domain ",
+      "of ",
+      "these ",
+      "two ",
+      "signals"
+    ],
+    "shap_values": [
+      0.00010993704199790955,
+      0.0006430260837078094,
+      -7.928907871246338e-05,
+      -0.0005633160471916199,
+      0.0020589008927345276,
+      -0.000698968768119812,
+      -8.018314838409424e-05,
+      -0.001680321991443634,
+      0.00016768276691436768,
+      -0.00013016164302825928,
+      0.0003716275095939636,
+      -6.270408630371094e-05,
+      7.823854684829712e-05
+    ]
+  },
+  {
+    "text": "When shifting across, cross section of both signals overtime will linearly increase, then remain constant until decrease",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.02980905771255493,
+      0.9701910018920898
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "When ",
+      "shifting ",
+      "across, ",
+      "cross ",
+      "section ",
+      "of ",
+      "both ",
+      "signals ",
+      "overtime ",
+      "will ",
+      "linearly ",
+      "increase, ",
+      "then ",
+      "remain ",
+      "constant ",
+      "until ",
+      "decrease"
+    ],
+    "shap_values": [
+      0.003540408637491055,
+      0.07894782182120252,
+      0.12017800514877308,
+      0.07107220923353452,
+      -0.030471616963041015,
+      0.0022835676645627245,
+      -0.0010396181751275435,
+      -0.008537998379324563,
+      0.04634282509505283,
+      0.04635761053941678,
+      0.12488825163745787,
+      0.22378675556683447,
+      0.06861134368227795,
+      0.04291294838185422,
+      0.06771793727966724,
+      0.06856312079617055,
+      0.04140760042355396
+    ]
+  },
+  {
+    "text": "no",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9973113536834717,
+      0.0026886078994721174
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9973113536834717,
+    "tokens": [
+      "no"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Output is the overlaping area",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9950790405273438,
+      0.0049209329299628735
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Output ",
+      "is ",
+      "the ",
+      "overlaping ",
+      "area"
+    ],
+    "shap_values": [
+      0.0008701980113983154,
+      -0.0004576444625854492,
+      0.0015606209635734558,
+      -0.0028907284140586853,
+      -0.00037354230880737305
+    ]
+  },
+  {
+    "text": "Because they add up and then remain the same until the fuction starts moving out , then it subracts",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.034408796578645706,
+      0.9655912518501282
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Because ",
+      "they ",
+      "add ",
+      "up ",
+      "and ",
+      "then ",
+      "remain ",
+      "the ",
+      "same ",
+      "until ",
+      "the ",
+      "fuction ",
+      "starts ",
+      "moving ",
+      "out , ",
+      "then ",
+      "it ",
+      "subracts"
+    ],
+    "shap_values": [
+      0.009607339263311587,
+      0.0021972975955577567,
+      0.009467899115406908,
+      0.004808710058568977,
+      0.004051444528158754,
+      0.0769562841305742,
+      0.0668376446410548,
+      -0.013999102178786416,
+      0.04557315044075949,
+      0.11605868871993152,
+      0.024126315511239227,
+      0.1113678325273213,
+      0.1856047881374252,
+      0.06007879592652898,
+      0.09357235730567481,
+      0.10593757802416803,
+      0.01104652520007221,
+      0.04866787340142764
+    ]
+  },
+  {
+    "text": "they are both rect functions, therefore the result needs to be a rect function",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9935224652290344,
+      0.006477502640336752
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "they ",
+      "are ",
+      "both ",
+      "rect ",
+      "functions, ",
+      "therefore ",
+      "the ",
+      "result ",
+      "needs ",
+      "to ",
+      "be ",
+      "a ",
+      "rect ",
+      "function"
+    ],
+    "shap_values": [
+      0.004256483167409897,
+      -0.002756785601377487,
+      0.0021588578820228577,
+      -0.0024143680930137634,
+      -0.007382068783044815,
+      0.006379704922437668,
+      -0.0017266757786273956,
+      -0.0011228211224079132,
+      0.018828533589839935,
+      -0.020588256418704987,
+      0.011178724467754364,
+      -0.013740785419940948,
+      -0.017235353589057922,
+      0.021317139267921448
+    ]
+  },
+  {
+    "text": "Convolution, x(t) flipped and pass through h(t)",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.10566552728414536,
+      0.8943344950675964
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Convolution, ",
+      "x(",
+      "t) ",
+      "flipped ",
+      "and ",
+      "pass ",
+      "through ",
+      "h(",
+      "t"
+    ],
+    "shap_values": [
+      0.04917141293117311,
+      0.061406098466250114,
+      0.11392881690699141,
+      0.2564140259491978,
+      0.09906021656934172,
+      0.05674624934908934,
+      0.10171440438716672,
+      0.05541883417754434,
+      -0.02350897269207053
+    ]
+  },
+  {
+    "text": "stack",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9971873760223389,
+      0.0028126428369432688
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9971873760223389,
+    "tokens": [
+      "stack"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Area of overlap will initially increase until the two shapes fully overlap. Then it will be constant until the area decrease as the two shapes move apart.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.030187254771590233,
+      0.9698126912117004
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Area ",
+      "of ",
+      "overlap ",
+      "will ",
+      "initially ",
+      "increase ",
+      "until ",
+      "the ",
+      "two ",
+      "shapes ",
+      "fully ",
+      "overlap. ",
+      "Then ",
+      "it ",
+      "will ",
+      "be ",
+      "constant ",
+      "until ",
+      "the ",
+      "area ",
+      "decrease ",
+      "as ",
+      "the ",
+      "two ",
+      "shapes ",
+      "move ",
+      "apart"
+    ],
+    "shap_values": [
+      0.0020234166076988913,
+      0.009082312033569906,
+      0.02748351280024508,
+      0.008051295102632139,
+      0.028437439927074593,
+      0.11176273648015922,
+      0.05060743830836145,
+      0.0028131287763244472,
+      0.03232454007229535,
+      0.05379856979561737,
+      0.03211787749751238,
+      0.08830928670795402,
+      0.05452071082982002,
+      0.012424209438904654,
+      0.011732341576134786,
+      -0.01087236926832702,
+      0.04541942893411033,
+      0.05529995582764968,
+      0.025872095066006295,
+      0.04604139422008302,
+      0.08439020367222838,
+      0.030639042481197976,
+      -0.0034967348401551135,
+      -0.000838251413370017,
+      0.06261857672507176,
+      0.08705039390042657,
+      0.021233565188595094
+    ]
+  },
+  {
+    "text": "aaa",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997149646282196,
+      0.002850400283932686
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997149646282196,
+    "tokens": [
+      "aaa"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "the amplitude won't ever surpass 1, however there will also be a period of time where it is below 1 and above 0.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.047423794865608215,
+      0.952576220035553
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "the ",
+      "amplitude ",
+      "won'",
+      "t ",
+      "ever ",
+      "surpass ",
+      "1, ",
+      "however ",
+      "there ",
+      "will ",
+      "also ",
+      "be ",
+      "a ",
+      "period ",
+      "of ",
+      "time ",
+      "where ",
+      "it ",
+      "is ",
+      "below ",
+      "1 ",
+      "and ",
+      "above ",
+      "0"
+    ],
+    "shap_values": [
+      0.006197410613822285,
+      0.038516224529303145,
+      0.0663100421152194,
+      -0.0030237076643970795,
+      0.09060423584014643,
+      0.217855616559973,
+      0.10419639362953603,
+      0.02297741586517077,
+      0.048170074725931045,
+      0.10495339190674713,
+      0.02924110708408989,
+      0.02794271476159338,
+      0.03534360021149041,
+      0.0665007323914324,
+      -0.017204560012032744,
+      0.03517114718124503,
+      0.021929876587819308,
+      0.011441084672696888,
+      0.015948954576742835,
+      0.029710109505685978,
+      -0.003906276833731681,
+      0.0005853869952261448,
+      0.005925664183450863,
+      -0.007280674384674057
+    ]
+  },
+  {
+    "text": "bc",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.996685802936554,
+      0.003314133733510971
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.996685802936554,
+    "tokens": [
+      "bc"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "blah blah",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968270659446716,
+      0.003172932891175151
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "blah ",
+      "blah"
+    ],
+    "shap_values": [
+      0.0011101961135864258,
+      -0.0006532669067382812
+    ]
+  },
+  {
+    "text": "h(t) is multiplies by x(t) and creates y(t)",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7736960053443909,
+      0.2263040393590927
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "h(",
+      "t) ",
+      "is ",
+      "multiplies ",
+      "by ",
+      "x(",
+      "t) ",
+      "and ",
+      "creates ",
+      "y(",
+      "t"
+    ],
+    "shap_values": [
+      -0.00898594781756401,
+      -0.011253852397203445,
+      -0.013615269213914871,
+      -0.03423133119940758,
+      -0.013317899778485298,
+      -0.04908649064600468,
+      0.005495879799127579,
+      -0.018588773906230927,
+      -0.005227938294410706,
+      -0.03664553165435791,
+      -0.004408255219459534
+    ]
+  },
+  {
+    "text": "i dont know",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997542679309845,
+      0.002457299968227744
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "i ",
+      "dont ",
+      "know"
+    ],
+    "shap_values": [
+      0.0002713203430175781,
+      0.00042188167572021484,
+      0.0004793405532836914
+    ]
+  },
+  {
+    "text": "it is linear and has an input at 2",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.989759624004364,
+      0.01024035643786192
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "it ",
+      "is ",
+      "linear ",
+      "and ",
+      "has ",
+      "an ",
+      "input ",
+      "at ",
+      "2"
+    ],
+    "shap_values": [
+      -0.001182548701763153,
+      5.2444636821746826e-05,
+      -0.002216935157775879,
+      0.001419059932231903,
+      -0.010345309972763062,
+      -0.0030368193984031677,
+      8.717179298400879e-05,
+      -0.02008955180644989,
+      0.02870197594165802
+    ]
+  },
+  {
+    "text": "delay",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9971382021903992,
+      0.002861845539882779
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9971382021903992,
+    "tokens": [
+      "delay"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "at the beginning, the x(t) run into the h(t) the area of the the output was raising and at the last stage, the x(t) run out to the h(t) the area of the the output was decreasing both process are linear.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.030574137344956398,
+      0.9694258570671082
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "at ",
+      "the ",
+      "beginning, ",
+      "the ",
+      "x(",
+      "t) ",
+      "run ",
+      "into ",
+      "the ",
+      "h(",
+      "t) ",
+      "the ",
+      "area ",
+      "of ",
+      "the ",
+      "the ",
+      "output ",
+      "was ",
+      "raising ",
+      "and ",
+      "at ",
+      "the ",
+      "last ",
+      "stage, ",
+      "the ",
+      "x(",
+      "t) ",
+      "run ",
+      "out ",
+      "to ",
+      "the ",
+      "h(",
+      "t) ",
+      "the ",
+      "area ",
+      "of ",
+      "the ",
+      "the ",
+      "output ",
+      "was ",
+      "decreasing ",
+      "both ",
+      "process ",
+      "are ",
+      "linear"
+    ],
+    "shap_values": [
+      0.012250610881892499,
+      0.01378067002951866,
+      0.049925452905881684,
+      -0.0012054558101226576,
+      0.024716552630707156,
+      -0.0034449488812242635,
+      0.05991846467804862,
+      0.044848359473689925,
+      0.013640012750935663,
+      0.01568239180657353,
+      -0.00908448403182168,
+      0.008992534173254777,
+      0.027760042371179832,
+      -0.004904387956533658,
+      0.01547024494963504,
+      0.024741293890353216,
+      0.01501315736580485,
+      0.029275475744119223,
+      0.06774460422942259,
+      0.0630034576994755,
+      0.03342126452844241,
+      0.00408367350246408,
+      0.026635955178790027,
+      0.059978620356559986,
+      -0.0014412226482818369,
+      0.022531756632815814,
+      0.016901288323424524,
+      0.07887335220220848,
+      0.04535543577003409,
+      0.03191487655931269,
+      0.011948413291975157,
+      0.03164083914089133,
+      0.011115098550362745,
+      0.01336834015455679,
+      0.041138871431030566,
+      -0.01071995307211182,
+      0.007382334079011343,
+      0.0058525838976493105,
+      0.005291250781738199,
+      0.009634503236156888,
+      0.05040488916565664,
+      -0.0021691284142434596,
+      0.0006410681390358755,
+      0.007780924134810145,
+      -0.002160647257308786
+    ]
+  },
+  {
+    "text": "MUTI",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997050940990448,
+      0.00294912769459188
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997050940990448,
+    "tokens": [
+      "MUTI"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "The area of overlap of the two functions will increase until the functions are both inside of each other; the area will remain constant. The area of overlap will then decrease as the functions pass each other.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.03239930421113968,
+      0.9676007628440857
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "The ",
+      "area ",
+      "of ",
+      "overlap ",
+      "of ",
+      "the ",
+      "two ",
+      "functions ",
+      "will ",
+      "increase ",
+      "until ",
+      "the ",
+      "functions ",
+      "are ",
+      "both ",
+      "inside ",
+      "of ",
+      "each ",
+      "other; ",
+      "the ",
+      "area ",
+      "will ",
+      "remain ",
+      "constant. ",
+      "The ",
+      "area ",
+      "of ",
+      "overlap ",
+      "will ",
+      "then ",
+      "decrease ",
+      "as ",
+      "the ",
+      "functions ",
+      "pass ",
+      "each ",
+      "other"
+    ],
+    "shap_values": [
+      -0.006508673155622091,
+      0.0035369744946365245,
+      0.006273115570365917,
+      0.019115602648525964,
+      0.0004232518476783298,
+      -0.0008501950142090209,
+      -0.00023989297187654302,
+      0.002882829350710381,
+      0.0603651344354148,
+      0.22686965477623744,
+      0.0682156837938237,
+      9.955383575288579e-05,
+      0.022193300181243103,
+      0.011523404384206515,
+      0.015896005024842452,
+      0.0344449378826539,
+      -0.010638079278578516,
+      0.009124957090534735,
+      0.011845715016534086,
+      0.04246113492263248,
+      0.047512531506072264,
+      0.031672874312789645,
+      0.016138506165589206,
+      0.0353918973414693,
+      0.007333982982415294,
+      0.004720721378432175,
+      0.003815720460876876,
+      0.039055532258386774,
+      0.03719714550523069,
+      0.07373892631865321,
+      0.08861757063557608,
+      0.02184233842406404,
+      -0.0036303074318521584,
+      0.010896562669838133,
+      0.026394337486887638,
+      0.008897740465069475,
+      -0.002964618544613656
+    ]
+  },
+  {
+    "text": "adav",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9973688125610352,
+      0.002631188603118062
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9973688125610352,
+    "tokens": [
+      "adav"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "signals add together",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9971797466278076,
+      0.0028202366083860397
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "signals ",
+      "add ",
+      "together"
+    ],
+    "shap_values": [
+      0.0004521608352661133,
+      -0.00022429227828979492,
+      0.0005817413330078125
+    ]
+  },
+  {
+    "text": "...",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9963701367378235,
+      0.003629829501733184
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "..."
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "combined response",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9976739883422852,
+      0.0023260090965777636
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "combined ",
+      "response"
+    ],
+    "shap_values": [
+      0.0005503594875335693,
+      0.0007534921169281006
+    ]
+  },
+  {
+    "text": "The output is the area of overlap. When convoluting the input with the impulse response, the overlapping area increases linearly to one, stays the same for a while, then decreases until there is no overlap.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0239946898072958,
+      0.9760053157806396
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "The ",
+      "output ",
+      "is ",
+      "the ",
+      "area ",
+      "of ",
+      "overlap. ",
+      "When ",
+      "convoluting ",
+      "the ",
+      "input ",
+      "with ",
+      "the ",
+      "impulse ",
+      "response, ",
+      "the ",
+      "overlapping ",
+      "area ",
+      "increases ",
+      "linearly ",
+      "to ",
+      "one, ",
+      "stays ",
+      "the ",
+      "same ",
+      "for ",
+      "a ",
+      "while, ",
+      "then ",
+      "decreases ",
+      "until ",
+      "there ",
+      "is ",
+      "no ",
+      "overlap"
+    ],
+    "shap_values": [
+      -0.00017450311133870855,
+      0.009874435658275615,
+      -0.0004210926636005752,
+      -0.008058102735958528,
+      0.014670071825094055,
+      0.017450047853344586,
+      0.04574054445401998,
+      0.002943607985798735,
+      -0.011984618453425355,
+      0.0032851297146407887,
+      0.015039155070553534,
+      0.016482174207339995,
+      0.0055987938976613805,
+      0.014124597117188387,
+      0.013573527772678062,
+      0.015154641179833561,
+      0.07706142657116288,
+      0.03701663224637741,
+      0.17497982583154226,
+      0.06312878637254471,
+      0.021788362588267773,
+      0.014506234787404537,
+      0.01997852667409461,
+      0.0032434646709589288,
+      0.007020249548077118,
+      0.018652153048606124,
+      0.009889334098261315,
+      0.014548398212355096,
+      0.10640584427164868,
+      0.16449868228664855,
+      0.07582282866860623,
+      0.009535384098853683,
+      -0.003800332129079228,
+      -0.016010637967459235,
+      0.02219545564245588
+    ]
+  },
+  {
+    "text": "Unknown",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975135922431946,
+      0.002486431272700429
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9975135922431946,
+    "tokens": [
+      "Unknown"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "most accurate",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967510104179382,
+      0.0032490165904164314
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "most ",
+      "accurate"
+    ],
+    "shap_values": [
+      0.000654757022857666,
+      -0.0002738833427429199
+    ]
+  },
+  {
+    "text": "You flip it about the y axis, shift it by t then integrate over a region of overlap",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.032015129923820496,
+      0.9679849147796631
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "You ",
+      "flip ",
+      "it ",
+      "about ",
+      "the ",
+      "y ",
+      "axis, ",
+      "shift ",
+      "it ",
+      "by ",
+      "t ",
+      "then ",
+      "integrate ",
+      "over ",
+      "a ",
+      "region ",
+      "of ",
+      "overlap"
+    ],
+    "shap_values": [
+      0.010004198178648949,
+      0.1634055885951966,
+      -0.017651865040534176,
+      -0.0045979090355103835,
+      0.03846991073805839,
+      0.04707225738093257,
+      0.1783749182941392,
+      0.13973932771477848,
+      -0.01275597525818739,
+      0.06778907937405165,
+      -0.011856561410240829,
+      0.15684500357019715,
+      0.062134662926837336,
+      0.07901927037892165,
+      -0.016944497110671364,
+      0.024621748671052046,
+      -0.01878493708500173,
+      0.07947086439526174
+    ]
+  },
+  {
+    "text": "the additive nature of the impulse response",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9964284300804138,
+      0.003571615554392338
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "the ",
+      "additive ",
+      "nature ",
+      "of ",
+      "the ",
+      "impulse ",
+      "response"
+    ],
+    "shap_values": [
+      0.00036012381315231323,
+      -7.899850606918335e-05,
+      -9.387731552124023e-07,
+      -0.00026880204677581787,
+      -0.00015032291412353516,
+      -0.000364154577255249,
+      0.0005613863468170166
+    ]
+  },
+  {
+    "text": "just guess",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.996938169002533,
+      0.003061827505007386
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "just ",
+      "guess"
+    ],
+    "shap_values": [
+      0.0006823241710662842,
+      -0.00011429190635681152
+    ]
+  },
+  {
+    "text": "Amplitudes add together",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.996819794178009,
+      0.003180223284289241
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Amplitudes ",
+      "add ",
+      "together"
+    ],
+    "shap_values": [
+      -0.00017210841178894043,
+      0.00015842914581298828,
+      0.000463336706161499
+    ]
+  },
+  {
+    "text": "It is the most reasonable convolution graph",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967389106750488,
+      0.003261011792346835
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "It ",
+      "is ",
+      "the ",
+      "most ",
+      "reasonable ",
+      "convolution ",
+      "graph"
+    ],
+    "shap_values": [
+      -0.0005118325352668762,
+      0.0011795982718467712,
+      0.0006304308772087097,
+      -0.0011738911271095276,
+      -1.8484890460968018e-05,
+      -9.82731580734253e-06,
+      0.0002727806568145752
+    ]
+  },
+  {
+    "text": "11",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975996017456055,
+      0.002400395693257451
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9975996017456055,
+    "tokens": [
+      "11"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "goose",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975252151489258,
+      0.0024748456198722124
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9975252151489258,
+    "tokens": [
+      "goose"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "pass",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997529923915863,
+      0.002470116363838315
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997529923915863,
+    "tokens": [
+      "pass"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "h(t) is multiplied by x(t) and only the area between them will pass ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6964079737663269,
+      0.3035920262336731
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "h(",
+      "t) ",
+      "is ",
+      "multiplied ",
+      "by ",
+      "x(",
+      "t) ",
+      "and ",
+      "only ",
+      "the ",
+      "area ",
+      "between ",
+      "them ",
+      "will ",
+      "pass"
+    ],
+    "shap_values": [
+      0.054906219244003296,
+      0.004030171781778336,
+      0.008466294035315514,
+      -0.07748343981802464,
+      -0.04297723062336445,
+      -0.045370468869805336,
+      -0.009678196161985397,
+      0.03266505151987076,
+      -0.00041734427213668823,
+      -0.010217033326625824,
+      -0.041913893073797226,
+      -0.0778423584997654,
+      -0.004015225917100906,
+      -0.06484411284327507,
+      -0.025224044919013977
+    ]
+  },
+  {
+    "text": "Because sdfgs",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9976029992103577,
+      0.002396954456344247
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Because ",
+      "sdfgs"
+    ],
+    "shap_values": [
+      0.0008621513843536377,
+      0.000370711088180542
+    ]
+  },
+  {
+    "text": "The overlap would create that shape",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9956212043762207,
+      0.004378817975521088
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "The ",
+      "overlap ",
+      "would ",
+      "create ",
+      "that ",
+      "shape"
+    ],
+    "shap_values": [
+      0.0017647892236709595,
+      -0.0016310811042785645,
+      0.0012104436755180359,
+      -0.0036203935742378235,
+      0.00019809603691101074,
+      0.0013292133808135986
+    ]
+  },
+  {
+    "text": "dunno",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9969691634178162,
+      0.003030829131603241
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9969691634178162,
+    "tokens": [
+      "dunno"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "ghj",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9974040389060974,
+      0.0025959631893783808
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9974040389060974,
+    "tokens": [
+      "ghj"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "they are both rect functions, therefore the result needs to be a rect function",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9935224652290344,
+      0.006477502640336752
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "they ",
+      "are ",
+      "both ",
+      "rect ",
+      "functions, ",
+      "therefore ",
+      "the ",
+      "result ",
+      "needs ",
+      "to ",
+      "be ",
+      "a ",
+      "rect ",
+      "function"
+    ],
+    "shap_values": [
+      0.004256483167409897,
+      -0.002756785601377487,
+      0.0021588578820228577,
+      -0.0024143680930137634,
+      -0.007382068783044815,
+      0.006379704922437668,
+      -0.0017266757786273956,
+      -0.0011228211224079132,
+      0.018828533589839935,
+      -0.020588256418704987,
+      0.011178724467754364,
+      -0.013740785419940948,
+      -0.017235353589057922,
+      0.021317139267921448
+    ]
+  },
+  {
+    "text": "Convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967753291130066,
+      0.003224701853469014
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967753291130066,
+    "tokens": [
+      "Convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "will be the convolution of the two",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9969422221183777,
+      0.003057849360629916
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "will ",
+      "be ",
+      "the ",
+      "convolution ",
+      "of ",
+      "the ",
+      "two"
+    ],
+    "shap_values": [
+      -0.0020210593938827515,
+      0.00114382803440094,
+      0.00023836642503738403,
+      0.0011250600218772888,
+      2.6628375053405762e-05,
+      -0.0008462071418762207,
+      0.0009054690599441528
+    ]
+  },
+  {
+    "text": "i dont know",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997542679309845,
+      0.002457299968227744
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "i ",
+      "dont ",
+      "know"
+    ],
+    "shap_values": [
+      0.0002713203430175781,
+      0.00042188167572021484,
+      0.0004793405532836914
+    ]
+  },
+  {
+    "text": "Because as the function slowly moves across it will create a slope and straight line",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.1121114194393158,
+      0.8878886103630066
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Because ",
+      "as ",
+      "the ",
+      "function ",
+      "slowly ",
+      "moves ",
+      "across ",
+      "it ",
+      "will ",
+      "create ",
+      "a ",
+      "slope ",
+      "and ",
+      "straight ",
+      "line"
+    ],
+    "shap_values": [
+      0.009102943891775794,
+      0.037220066456939094,
+      -0.032849367140443064,
+      0.020222243343596347,
+      0.22937477634695824,
+      0.17828070231189486,
+      0.06076096794276964,
+      0.019455386020126753,
+      0.06204001358128153,
+      0.03604082902893424,
+      0.00856415780435782,
+      0.1058930939034326,
+      0.08196489640977234,
+      0.07641483267070726,
+      -0.008226761710830033
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Flip one then move it across the other. the area of overlap is the output. It will increase linearly until the small box is completely inside the big box. Then it will be constant until it leaves. at which point it with decrease linearly",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.023821815848350525,
+      0.9761781692504883
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Flip ",
+      "one ",
+      "then ",
+      "move ",
+      "it ",
+      "across ",
+      "the ",
+      "other. ",
+      "the ",
+      "area ",
+      "of ",
+      "overlap ",
+      "is ",
+      "the ",
+      "output. ",
+      "It ",
+      "will ",
+      "increase ",
+      "linearly ",
+      "until ",
+      "the ",
+      "small ",
+      "box ",
+      "is ",
+      "completely ",
+      "inside ",
+      "the ",
+      "big ",
+      "box. ",
+      "Then ",
+      "it ",
+      "will ",
+      "be ",
+      "constant ",
+      "until ",
+      "it ",
+      "leaves. ",
+      "at ",
+      "which ",
+      "point ",
+      "it ",
+      "with ",
+      "decrease ",
+      "linearly"
+    ],
+    "shap_values": [
+      0.07097325516951969,
+      0.021311060023435857,
+      0.07099599679349922,
+      0.07014705568144564,
+      0.004567077288811561,
+      0.05359810927620856,
+      0.016859027942700777,
+      0.027462188714707736,
+      0.008525542179995682,
+      0.007432917242113035,
+      0.021140252552868333,
+      0.03571126504539279,
+      -0.002323435452126432,
+      0.014734391639649402,
+      0.024818343015795108,
+      0.026025812978332397,
+      0.022061558567656903,
+      0.050209558623464545,
+      0.024631517055240693,
+      0.03037694994782214,
+      -0.00022723068468621932,
+      0.005602664230536902,
+      0.006960431030165637,
+      0.004808956673514331,
+      0.013985143759782659,
+      0.01383475751572405,
+      0.0018823659229383338,
+      0.010071646905998932,
+      0.008610441622295184,
+      0.03514864740645862,
+      0.006428841083106818,
+      0.023056337453454034,
+      0.019739865045266924,
+      0.032966419585136464,
+      0.04030341194811626,
+      0.013920487614086596,
+      0.04566375493595842,
+      0.020256134448572993,
+      0.0007979928413988091,
+      0.011321154386678245,
+      0.0014990561248851009,
+      0.02152726101485314,
+      0.027878936307388358,
+      0.007252418290590867
+    ]
+  },
+  {
+    "text": "as the h(t) passes over x(t) it creates a elongated rectangle with no effect",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6537315249443054,
+      0.34626850485801697
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "as ",
+      "the ",
+      "h(",
+      "t) ",
+      "passes ",
+      "over ",
+      "x(",
+      "t) ",
+      "it ",
+      "creates ",
+      "a ",
+      "elongated ",
+      "rectangle ",
+      "with ",
+      "no ",
+      "effect"
+    ],
+    "shap_values": [
+      0.0036870650947093964,
+      0.009663481265306473,
+      -0.04054176062345505,
+      -0.07678978890180588,
+      -0.1375340260565281,
+      -0.06412427499890327,
+      -0.044211432337760925,
+      -0.021333016455173492,
+      0.017313589807599783,
+      -0.04579123994335532,
+      0.03426877409219742,
+      0.009633224457502365,
+      0.011792941018939018,
+      -0.0354450847953558,
+      0.014620667323470116,
+      0.022152269259095192
+    ]
+  },
+  {
+    "text": "Because of the convolution theorm",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9972534775733948,
+      0.0027465196326375008
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Because ",
+      "of ",
+      "the ",
+      "convolution ",
+      "theorm"
+    ],
+    "shap_values": [
+      0.0005503445863723755,
+      -0.0005167275667190552,
+      -0.00011241436004638672,
+      0.00025516748428344727,
+      0.0007069706916809082
+    ]
+  },
+  {
+    "text": "Overlapping adds to the amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9974806308746338,
+      0.0025193921755999327
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Overlapping ",
+      "adds ",
+      "to ",
+      "the ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.0007095187902450562,
+      0.0011190623044967651,
+      -0.006879180669784546,
+      -0.0005527287721633911,
+      0.0067138224840164185
+    ]
+  },
+  {
+    "text": "Not too sure.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9943508505821228,
+      0.005649147089570761
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Not ",
+      "too ",
+      "sure"
+    ],
+    "shap_values": [
+      0.0012779682874679565,
+      -0.0015650838613510132,
+      0.0003428459167480469
+    ]
+  },
+  {
+    "text": "amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9972014427185059,
+      0.002798575209453702
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9972014427185059,
+    "tokens": [
+      "amplitude"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "convolution of the two functions in the time domain.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9962472915649414,
+      0.003752670018002391
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "convolution ",
+      "of ",
+      "the ",
+      "two ",
+      "functions ",
+      "in ",
+      "the ",
+      "time ",
+      "domain"
+    ],
+    "shap_values": [
+      0.0028518736362457275,
+      -0.0002801567316055298,
+      -0.0005025565624237061,
+      -0.00037904083728790283,
+      0.0005656778812408447,
+      -0.000942915678024292,
+      0.00036675482988357544,
+      -0.0009924247860908508,
+      -0.0008135735988616943
+    ]
+  },
+  {
+    "text": "because it is 2 rect functions multiplied",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9929884076118469,
+      0.00701155373826623
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "because ",
+      "it ",
+      "is ",
+      "2 ",
+      "rect ",
+      "functions ",
+      "multiplied"
+    ],
+    "shap_values": [
+      8.331984281539917e-05,
+      -0.0014897212386131287,
+      -0.0014607235789299011,
+      0.0020034238696098328,
+      -0.009273812174797058,
+      -0.002708330750465393,
+      0.009464114904403687
+    ]
+  },
+  {
+    "text": "x(t) will overlapping h(t) for 1 second and stay complete overlapped for 2 seconds then moved out for 1 second ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.029199080541729927,
+      0.9708009362220764
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "x(",
+      "t) ",
+      "will ",
+      "overlapping ",
+      "h(",
+      "t) ",
+      "for ",
+      "1 ",
+      "second ",
+      "and ",
+      "stay ",
+      "complete ",
+      "overlapped ",
+      "for ",
+      "2 ",
+      "seconds ",
+      "then ",
+      "moved ",
+      "out ",
+      "for ",
+      "1 ",
+      "second"
+    ],
+    "shap_values": [
+      0.017944979248568416,
+      -0.0044291161466389894,
+      0.014322425631689839,
+      0.029136338984244503,
+      0.007581079917144962,
+      0.020198485712171532,
+      0.03627114817936672,
+      0.008010166777239647,
+      0.03392307095055003,
+      0.028083567594876513,
+      0.08613987447461113,
+      0.04015934299968649,
+      0.0629014738224214,
+      0.021918582351645455,
+      0.0490557989323861,
+      0.11827637388341827,
+      0.15480217698495835,
+      0.08095587110437918,
+      0.06878431280347286,
+      0.032659874465025496,
+      0.0262436076591257,
+      0.03422874976240564
+    ]
+  },
+  {
+    "text": "When convolving flip x(t), place it on the left of h(t), move from left to right and draw the resulting shape.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.030803052708506584,
+      0.9691969752311707
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "When ",
+      "convolving ",
+      "flip ",
+      "x(",
+      "t), ",
+      "place ",
+      "it ",
+      "on ",
+      "the ",
+      "left ",
+      "of ",
+      "h(",
+      "t), ",
+      "move ",
+      "from ",
+      "left ",
+      "to ",
+      "right ",
+      "and ",
+      "draw ",
+      "the ",
+      "resulting ",
+      "shape"
+    ],
+    "shap_values": [
+      0.06283551958040334,
+      0.04405446391319856,
+      0.16879246885946486,
+      0.01529837523412425,
+      0.03385605376388412,
+      0.05480651521065738,
+      0.004155401009484194,
+      0.011413988817366771,
+      -0.0020207302586641163,
+      0.05646408935717773,
+      0.007823616462701466,
+      0.03999571769236354,
+      0.10128000743497978,
+      0.16352878918041824,
+      0.0169398615580576,
+      0.04859642469455139,
+      0.02932113014321658,
+      0.035855439764418406,
+      0.031738788609800395,
+      0.03026485600275919,
+      0.016368697804864496,
+      0.001145729751442559,
+      -0.012153868927271105
+    ]
+  },
+  {
+    "text": "..",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9969167113304138,
+      0.003083317307755351
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9969167113304138,
+    "tokens": [
+      ".."
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "at the beginning, the x(t) run into the h(t) the area of the the output was raising and at the last stage, the x(t) run out to the h(t) the area of the the output was decreasing both process are linear.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.030574137344956398,
+      0.9694258570671082
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "at ",
+      "the ",
+      "beginning, ",
+      "the ",
+      "x(",
+      "t) ",
+      "run ",
+      "into ",
+      "the ",
+      "h(",
+      "t) ",
+      "the ",
+      "area ",
+      "of ",
+      "the ",
+      "the ",
+      "output ",
+      "was ",
+      "raising ",
+      "and ",
+      "at ",
+      "the ",
+      "last ",
+      "stage, ",
+      "the ",
+      "x(",
+      "t) ",
+      "run ",
+      "out ",
+      "to ",
+      "the ",
+      "h(",
+      "t) ",
+      "the ",
+      "area ",
+      "of ",
+      "the ",
+      "the ",
+      "output ",
+      "was ",
+      "decreasing ",
+      "both ",
+      "process ",
+      "are ",
+      "linear"
+    ],
+    "shap_values": [
+      0.012250610881892499,
+      0.01378067002951866,
+      0.049925452905881684,
+      -0.0012054558101226576,
+      0.024716552630707156,
+      -0.0034449488812242635,
+      0.05991846467804862,
+      0.044848359473689925,
+      0.013640012750935663,
+      0.01568239180657353,
+      -0.00908448403182168,
+      0.008992534173254777,
+      0.027760042371179832,
+      -0.004904387956533658,
+      0.01547024494963504,
+      0.024741293890353216,
+      0.01501315736580485,
+      0.029275475744119223,
+      0.06774460422942259,
+      0.0630034576994755,
+      0.03342126452844241,
+      0.00408367350246408,
+      0.026635955178790027,
+      0.059978620356559986,
+      -0.0014412226482818369,
+      0.022531756632815814,
+      0.016901288323424524,
+      0.07887335220220848,
+      0.04535543577003409,
+      0.03191487655931269,
+      0.011948413291975157,
+      0.03164083914089133,
+      0.011115098550362745,
+      0.01336834015455679,
+      0.041138871431030566,
+      -0.01071995307211182,
+      0.007382334079011343,
+      0.0058525838976493105,
+      0.005291250781738199,
+      0.009634503236156888,
+      0.05040488916565664,
+      -0.0021691284142434596,
+      0.0006410681390358755,
+      0.007780924134810145,
+      -0.002160647257308786
+    ]
+  },
+  {
+    "text": "flip slide across ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6338875889778137,
+      0.3661123812198639
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "flip ",
+      "slide ",
+      "across"
+    ],
+    "shap_values": [
+      -0.055028244853019714,
+      -0.22045402228832245,
+      -0.08705928921699524
+    ]
+  },
+  {
+    "text": "Using the graphical convolution method, after x(t) is flipped and slid across h(t), y(t) is 1 where h(t) is 1 as both are rectangular functions.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06714972108602524,
+      0.932850182056427
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Using ",
+      "the ",
+      "graphical ",
+      "convolution ",
+      "method, ",
+      "after ",
+      "x(",
+      "t) ",
+      "is ",
+      "flipped ",
+      "and ",
+      "slid ",
+      "across ",
+      "h(",
+      "t), ",
+      "y(",
+      "t) ",
+      "is ",
+      "1 ",
+      "where ",
+      "h(",
+      "t) ",
+      "is ",
+      "1 ",
+      "as ",
+      "both ",
+      "are ",
+      "rectangular ",
+      "functions"
+    ],
+    "shap_values": [
+      -0.046244727389421314,
+      0.014162553532514721,
+      -0.04683179588755593,
+      -0.029718724952545017,
+      0.02824875057558529,
+      0.060846081032650545,
+      0.03259147729113465,
+      -0.009375867048220243,
+      0.04970816081186058,
+      0.13272152571153129,
+      0.05388727302488405,
+      0.32177856793714454,
+      0.16018844692007406,
+      0.02568092759611318,
+      -0.01388439549918985,
+      0.00789745711517753,
+      0.0007417168890242465,
+      0.009740492831042502,
+      -0.008586886768171098,
+      0.054171266237972304,
+      0.028920860786456615,
+      -0.005626071011647582,
+      -0.0019255334045737982,
+      -0.002650991937116487,
+      0.011328847689583199,
+      -0.005822318675200222,
+      0.04159972245179233,
+      0.12681854770198697,
+      -0.06640309435169911
+    ]
+  },
+  {
+    "text": "the ouput is the convolution of the input and transfer function. which means that between 2-3s, the graph should be the sum of the functions magnitudes.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.5685739517211914,
+      0.4314260482788086
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "the ",
+      "ouput ",
+      "is ",
+      "the ",
+      "convolution ",
+      "of ",
+      "the ",
+      "input ",
+      "and ",
+      "transfer ",
+      "function. ",
+      "which ",
+      "means ",
+      "that ",
+      "between ",
+      "2-",
+      "3s, ",
+      "the ",
+      "graph ",
+      "should ",
+      "be ",
+      "the ",
+      "sum ",
+      "of ",
+      "the ",
+      "functions ",
+      "magnitudes"
+    ],
+    "shap_values": [
+      0.015040777623653412,
+      -0.01382436603307724,
+      -0.00217495858669281,
+      0.0058080703020095825,
+      -0.0077555812895298,
+      0.0036313384771347046,
+      0.01638048328459263,
+      -0.00852365605533123,
+      0.005649931728839874,
+      -0.009664678946137428,
+      -0.026972530409693718,
+      0.010964915156364441,
+      -0.03834383934736252,
+      0.007472064346075058,
+      -0.047493841499090195,
+      -0.04217342473566532,
+      -0.09135903976857662,
+      -0.022353628650307655,
+      -0.02817392908036709,
+      -0.03849102836102247,
+      -0.006101381964981556,
+      0.009778675468017658,
+      -0.01866806500280897,
+      0.014478219983478388,
+      -0.002743020343283812,
+      -0.04520192711303631,
+      0.02566900694121917
+    ]
+  },
+  {
+    "text": "most accurate",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967510104179382,
+      0.0032490165904164314
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "most ",
+      "accurate"
+    ],
+    "shap_values": [
+      0.000654757022857666,
+      -0.0002738833427429199
+    ]
+  },
+  {
+    "text": "convolution of the two functions in the time domain.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9962472915649414,
+      0.003752670018002391
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "convolution ",
+      "of ",
+      "the ",
+      "two ",
+      "functions ",
+      "in ",
+      "the ",
+      "time ",
+      "domain"
+    ],
+    "shap_values": [
+      0.0028518736362457275,
+      -0.0002801567316055298,
+      -0.0005025565624237061,
+      -0.00037904083728790283,
+      0.0005656778812408447,
+      -0.000942915678024292,
+      0.00036675482988357544,
+      -0.0009924247860908508,
+      -0.0008135735988616943
+    ]
+  },
+  {
+    "text": "Convolution plot will have a trapezoidal shape as when plotting overlapping area, it will increase, reach a maximum and stay at this point the decrease.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.024132614955306053,
+      0.9758674502372742
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Convolution ",
+      "plot ",
+      "will ",
+      "have ",
+      "a ",
+      "trapezoidal ",
+      "shape ",
+      "as ",
+      "when ",
+      "plotting ",
+      "overlapping ",
+      "area, ",
+      "it ",
+      "will ",
+      "increase, ",
+      "reach ",
+      "a ",
+      "maximum ",
+      "and ",
+      "stay ",
+      "at ",
+      "this ",
+      "point ",
+      "the ",
+      "decrease"
+    ],
+    "shap_values": [
+      -0.014892183084157296,
+      0.025062706481548958,
+      0.03383802545431536,
+      0.03555490185681265,
+      -0.0107209040215821,
+      0.14393309423030587,
+      0.02803958108415827,
+      0.027145468950038776,
+      0.01473813811026048,
+      0.016821222234284505,
+      0.03890072739159223,
+      0.05699163061217405,
+      0.02402325851653586,
+      0.06017785115909646,
+      0.15401113310144865,
+      0.0720570201992814,
+      0.011566896665802536,
+      0.048071101050785124,
+      0.060446433465889036,
+      0.0244940589327598,
+      0.010916036510025151,
+      -0.0064082933677127585,
+      0.041325600890559144,
+      0.010267995938193053,
+      0.06222259206697345
+    ]
+  },
+  {
+    "text": "Convolution ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967572093009949,
+      0.003242740174755454
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967572093009949,
+    "tokens": [
+      "Convolution "
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "c",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968645572662354,
+      0.003135394537821412
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9968645572662354,
+    "tokens": [
+      "c"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "I chose this because the impulse response would have acted on the input so the output would be starting at the same time as the input but having the same structure as the impulse.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7605509161949158,
+      0.23944908380508423
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "I ",
+      "chose ",
+      "this ",
+      "because ",
+      "the ",
+      "impulse ",
+      "response ",
+      "would ",
+      "have ",
+      "acted ",
+      "on ",
+      "the ",
+      "input ",
+      "so ",
+      "the ",
+      "output ",
+      "would ",
+      "be ",
+      "starting ",
+      "at ",
+      "the ",
+      "same ",
+      "time ",
+      "as ",
+      "the ",
+      "input ",
+      "but ",
+      "having ",
+      "the ",
+      "same ",
+      "structure ",
+      "as ",
+      "the ",
+      "impulse"
+    ],
+    "shap_values": [
+      0.051949966698884964,
+      0.01865057647228241,
+      0.007999788969755173,
+      0.003154553472995758,
+      -0.0029533561319112778,
+      0.0006277989596128464,
+      0.0001580938696861267,
+      -0.004055194556713104,
+      0.0008401758968830109,
+      -0.00041110068559646606,
+      -0.00116056390106678,
+      0.0008285846561193466,
+      -0.014466751366853714,
+      -0.00842815637588501,
+      -0.005586439743638039,
+      -0.005359696224331856,
+      0.003437710925936699,
+      0.01784428022801876,
+      -0.01764005981385708,
+      0.00538579560816288,
+      0.012312404811382294,
+      -0.0006457231938838959,
+      -0.01925917435437441,
+      -0.016216310672461987,
+      -0.01482967690875133,
+      -0.00929315605511268,
+      -0.009324265023072561,
+      -0.009171276752437865,
+      -0.022700100604976927,
+      0.003940573494349208,
+      0.004489729713116374,
+      -0.020365748022283827,
+      -0.015531867210354124,
+      -0.0067032868308680394
+    ]
+  },
+  {
+    "text": "d matches closest to the expected output",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9955270290374756,
+      0.004472939297556877
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "d ",
+      "matches ",
+      "closest ",
+      "to ",
+      "the ",
+      "expected ",
+      "output"
+    ],
+    "shap_values": [
+      0.0018023848533630371,
+      0.0019388794898986816,
+      0.0021854564547538757,
+      -0.006285093724727631,
+      0.0003108382225036621,
+      -0.0004799962043762207,
+      -0.00031557679176330566
+    ]
+  },
+  {
+    "text": "They add on to each other",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9959180951118469,
+      0.004081924445927143
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "They ",
+      "add ",
+      "on ",
+      "to ",
+      "each ",
+      "other"
+    ],
+    "shap_values": [
+      0.00027380138635635376,
+      0.004422344267368317,
+      0.001464352011680603,
+      -0.006809055805206299,
+      -0.000257343053817749,
+      0.0004538595676422119
+    ]
+  },
+  {
+    "text": "d",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9970692992210388,
+      0.002930753631517291
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9970692992210388,
+    "tokens": [
+      "d"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "properties of covolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975132942199707,
+      0.002486675512045622
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "properties ",
+      "of ",
+      "covolution"
+    ],
+    "shap_values": [
+      0.00047679245471954346,
+      0.00018240511417388916,
+      0.0004839599132537842
+    ]
+  },
+  {
+    "text": "ccc",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9971396327018738,
+      0.0028603982646018267
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9971396327018738,
+    "tokens": [
+      "ccc"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "shifts",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975002408027649,
+      0.0024997598957270384
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9975002408027649,
+    "tokens": [
+      "shifts"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "na",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997272789478302,
+      0.002727194456383586
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997272789478302,
+    "tokens": [
+      "na"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "multiply",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9974543452262878,
+      0.0025455965660512447
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9974543452262878,
+    "tokens": [
+      "multiply"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "because X2(f) have larger frequency ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9942192435264587,
+      0.00578082213178277
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "because ",
+      "X2(",
+      "f) ",
+      "have ",
+      "larger ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.008135586977005005,
+      -0.006399676203727722,
+      -0.0010940581560134888,
+      -0.0014541447162628174,
+      -0.0020332038402557373,
+      0.0007432997226715088
+    ]
+  },
+  {
+    "text": "fdsa",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9972286224365234,
+      0.002771353116258979
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9972286224365234,
+    "tokens": [
+      "fdsa"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Linear increase as xt is going into ht, stabilises once fully encased, and decreases at 6s 4+1+1",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.030094772577285767,
+      0.9699053168296814
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "Linear ",
+      "increase ",
+      "as ",
+      "xt ",
+      "is ",
+      "going ",
+      "into ",
+      "ht, ",
+      "stabilises ",
+      "once ",
+      "fully ",
+      "encased, ",
+      "and ",
+      "decreases ",
+      "at ",
+      "6s ",
+      "4+",
+      "1+",
+      "1"
+    ],
+    "shap_values": [
+      0.07356962131598266,
+      0.16868537391565042,
+      0.036724066936585587,
+      0.04476219365460565,
+      0.015020795894088224,
+      0.05866001428512391,
+      0.03487519673217321,
+      0.05380467852955917,
+      0.08670133049599826,
+      0.08227495728351641,
+      0.035157153266482055,
+      0.0727806923823664,
+      0.047972979344194755,
+      0.09461693871708121,
+      0.03784010092203971,
+      0.054039162045228295,
+      0.016340714224497788,
+      -0.007036005757981911,
+      -0.04051447685924359
+    ]
+  },
+  {
+    "text": "h(t) is multiplies by x(t) and creates y(t)",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7736960053443909,
+      0.2263040393590927
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "h(",
+      "t) ",
+      "is ",
+      "multiplies ",
+      "by ",
+      "x(",
+      "t) ",
+      "and ",
+      "creates ",
+      "y(",
+      "t"
+    ],
+    "shap_values": [
+      -0.00898594781756401,
+      -0.011253852397203445,
+      -0.013615269213914871,
+      -0.03423133119940758,
+      -0.013317899778485298,
+      -0.04908649064600468,
+      0.005495879799127579,
+      -0.018588773906230927,
+      -0.005227938294410706,
+      -0.03664553165435791,
+      -0.004408255219459534
+    ]
+  },
+  {
+    "text": "aesthetic",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997025191783905,
+      0.002974888077005744
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997025191783905,
+    "tokens": [
+      "aesthetic"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "yes",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9974074959754944,
+      0.0025924707297235727
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9974074959754944,
+    "tokens": [
+      "yes"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "111",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9974110722541809,
+      0.002588860923424363
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9974110722541809,
+    "tokens": [
+      "111"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Result Obtained Via graphical convolution ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.996781587600708,
+      0.0032183844596147537
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Result ",
+      "Obtained ",
+      "Via ",
+      "graphical ",
+      "convolution"
+    ],
+    "shap_values": [
+      -9.635090827941895e-05,
+      -0.0005979239940643311,
+      0.0006524622440338135,
+      -0.0009281188249588013,
+      0.0013927668333053589
+    ]
+  },
+  {
+    "text": "blah blah",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968270659446716,
+      0.003172932891175151
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "blah ",
+      "blah"
+    ],
+    "shap_values": [
+      0.0011101961135864258,
+      -0.0006532669067382812
+    ]
+  },
+  {
+    "text": "convolution in the time domain",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.996424674987793,
+      0.003575338749215007
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "convolution ",
+      "in ",
+      "the ",
+      "time ",
+      "domain"
+    ],
+    "shap_values": [
+      0.0024057328701019287,
+      -0.0011683106422424316,
+      -3.715604543685913e-05,
+      -0.001431979238986969,
+      0.0002862513065338135
+    ]
+  },
+  {
+    "text": "aa",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997291624546051,
+      0.00270830444060266
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997291624546051,
+    "tokens": [
+      "aa"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "will be the convolution of the two",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9969422221183777,
+      0.003057849360629916
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "will ",
+      "be ",
+      "the ",
+      "convolution ",
+      "of ",
+      "the ",
+      "two"
+    ],
+    "shap_values": [
+      -0.0020210593938827515,
+      0.00114382803440094,
+      0.00023836642503738403,
+      0.0011250600218772888,
+      2.6628375053405762e-05,
+      -0.0008462071418762207,
+      0.0009054690599441528
+    ]
+  },
+  {
+    "text": "They will only converge at t=3.  There will be a ramp up and ramp down as the overlap begins/ends.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.031932663172483444,
+      0.9680673480033875
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "They ",
+      "will ",
+      "only ",
+      "converge ",
+      "at ",
+      "t=",
+      "3.  ",
+      "There ",
+      "will ",
+      "be ",
+      "a ",
+      "ramp ",
+      "up ",
+      "and ",
+      "ramp ",
+      "down ",
+      "as ",
+      "the ",
+      "overlap ",
+      "begins/",
+      "ends"
+    ],
+    "shap_values": [
+      0.012964161149284337,
+      0.04172863691201201,
+      0.0660100137538393,
+      0.057074605450907256,
+      0.020741341046232264,
+      0.0033132069438579492,
+      0.025060262116312515,
+      0.04539162944274722,
+      0.0161958021344617,
+      0.020595223730197176,
+      0.030260841820563655,
+      0.11984197876154212,
+      0.01853986222704407,
+      0.06948247671243735,
+      0.12621677279094,
+      0.0811792461827281,
+      0.05132278279779712,
+      0.016778902769146953,
+      0.06564562374842353,
+      0.05306076671695337,
+      0.019519925903296098
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Convolution process",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9973780512809753,
+      0.0026219356805086136
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Convolution ",
+      "process"
+    ],
+    "shap_values": [
+      0.0009003281593322754,
+      0.00010758638381958008
+    ]
+  },
+  {
+    "text": "it is the convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997471809387207,
+      0.0025281845591962337
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "it ",
+      "is ",
+      "the ",
+      "convolution"
+    ],
+    "shap_values": [
+      -1.2531876564025879e-05,
+      0.0007288902997970581,
+      -0.0008496642112731934,
+      0.001234978437423706
+    ]
+  },
+  {
+    "text": "MUTI",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997050940990448,
+      0.00294912769459188
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997050940990448,
+    "tokens": [
+      "MUTI"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "x(t) is an impulse response just delayed 1 second therefore h(t) must be the same simply delayed 1 second",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7222211360931396,
+      0.27777883410453796
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "x(",
+      "t) ",
+      "is ",
+      "an ",
+      "impulse ",
+      "response ",
+      "just ",
+      "delayed ",
+      "1 ",
+      "second ",
+      "therefore ",
+      "h(",
+      "t) ",
+      "must ",
+      "be ",
+      "the ",
+      "same ",
+      "simply ",
+      "delayed ",
+      "1 ",
+      "second"
+    ],
+    "shap_values": [
+      -0.013801200315356255,
+      0.028397848829627037,
+      0.002693343907594681,
+      0.036871831864118576,
+      -0.019396107643842697,
+      0.008201763033866882,
+      -0.03345601074397564,
+      -0.01792377047240734,
+      -0.000952593982219696,
+      -0.06183402240276337,
+      -0.032912639901041985,
+      -0.05339057184755802,
+      -0.0010690614581108093,
+      -0.02981327846646309,
+      -0.02982472162693739,
+      0.026034190319478512,
+      -0.06543697416782379,
+      -0.007096640765666962,
+      -0.05791262909770012,
+      -0.0021854378283023834,
+      0.05065768212080002
+    ]
+  },
+  {
+    "text": "don't understand",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.99651700258255,
+      0.0034829899668693542
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "don'",
+      "t ",
+      "understand"
+    ],
+    "shap_values": [
+      0.0018423348665237427,
+      -0.0014623850584030151,
+      -0.00023308396339416504
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "blah blah",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9968270659446716,
+      0.003172932891175151
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "blah ",
+      "blah"
+    ],
+    "shap_values": [
+      0.0011101961135864258,
+      -0.0006532669067382812
+    ]
+  },
+  {
+    "text": "this is all the area it integrates over",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9950787425041199,
+      0.0049212779849767685
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "this ",
+      "is ",
+      "all ",
+      "the ",
+      "area ",
+      "it ",
+      "integrates ",
+      "over"
+    ],
+    "shap_values": [
+      0.0022514015436172485,
+      -0.001735776662826538,
+      -0.002156183123588562,
+      0.001788318157196045,
+      -0.002950698137283325,
+      0.003907546401023865,
+      -0.003181755542755127,
+      0.0007857531309127808
+    ]
+  },
+  {
+    "text": "Not too sure.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9943508505821228,
+      0.005649147089570761
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Not ",
+      "too ",
+      "sure"
+    ],
+    "shap_values": [
+      0.0012779682874679565,
+      -0.0015650838613510132,
+      0.0003428459167480469
+    ]
+  },
+  {
+    "text": "MUTI",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.997050940990448,
+      0.00294912769459188
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.997050940990448,
+    "tokens": [
+      "MUTI"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "same length as the first signal",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9966227412223816,
+      0.003377313492819667
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "same ",
+      "length ",
+      "as ",
+      "the ",
+      "first ",
+      "signal"
+    ],
+    "shap_values": [
+      -0.001477465033531189,
+      0.0031456202268600464,
+      0.0005052089691162109,
+      -0.0018924474716186523,
+      0.00132007896900177,
+      -0.0013483911752700806
+    ]
+  },
+  {
+    "text": "convolution",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9967735409736633,
+      0.003226467641070485
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9967735409736633,
+    "tokens": [
+      "convolution"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "sdg",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9956293702125549,
+      0.0043706139549613
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9956293702125549,
+    "tokens": [
+      "sdg"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Based on the convolution of the two signals, plot b will be the output, y(t), of the system",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7108355164527893,
+      0.2891644835472107
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Based ",
+      "on ",
+      "the ",
+      "convolution ",
+      "of ",
+      "the ",
+      "two ",
+      "signals, ",
+      "plot ",
+      "b ",
+      "will ",
+      "be ",
+      "the ",
+      "output, ",
+      "y(",
+      "t), ",
+      "of ",
+      "the ",
+      "system"
+    ],
+    "shap_values": [
+      -0.00641511008143425,
+      -0.01035303995013237,
+      -0.008024010807275772,
+      -0.022269655019044876,
+      -0.006390940397977829,
+      0.003334369510412216,
+      -0.007208913564682007,
+      -0.012353003025054932,
+      -0.015472672879695892,
+      -0.017487429082393646,
+      -0.02202262356877327,
+      -0.022063087671995163,
+      -0.00024792738258838654,
+      -0.03304492495954037,
+      -0.02735135145485401,
+      -0.05370800010859966,
+      -0.002636389806866646,
+      -0.05704954452812672,
+      0.0352296344935894
+    ]
+  },
+  {
+    "text": "More periods in given time interval (0,1)",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7233178019523621,
+      0.27668216824531555
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "More ",
+      "periods ",
+      "in ",
+      "given ",
+      "time ",
+      "interval (",
+      "0,",
+      "1"
+    ],
+    "shap_values": [
+      -0.027452312409877777,
+      -0.08674966543912888,
+      -0.026606552302837372,
+      0.00862712413072586,
+      -0.02116496115922928,
+      -0.07877302914857864,
+      -0.05464034527540207,
+      0.01733691245317459
+    ]
+  },
+  {
+    "text": "3 Stages of overlap include a linear increase in area as they begin to overlap, a constant when the two are completely overlapped, and a linear decrease when the overlap begins to end",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.025588572025299072,
+      0.9744114279747009
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.003629829501733184,
+    "tokens": [
+      "3 ",
+      "Stages ",
+      "of ",
+      "overlap ",
+      "include ",
+      "a ",
+      "linear ",
+      "increase ",
+      "in ",
+      "area ",
+      "as ",
+      "they ",
+      "begin ",
+      "to ",
+      "overlap, ",
+      "a ",
+      "constant ",
+      "when ",
+      "the ",
+      "two ",
+      "are ",
+      "completely ",
+      "overlapped, ",
+      "and ",
+      "a ",
+      "linear ",
+      "decrease ",
+      "when ",
+      "the ",
+      "overlap ",
+      "begins ",
+      "to ",
+      "end"
+    ],
+    "shap_values": [
+      0.012635743238206487,
+      0.03635528554877965,
+      0.002764205062703695,
+      0.04443664135033032,
+      -0.010538153481320478,
+      -0.00900427189480979,
+      0.028273173578782007,
+      0.0777157619886566,
+      0.015374254107882734,
+      0.03508189511921955,
+      0.0169527921025292,
+      0.03835734996391693,
+      0.044811929437855724,
+      0.047522819113510195,
+      0.10068286219757283,
+      0.009221171123499516,
+      0.022067577876441646,
+      0.024275683441373985,
+      -0.0016491767528350465,
+      -0.012108933740819339,
+      0.008831041207789289,
+      0.02137233646256694,
+      0.04900324079547621,
+      0.011367953193257563,
+      0.01206015414289949,
+      0.09294178607605216,
+      0.060681672789441005,
+      0.011216418738412257,
+      -0.0067837008819980026,
+      0.07846621247962401,
+      0.06375014968175997,
+      0.028489341827985806,
+      0.016156382578224618
+    ]
+  },
+  {
+    "text": "convolutions",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9975836277008057,
+      0.002416378352791071
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9975836277008057,
+    "tokens": [
+      "convolutions"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "impulse response is convolution of signals",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9971089959144592,
+      0.0028909749817103148
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "impulse ",
+      "response ",
+      "is ",
+      "convolution ",
+      "of ",
+      "signals"
+    ],
+    "shap_values": [
+      -0.0008118823170661926,
+      0.0006039813160896301,
+      0.0006264448165893555,
+      0.0001690983772277832,
+      8.672475814819336e-06,
+      0.00014254450798034668
+    ]
+  },
+  {
+    "text": "Summation of two signals",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9972765445709229,
+      0.002723484067246318
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9963701367378235,
+    "tokens": [
+      "Summation ",
+      "of ",
+      "two ",
+      "signals"
+    ],
+    "shap_values": [
+      0.0005569308996200562,
+      -5.3122639656066895e-05,
+      -0.00181540846824646,
+      0.002218008041381836
+    ]
+  }
+]

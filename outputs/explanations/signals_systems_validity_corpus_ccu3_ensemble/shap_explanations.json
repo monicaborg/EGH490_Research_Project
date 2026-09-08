@@ -1,0 +1,5300 @@
+[
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "More noise",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9941210746765137,
+      0.005878927651792765
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "More ",
+      "noise"
+    ],
+    "shap_values": [
+      -0.005899310111999512,
+      0.007203400135040283
+    ]
+  },
+  {
+    "text": "Idk",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9939651489257812,
+      0.006034823600202799
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9939651489257812,
+    "tokens": [
+      "Idk"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9944808483123779,
+      0.005519156809896231
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.012389302253723145,
+      0.014053165912628174
+    ]
+  },
+  {
+    "text": "The frequency increased",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9851246476173401,
+      0.014875303022563457
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "increased"
+    ],
+    "shap_values": [
+      0.023933589458465576,
+      -0.025410056114196777,
+      -0.006215870380401611
+    ]
+  },
+  {
+    "text": "x2 signal has a period that is two times the x1 signal. Therefore, the frequency of x2 is twice the x1 with same magnitude.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.03696043789386749,
+      0.9630395770072937
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2 ",
+      "signal ",
+      "has ",
+      "a ",
+      "period ",
+      "that ",
+      "is ",
+      "two ",
+      "times ",
+      "the ",
+      "x1 ",
+      "signal. ",
+      "Therefore, ",
+      "the ",
+      "frequency ",
+      "of ",
+      "x2 ",
+      "is ",
+      "twice ",
+      "the ",
+      "x1 ",
+      "with ",
+      "same ",
+      "magnitude"
+    ],
+    "shap_values": [
+      0.05911111232126132,
+      0.04126567725325003,
+      0.03935499902581796,
+      -0.008028745476622134,
+      0.011118893686216325,
+      -0.03537318791495636,
+      0.03161633969284594,
+      0.048164294683374465,
+      0.021444554324261844,
+      -0.007349362829700112,
+      0.1153079736395739,
+      0.05787007248727605,
+      0.02423851005733013,
+      -0.03827104077208787,
+      0.12111851916415617,
+      -0.0020882345852442086,
+      0.09298597311135381,
+      0.027402215055190027,
+      0.06350593152455986,
+      0.011916715651750565,
+      0.05587934155482799,
+      0.07731898839119822,
+      0.1133953133248724,
+      0.030746153730433434
+    ]
+  },
+  {
+    "text": "denser frequency, higher peak frequencies",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.14961181581020355,
+      0.8503881096839905
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "denser ",
+      "frequency, ",
+      "higher ",
+      "peak ",
+      "frequencies"
+    ],
+    "shap_values": [
+      0.18371174624189734,
+      0.36763463309034705,
+      0.11618875153362751,
+      0.07993659004569054,
+      0.09573347587138414
+    ]
+  },
+  {
+    "text": "x2 period is half of x1 meaning a higher frequency while the amplitude remains the same",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.028796181082725525,
+      0.9712038040161133
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2 ",
+      "period ",
+      "is ",
+      "half ",
+      "of ",
+      "x1 ",
+      "meaning ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "while ",
+      "the ",
+      "amplitude ",
+      "remains ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      0.06651969079393893,
+      0.06591929274145514,
+      0.01651506358757615,
+      0.03352261451072991,
+      0.012977091944776475,
+      0.06002469582017511,
+      0.04770414566155523,
+      0.02032363263424486,
+      0.16087777132634073,
+      0.21237032173667103,
+      0.007678308873437345,
+      0.0033955423859879375,
+      0.06577936746180058,
+      -0.002550685778260231,
+      0.05635606386931613,
+      0.13660797354532406
+    ]
+  },
+  {
+    "text": "Greater frequency value",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9852266311645508,
+      0.014773358590900898
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Greater ",
+      "frequency ",
+      "value"
+    ],
+    "shap_values": [
+      -0.047540172934532166,
+      -0.07665489614009857,
+      0.11660471558570862
+    ]
+  },
+  {
+    "text": "blah blah",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9729623794555664,
+      0.02703757770359516
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "blah ",
+      "blah"
+    ],
+    "shap_values": [
+      -0.015241295099258423,
+      -0.004613310098648071
+    ]
+  },
+  {
+    "text": "Both have the same amplitude. However, x2 has higher frequency. Therefore the frequency spectrum will show higher like in b",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.05484558269381523,
+      0.9451543688774109
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Both ",
+      "have ",
+      "the ",
+      "same ",
+      "amplitude. ",
+      "However, ",
+      "x2 ",
+      "has ",
+      "higher ",
+      "frequency. ",
+      "Therefore ",
+      "the ",
+      "frequency ",
+      "spectrum ",
+      "will ",
+      "show ",
+      "higher ",
+      "like ",
+      "in ",
+      "b"
+    ],
+    "shap_values": [
+      0.0008612376404926181,
+      0.003937948844395578,
+      -0.017357865464873612,
+      0.18794640561100096,
+      0.09323438385035843,
+      0.013023189618252218,
+      0.13525859580840915,
+      0.010321149020455778,
+      0.09031879826216027,
+      0.10537840536562726,
+      0.03516053670318797,
+      -0.03688883822178468,
+      0.04689542221603915,
+      0.02832926478004083,
+      0.03848505998030305,
+      0.05781226942781359,
+      0.06911292887525633,
+      0.059527442848775536,
+      0.012389660638291389,
+      0.004225460172165185
+    ]
+  },
+  {
+    "text": "Compression in time is equal to expansion in frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.10395196080207825,
+      0.8960480690002441
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Compression ",
+      "in ",
+      "time ",
+      "is ",
+      "equal ",
+      "to ",
+      "expansion ",
+      "in ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.01414283225312829,
+      0.04113760753534734,
+      0.052383599919267,
+      0.030566881061531603,
+      0.155094024958089,
+      0.049378204392269254,
+      0.2819398332503624,
+      0.12714838940883055,
+      0.1370737833203748
+    ]
+  },
+  {
+    "text": "na",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9955363869667053,
+      0.004463565070182085
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9955363869667053,
+    "tokens": [
+      "na"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "x2(t) has the same duration, but a higher frequency, so the peaks will occur in the same place, but will have a greater amplitude.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.22661559283733368,
+      0.7733843922615051
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2(",
+      "t) ",
+      "has ",
+      "the ",
+      "same ",
+      "duration, ",
+      "but ",
+      "a ",
+      "higher ",
+      "frequency, ",
+      "so ",
+      "the ",
+      "peaks ",
+      "will ",
+      "occur ",
+      "in ",
+      "the ",
+      "same ",
+      "place, ",
+      "but ",
+      "will ",
+      "have ",
+      "a ",
+      "greater ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.030508678988553584,
+      0.0451374287949875,
+      0.035633074352517724,
+      -0.010280523914843798,
+      0.12171208241488785,
+      0.08730407746043056,
+      -0.020238769473508,
+      0.03828456692281179,
+      0.12484973619575612,
+      0.14800173192634247,
+      -0.004098894452909008,
+      -0.017443855467718095,
+      -0.004265027935616672,
+      0.02200457066646777,
+      0.018697237217566,
+      -0.0015634148730896413,
+      -0.039245184569153935,
+      0.13076095806900412,
+      0.0022948115365579724,
+      0.029085278161801398,
+      0.02276167826494202,
+      0.031250004831235856,
+      0.014762634120415896,
+      0.08569234580500051,
+      0.020948485820554197
+    ]
+  },
+  {
+    "text": "x2(t) has teh same amplitude as x1(t) although a higher frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.025533005595207214,
+      0.9744669795036316
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2(",
+      "t) ",
+      "has ",
+      "teh ",
+      "same ",
+      "amplitude ",
+      "as ",
+      "x1(",
+      "t) ",
+      "although ",
+      "a ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.126840086071752,
+      0.08908472291659564,
+      0.044744469108991325,
+      0.05953173933085054,
+      0.22345757589209825,
+      0.18998888425994664,
+      0.049725309130735695,
+      0.13996812340337783,
+      0.009587730979546905,
+      0.007815206190571189,
+      3.359414404258132e-05,
+      0.05037384544266388,
+      -0.023867220268584788
+    ]
+  },
+  {
+    "text": "More frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9910145401954651,
+      0.00898545142263174
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "More ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.007741391658782959,
+      0.0059389472007751465
+    ]
+  },
+  {
+    "text": "khkh",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9931328296661377,
+      0.006867248564958572
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9931328296661377,
+    "tokens": [
+      "khkh"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "High f",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9929563403129578,
+      0.007043682038784027
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "High ",
+      "f"
+    ],
+    "shap_values": [
+      -0.003590226173400879,
+      0.003729581832885742
+    ]
+  },
+  {
+    "text": "32 Cycles per second of high frequency signal, and in radians this is approximately 200 radians per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0610625259578228,
+      0.9389374852180481
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "32 ",
+      "Cycles ",
+      "per ",
+      "second ",
+      "of ",
+      "high ",
+      "frequency ",
+      "signal, ",
+      "and ",
+      "in ",
+      "radians ",
+      "this ",
+      "is ",
+      "approximately ",
+      "200 ",
+      "radians ",
+      "per ",
+      "second"
+    ],
+    "shap_values": [
+      0.004603578767273575,
+      0.030375772330444306,
+      0.06476673216093332,
+      0.10094158549327403,
+      -0.014521725184749812,
+      0.08985346771078184,
+      0.22890182555420324,
+      0.14306036563357338,
+      0.04787808214314282,
+      0.01365288661327213,
+      0.14298490795772523,
+      -0.03941534541081637,
+      -0.007488137925975025,
+      0.038457927643321455,
+      0.013850624090991914,
+      0.030871526076225564,
+      0.022018281830241904,
+      0.0209622168331407
+    ]
+  },
+  {
+    "text": "Because",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9937232136726379,
+      0.006276778876781464
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9937232136726379,
+    "tokens": [
+      "Because"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Same amplitude, different frequencies.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.11228074878454208,
+      0.8877193331718445
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Same ",
+      "amplitude, ",
+      "different ",
+      "frequencies"
+    ],
+    "shap_values": [
+      0.30607565119862556,
+      0.296557342633605,
+      0.07913690013810992,
+      0.05404585273936391
+    ]
+  },
+  {
+    "text": "Because the frequency is greater but the amplitude is consistent",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.4898594915866852,
+      0.5101404786109924
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Because ",
+      "the ",
+      "frequency ",
+      "is ",
+      "greater ",
+      "but ",
+      "the ",
+      "amplitude ",
+      "is ",
+      "consistent"
+    ],
+    "shap_values": [
+      -0.143883443553932,
+      0.02339690865483135,
+      0.21199619403341785,
+      0.03368865727679804,
+      0.13335125369485468,
+      0.10222302889451385,
+      0.03380324138561264,
+      0.07763287198031321,
+      0.001132882956881076,
+      0.029615970386657864
+    ]
+  },
+  {
+    "text": "Same magnitude but twice the frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.11775461584329605,
+      0.8822453618049622
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Same ",
+      "magnitude ",
+      "but ",
+      "twice ",
+      "the ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.205901998328045,
+      0.19026213814504445,
+      0.1245154575444758,
+      0.1533779507735744,
+      0.049059243057854474,
+      0.15194566105492413
+    ]
+  },
+  {
+    "text": "Same signal but higher frequency ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.5999220013618469,
+      0.40007802844047546
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Same ",
+      "signal ",
+      "but ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.21056381985545158,
+      -0.043716367334127426,
+      -0.010110192000865936,
+      -0.01907741278409958,
+      -0.12562749534845352
+    ]
+  },
+  {
+    "text": "ewrtfgh",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9885773658752441,
+      0.011422629468142986
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9885773658752441,
+    "tokens": [
+      "ewrtfgh"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "The frequency of x2 appears to be twice that of x1, so this would appear in the freq domain as two spikes further from the origin. Also share a magnitude. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0349191352725029,
+      0.9650807976722717
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "of ",
+      "x2 ",
+      "appears ",
+      "to ",
+      "be ",
+      "twice ",
+      "that ",
+      "of ",
+      "x1, ",
+      "so ",
+      "this ",
+      "would ",
+      "appear ",
+      "in ",
+      "the ",
+      "freq ",
+      "domain ",
+      "as ",
+      "two ",
+      "spikes ",
+      "further ",
+      "from ",
+      "the ",
+      "origin. ",
+      "Also ",
+      "share ",
+      "a ",
+      "magnitude"
+    ],
+    "shap_values": [
+      0.034114993672119454,
+      0.13703419078956358,
+      -0.017702866694889963,
+      0.12577202601823956,
+      0.023314880847465247,
+      -0.003175630059558898,
+      0.012593305262271315,
+      0.16956679831491783,
+      -0.010369617200922221,
+      0.0043144848314113915,
+      0.12347882281756029,
+      -0.00444916618289426,
+      -0.012760238314513117,
+      -0.0048570093349553645,
+      0.025862370326649398,
+      -0.022271708876360208,
+      -0.003266907238867134,
+      0.118747585976962,
+      0.051778800261672586,
+      0.02127724763704464,
+      0.008813985739834607,
+      0.04301015590317547,
+      0.043300173652824014,
+      0.012195636460091919,
+      0.021536527026910335,
+      0.026646391779650003,
+      0.05807537556393072,
+      -0.025930658041033894,
+      -0.024413892475422472,
+      0.019979059870820493
+    ]
+  },
+  {
+    "text": "The frequency increased and amplitude is the same",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.07767792791128159,
+      0.9223220944404602
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "increased ",
+      "and ",
+      "amplitude ",
+      "is ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      -0.02966024010675028,
+      0.2614892370183952,
+      0.09747209632769227,
+      0.11640173802152276,
+      0.16724747302941978,
+      0.08366858144290745,
+      -0.009748501004651189,
+      0.2282687968108803
+    ]
+  },
+  {
+    "text": "The gain is the same but the frequency is greater",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.04629729688167572,
+      0.9537026882171631
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "gain ",
+      "is ",
+      "the ",
+      "same ",
+      "but ",
+      "the ",
+      "frequency ",
+      "is ",
+      "greater"
+    ],
+    "shap_values": [
+      -0.025322080007754266,
+      0.058831960312090814,
+      0.06830015685409307,
+      0.01748974691145122,
+      0.3257683508563787,
+      0.08977800374850631,
+      0.09100071503780782,
+      0.15886057447642088,
+      0.07692435185890645,
+      0.08488799526821822
+    ]
+  },
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "looks right",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.996046245098114,
+      0.003953808452934027
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "looks ",
+      "right"
+    ],
+    "shap_values": [
+      0.0011493563652038574,
+      0.002079904079437256
+    ]
+  },
+  {
+    "text": "The frequency is twice that of the first one, with the same amplitude.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.04333864524960518,
+      0.9566612839698792
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "is ",
+      "twice ",
+      "that ",
+      "of ",
+      "the ",
+      "first ",
+      "one, ",
+      "with ",
+      "the ",
+      "same ",
+      "amplitude"
+    ],
+    "shap_values": [
+      -0.011861420818604529,
+      0.17920780403073877,
+      0.059034289326518774,
+      0.14236692455597222,
+      -0.11615823453757912,
+      0.02911599271465093,
+      -0.03243809740524739,
+      0.08599506958853453,
+      0.11885157669894397,
+      0.10291359829716384,
+      -0.026045238715596497,
+      0.2702582749770954,
+      0.14972806768491864
+    ]
+  },
+  {
+    "text": "The frequency of the wave has increased, therefore the peaks will be higher along the frequency domain",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.5985949039459229,
+      0.40140509605407715
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "of ",
+      "the ",
+      "wave ",
+      "has ",
+      "increased, ",
+      "therefore ",
+      "the ",
+      "peaks ",
+      "will ",
+      "be ",
+      "higher ",
+      "along ",
+      "the ",
+      "frequency ",
+      "domain"
+    ],
+    "shap_values": [
+      0.0370323546230793,
+      -0.06711936369538307,
+      0.007062112912535667,
+      0.06378758139908314,
+      -0.06549430685117841,
+      0.02758006053045392,
+      -0.1532888524234295,
+      -0.0327422134578228,
+      0.043876465409994125,
+      -0.042067743837833405,
+      -0.030948473140597343,
+      -0.02127212844789028,
+      -0.07713254913687706,
+      -0.020765099674463272,
+      0.06026273709721863,
+      -0.12478949245996773,
+      0.0017968304455280304
+    ]
+  },
+  {
+    "text": "Higher frequency, same amplitude",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.18573839962482452,
+      0.8142616152763367
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Higher ",
+      "frequency, ",
+      "same ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.07463916996493936,
+      0.3438704055733979,
+      0.34852239256724715,
+      0.040046734269708395
+    ]
+  },
+  {
+    "text": "higher frequency means higher amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.886023759841919,
+      0.11397624760866165
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency ",
+      "means ",
+      "higher ",
+      "amplitude"
+    ],
+    "shap_values": [
+      -0.010147273540496826,
+      -0.0328809916973114,
+      0.062134213745594025,
+      -0.09965913742780685,
+      -0.026240035891532898
+    ]
+  },
+  {
+    "text": "Higher frequency. Therefore, higher spikes but has the same shape so same position at -100 and 100.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.14544440805912018,
+      0.854555606842041
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Higher ",
+      "frequency. ",
+      "Therefore, ",
+      "higher ",
+      "spikes ",
+      "but ",
+      "has ",
+      "the ",
+      "same ",
+      "shape ",
+      "so ",
+      "same ",
+      "position ",
+      "at -",
+      "100 ",
+      "and ",
+      "100"
+    ],
+    "shap_values": [
+      0.07596400508191437,
+      0.11730038176756352,
+      -0.040875466307625175,
+      0.1184243627358228,
+      0.09876197460107505,
+      0.0674160725902766,
+      0.08182528225006536,
+      -0.004520779533777386,
+      0.24245227314531803,
+      0.0008159307762980461,
+      -0.011414200533181429,
+      0.10126133682206273,
+      0.022698703571222723,
+      0.007503939908929169,
+      -0.015043036080896854,
+      0.012028511380776763,
+      -0.009776742430403829
+    ]
+  },
+  {
+    "text": "Not sure",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.994779646396637,
+      0.005220254883170128
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Not ",
+      "sure"
+    ],
+    "shap_values": [
+      -0.007714182138442993,
+      0.009676843881607056
+    ]
+  },
+  {
+    "text": "nope",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9949937462806702,
+      0.0050062499940395355
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9949937462806702,
+    "tokens": [
+      "nope"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "same amplitude as x_1 therefore must be b or c. Higher frequency therefore must be b",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.04026252403855324,
+      0.9597374796867371
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "same ",
+      "amplitude ",
+      "as ",
+      "x_1 ",
+      "therefore ",
+      "must ",
+      "be ",
+      "b ",
+      "or ",
+      "c. ",
+      "Higher ",
+      "frequency ",
+      "therefore ",
+      "must ",
+      "be ",
+      "b"
+    ],
+    "shap_values": [
+      0.19060459930915385,
+      0.0918948199832812,
+      0.05327456339728087,
+      0.1299322609556839,
+      0.051023330248426646,
+      0.06835659412899986,
+      0.026901128061581403,
+      0.04941874596988782,
+      0.024845530278980732,
+      0.07831044460181147,
+      0.08243904879782349,
+      0.11127074318937957,
+      0.004846277181059122,
+      -0.008255411230493337,
+      0.015781692636664957,
+      -0.018089800723828375
+    ]
+  },
+  {
+    "text": "Compression in time domain is expansion in frequency domain",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.1597796231508255,
+      0.8402203917503357
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Compression ",
+      "in ",
+      "time ",
+      "domain ",
+      "is ",
+      "expansion ",
+      "in ",
+      "frequency ",
+      "domain"
+    ],
+    "shap_values": [
+      0.17300143546890467,
+      -0.001230986206792295,
+      0.1426456666085869,
+      0.11357855913229287,
+      0.03507494693621993,
+      0.14841473288834095,
+      0.05627283378271386,
+      0.14361924020340666,
+      0.021661050035618246
+    ]
+  },
+  {
+    "text": "a compression in time domain means a stretch in the frequency domain spectra ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.12658022344112396,
+      0.8734197616577148
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "a ",
+      "compression ",
+      "in ",
+      "time ",
+      "domain ",
+      "means ",
+      "a ",
+      "stretch ",
+      "in ",
+      "the ",
+      "frequency ",
+      "domain ",
+      "spectra"
+    ],
+    "shap_values": [
+      0.07904466276522726,
+      0.20690324192401022,
+      0.04929358884692192,
+      0.10089692263863981,
+      0.1391836841357872,
+      0.06804558949079365,
+      0.00039451837074011564,
+      0.11198888660874218,
+      -0.01494274940341711,
+      -9.731296449899673e-05,
+      0.08250759216025472,
+      0.0587235763669014,
+      -0.01570028578862548
+    ]
+  },
+  {
+    "text": "higher magnitude and frequency ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9707501530647278,
+      0.02924984134733677
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "magnitude ",
+      "and ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.04625105857849121,
+      -0.0011149048805236816,
+      -0.007179558277130127,
+      0.03248190879821777
+    ]
+  },
+  {
+    "text": "Change in frequency will shift the position of phase as higher frequency will have higher phase?",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.3713984191417694,
+      0.6286015510559082
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Change ",
+      "in ",
+      "frequency ",
+      "will ",
+      "shift ",
+      "the ",
+      "position ",
+      "of ",
+      "phase ",
+      "as ",
+      "higher ",
+      "frequency ",
+      "will ",
+      "have ",
+      "higher ",
+      "phase"
+    ],
+    "shap_values": [
+      0.07715549098793417,
+      0.023187380866147578,
+      0.08160475257318467,
+      -0.016334757790900767,
+      0.06654979893937707,
+      -0.10113136167638004,
+      0.04520836693700403,
+      0.018635263084433973,
+      0.15406165341846645,
+      -0.02573386672884226,
+      0.05141366308089346,
+      0.21100452670361847,
+      -0.0024495968827977777,
+      0.032298946171067655,
+      0.13520546871586703,
+      0.10338722929009236
+    ]
+  },
+  {
+    "text": "Because x2 has a higher frequency and the same magnitude ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06320802122354507,
+      0.9367920756340027
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Because ",
+      "x2 ",
+      "has ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "and ",
+      "the ",
+      "same ",
+      "magnitude"
+    ],
+    "shap_values": [
+      -0.11422701319679618,
+      0.1281593118328601,
+      0.00919831485953182,
+      0.018443035311065614,
+      0.22056802187580615,
+      0.2130855704890564,
+      0.038294544676318765,
+      0.01113163388799876,
+      0.3534075388452038,
+      0.05164500209502876
+    ]
+  },
+  {
+    "text": "There are more periods or peaks over time",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9216818809509277,
+      0.07831811904907227
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "There ",
+      "are ",
+      "more ",
+      "periods ",
+      "or ",
+      "peaks ",
+      "over ",
+      "time"
+    ],
+    "shap_values": [
+      0.023638196289539337,
+      0.010994203388690948,
+      0.0017196014523506165,
+      -0.048979245126247406,
+      0.02429807186126709,
+      -0.06723864749073982,
+      -0.02386283501982689,
+      0.00829555094242096
+    ]
+  },
+  {
+    "text": "frequency looks as though its double, amplitudes look the same",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.03325587138533592,
+      0.9667441248893738
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "frequency ",
+      "looks ",
+      "as ",
+      "though ",
+      "its ",
+      "double, ",
+      "amplitudes ",
+      "look ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      0.03677469224203378,
+      0.004241225658915937,
+      0.019387443317100406,
+      -0.003016606206074357,
+      0.041198562481440604,
+      0.45123534195590764,
+      0.2471016541821882,
+      0.046784160542301834,
+      0.013821911881677806,
+      0.10203282593283802
+    ]
+  },
+  {
+    "text": "Signal is a amplitude modulated signal. The second signal is modulated at a higher frequency and so will be shifted to a higher frequency component",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.08668520301580429,
+      0.9133148193359375
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Signal ",
+      "is ",
+      "a ",
+      "amplitude ",
+      "modulated ",
+      "signal. ",
+      "The ",
+      "second ",
+      "signal ",
+      "is ",
+      "modulated ",
+      "at ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "and ",
+      "so ",
+      "will ",
+      "be ",
+      "shifted ",
+      "to ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "component"
+    ],
+    "shap_values": [
+      0.009685666678706184,
+      -0.02481949355569668,
+      -0.0005390549777075648,
+      0.019504418596625328,
+      0.06835070456145331,
+      0.06124394427752122,
+      -0.023344925022684038,
+      0.06480791233479977,
+      0.02980682981433347,
+      0.021513776446226984,
+      0.07542408263543621,
+      0.007564217143226415,
+      0.012857329013058916,
+      0.04800522877485491,
+      0.0788180113886483,
+      0.04868437780532986,
+      0.02249548665713519,
+      0.0638679227558896,
+      -0.010862502153031528,
+      0.12184239330235869,
+      0.004458946525119245,
+      -0.014089108095504344,
+      0.10856926621636376,
+      0.12051813973812386,
+      -0.008231664425693452
+    ]
+  },
+  {
+    "text": "I assumed that because its frequency is higher than x1(t), then the magnitude is higher.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8701006770133972,
+      0.12989936769008636
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "I ",
+      "assumed ",
+      "that ",
+      "because ",
+      "its ",
+      "frequency ",
+      "is ",
+      "higher ",
+      "than ",
+      "x1(",
+      "t), ",
+      "then ",
+      "the ",
+      "magnitude ",
+      "is ",
+      "higher"
+    ],
+    "shap_values": [
+      0.062259700149297714,
+      0.032140329480171204,
+      0.02715538814663887,
+      0.09442418068647385,
+      -0.017519060522317886,
+      -0.05963573977351189,
+      -0.03865459002554417,
+      -0.05384962074458599,
+      0.009674429893493652,
+      -0.05992824584245682,
+      -0.06984602101147175,
+      0.011583710089325905,
+      0.002557080239057541,
+      -0.06077738478779793,
+      -0.013607226312160492,
+      -0.0685243010520935
+    ]
+  },
+  {
+    "text": "2signal",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9884638786315918,
+      0.011536143720149994
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9884638786315918,
+    "tokens": [
+      "2signal"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Higher frequency and same amplitude",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.23310667276382446,
+      0.7668933868408203
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Higher ",
+      "frequency ",
+      "and ",
+      "same ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.18121048877947032,
+      0.1868720871862024,
+      0.04348759958520532,
+      0.36535097984597087,
+      -0.017210681457072496
+    ]
+  },
+  {
+    "text": "The magnitude is the same, however the frequency is higher in the second wave",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.04776594042778015,
+      0.9522340893745422
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "magnitude ",
+      "is ",
+      "the ",
+      "same, ",
+      "however ",
+      "the ",
+      "frequency ",
+      "is ",
+      "higher ",
+      "in ",
+      "the ",
+      "second ",
+      "wave"
+    ],
+    "shap_values": [
+      -0.011457756627351046,
+      0.09697367250919342,
+      0.036978647811338305,
+      0.0026618267875164747,
+      0.3656730689108372,
+      0.0070906709879636765,
+      0.09791635384317487,
+      0.18503303604666144,
+      0.030272260424681008,
+      0.06720659194979817,
+      0.01949341280851513,
+      -0.009929757914505899,
+      0.05611204885644838,
+      0.001027100079227239
+    ]
+  },
+  {
+    "text": "The waves are closer together, so frequency is increases - increased magnitude in the Fourier transform magnitude plot",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.39498820900917053,
+      0.6050117611885071
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "waves ",
+      "are ",
+      "closer ",
+      "together, ",
+      "so ",
+      "frequency ",
+      "is ",
+      "increases - ",
+      "increased ",
+      "magnitude ",
+      "in ",
+      "the ",
+      "Fourier ",
+      "transform ",
+      "magnitude ",
+      "plot"
+    ],
+    "shap_values": [
+      -0.09332033095415682,
+      0.0786378561751917,
+      -0.048117772210389376,
+      0.1473953586537391,
+      0.002487619058229029,
+      -0.024695588159374893,
+      0.13915314839687198,
+      -0.08521933911833912,
+      0.15132117515895516,
+      0.16993094293866307,
+      0.08890975208487362,
+      -0.05846209649462253,
+      -0.14512060396373272,
+      0.06722588208504021,
+      0.06935630331281573,
+      0.1694211991271004,
+      -0.03107465780340135
+    ]
+  },
+  {
+    "text": "the frequency looks to be twice as much so I say it is -200 to 200",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.10524001717567444,
+      0.8947599530220032
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "the ",
+      "frequency ",
+      "looks ",
+      "to ",
+      "be ",
+      "twice ",
+      "as ",
+      "much ",
+      "so ",
+      "I ",
+      "say ",
+      "it ",
+      "is -",
+      "200 ",
+      "to ",
+      "200"
+    ],
+    "shap_values": [
+      0.02896572620375082,
+      0.2157263337285258,
+      0.04969725653063506,
+      -0.008551246603019536,
+      0.02570811507757753,
+      0.18530692148488015,
+      0.056564089260064065,
+      0.07769381429534405,
+      -0.01668055495247245,
+      0.001117517240345478,
+      0.015912215458229184,
+      0.06331849214620888,
+      0.06824718473944813,
+      0.04627653246279806,
+      0.04622975568054244,
+      0.03204488736810163
+    ]
+  },
+  {
+    "text": "Same magnitude higher frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.30971914529800415,
+      0.6902808547019958
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Same ",
+      "magnitude ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.2966324989683926,
+      0.08231941843405366,
+      0.18879929324612021,
+      0.11534673115238547
+    ]
+  },
+  {
+    "text": "The frequency of x(2) is higher ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.41984105110168457,
+      0.5801589488983154
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "of ",
+      "x(",
+      "2) ",
+      "is ",
+      "higher"
+    ],
+    "shap_values": [
+      0.07521599077153951,
+      0.16323568194638938,
+      -0.01501616183668375,
+      0.1094202846288681,
+      0.04019165690988302,
+      0.17500255210325122,
+      0.024825240019708872
+    ]
+  },
+  {
+    "text": "cause a decrease in amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8815755844116211,
+      0.1184244453907013
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "cause ",
+      "a ",
+      "decrease ",
+      "in ",
+      "amplitude"
+    ],
+    "shap_values": [
+      -0.017776086926460266,
+      -0.01710696518421173,
+      -0.05832315981388092,
+      -0.025392934679985046,
+      0.007357746362686157
+    ]
+  },
+  {
+    "text": "Because the frequency is greater but the amplitude is consistent",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.4898594915866852,
+      0.5101404786109924
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Because ",
+      "the ",
+      "frequency ",
+      "is ",
+      "greater ",
+      "but ",
+      "the ",
+      "amplitude ",
+      "is ",
+      "consistent"
+    ],
+    "shap_values": [
+      -0.143883443553932,
+      0.02339690865483135,
+      0.21199619403341785,
+      0.03368865727679804,
+      0.13335125369485468,
+      0.10222302889451385,
+      0.03380324138561264,
+      0.07763287198031321,
+      0.001132882956881076,
+      0.029615970386657864
+    ]
+  },
+  {
+    "text": "SAME FREQ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9826961159706116,
+      0.01730388216674328
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "SAME ",
+      "FREQ"
+    ],
+    "shap_values": [
+      -0.005116403102874756,
+      -0.005004465579986572
+    ]
+  },
+  {
+    "text": "Same signal but higher frequency ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.5999220013618469,
+      0.40007802844047546
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Same ",
+      "signal ",
+      "but ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.21056381985545158,
+      -0.043716367334127426,
+      -0.010110192000865936,
+      -0.01907741278409958,
+      -0.12562749534845352
+    ]
+  },
+  {
+    "text": "?",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9927294850349426,
+      0.0072705186903476715
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9927294850349426,
+    "tokens": [
+      "?"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "same amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9887624382972717,
+      0.01123753096908331
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "same ",
+      "amplitude"
+    ],
+    "shap_values": [
+      -0.006687521934509277,
+      0.0026329755783081055
+    ]
+  },
+  {
+    "text": ".",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9936764240264893,
+      0.006323587149381638
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9936764240264893,
+    "tokens": [
+      "."
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "decrease in time and increase in frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.1134326234459877,
+      0.8865673542022705
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "decrease ",
+      "in ",
+      "time ",
+      "and ",
+      "increase ",
+      "in ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.2713549890322611,
+      0.05691134312655777,
+      0.07995203719474375,
+      0.04055031621828675,
+      0.24845297716092318,
+      0.07952799263875932,
+      0.10263478592969477
+    ]
+  },
+  {
+    "text": "idk",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9943544268608093,
+      0.005645590368658304
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9943544268608093,
+    "tokens": [
+      "idk"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Not sure",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.994779646396637,
+      0.005220254883170128
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Not ",
+      "sure"
+    ],
+    "shap_values": [
+      -0.007714182138442993,
+      0.009676843881607056
+    ]
+  },
+  {
+    "text": "more waves in the same time ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8592307567596436,
+      0.14076924324035645
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "more ",
+      "waves ",
+      "in ",
+      "the ",
+      "same ",
+      "time"
+    ],
+    "shap_values": [
+      0.01721745729446411,
+      -0.06778933107852936,
+      0.001187548041343689,
+      0.0018217265605926514,
+      -0.08889748156070709,
+      0.0028777271509170532
+    ]
+  },
+  {
+    "text": "Frequency has increased but the magnitude has stayed the same as x1(t)",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0689014196395874,
+      0.9310985207557678
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Frequency ",
+      "has ",
+      "increased ",
+      "but ",
+      "the ",
+      "magnitude ",
+      "has ",
+      "stayed ",
+      "the ",
+      "same ",
+      "as ",
+      "x1(",
+      "t"
+    ],
+    "shap_values": [
+      0.06743042834568769,
+      -0.00514877017121762,
+      0.260961294407025,
+      -0.003481826279312372,
+      -0.030605657608248293,
+      0.14572187734302133,
+      0.04880783159751445,
+      0.024825304397381842,
+      -0.03456055698916316,
+      0.23942643566988409,
+      0.0700566048908513,
+      0.12037655067979358,
+      -0.03947113506728783
+    ]
+  },
+  {
+    "text": "denser frequency, higher peak frequencies",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.14961181581020355,
+      0.8503881096839905
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "denser ",
+      "frequency, ",
+      "higher ",
+      "peak ",
+      "frequencies"
+    ],
+    "shap_values": [
+      0.18371174624189734,
+      0.36763463309034705,
+      0.11618875153362751,
+      0.07993659004569054,
+      0.09573347587138414
+    ]
+  },
+  {
+    "text": "magnitude doesn't change but increase in frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06482101231813431,
+      0.9351789951324463
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "magnitude ",
+      "doesn'",
+      "t ",
+      "change ",
+      "but ",
+      "increase ",
+      "in ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.1236862801015377,
+      0.08437171159312129,
+      0.07540733879432082,
+      0.12132387794554234,
+      0.07905884785577655,
+      0.2365355144138448,
+      0.09631874429760501,
+      0.1112937672296539
+    ]
+  },
+  {
+    "text": "The gain is the same but the frequency is greater",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.04629729688167572,
+      0.9537026882171631
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "gain ",
+      "is ",
+      "the ",
+      "same ",
+      "but ",
+      "the ",
+      "frequency ",
+      "is ",
+      "greater"
+    ],
+    "shap_values": [
+      -0.025322080007754266,
+      0.058831960312090814,
+      0.06830015685409307,
+      0.01748974691145122,
+      0.3257683508563787,
+      0.08977800374850631,
+      0.09100071503780782,
+      0.15886057447642088,
+      0.07692435185890645,
+      0.08488799526821822
+    ]
+  },
+  {
+    "text": "because x2t has a higher frequency but a similar shape to x1t ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7204573154449463,
+      0.2795427143573761
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "because ",
+      "x2t ",
+      "has ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "but ",
+      "a ",
+      "similar ",
+      "shape ",
+      "to ",
+      "x1t"
+    ],
+    "shap_values": [
+      0.18600853951647878,
+      -0.11833568336442113,
+      -0.08926953980699182,
+      0.008516004774719477,
+      -0.14104698412120342,
+      -0.2106057796627283,
+      0.006478205323219299,
+      0.09517330396920443,
+      -0.017528251744806767,
+      0.010648689698427916,
+      0.03686089301481843,
+      -0.04033630155026913
+    ]
+  },
+  {
+    "text": "I assumed that because its frequency is higher than x1(t), then the magnitude is higher.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8701006770133972,
+      0.12989936769008636
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "I ",
+      "assumed ",
+      "that ",
+      "because ",
+      "its ",
+      "frequency ",
+      "is ",
+      "higher ",
+      "than ",
+      "x1(",
+      "t), ",
+      "then ",
+      "the ",
+      "magnitude ",
+      "is ",
+      "higher"
+    ],
+    "shap_values": [
+      0.062259700149297714,
+      0.032140329480171204,
+      0.02715538814663887,
+      0.09442418068647385,
+      -0.017519060522317886,
+      -0.05963573977351189,
+      -0.03865459002554417,
+      -0.05384962074458599,
+      0.009674429893493652,
+      -0.05992824584245682,
+      -0.06984602101147175,
+      0.011583710089325905,
+      0.002557080239057541,
+      -0.06077738478779793,
+      -0.013607226312160492,
+      -0.0685243010520935
+    ]
+  },
+  {
+    "text": "Higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9944808483123779,
+      0.005519156809896231
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.012389302253723145,
+      0.014053165912628174
+    ]
+  },
+  {
+    "text": "The second function has a higher frequency therefore will have higher frequency components",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06405691057443619,
+      0.935943067073822
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "second ",
+      "function ",
+      "has ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "therefore ",
+      "will ",
+      "have ",
+      "higher ",
+      "frequency ",
+      "components"
+    ],
+    "shap_values": [
+      -0.04891502112150192,
+      0.10529153095558286,
+      0.09209122962784022,
+      0.0529521043645218,
+      0.02274254767689854,
+      0.13269532064441592,
+      0.11661659239325672,
+      0.033733259537257254,
+      0.08663240284658968,
+      0.05382610042579472,
+      0.13572451489744708,
+      0.13433179137064144,
+      0.011037780554033816
+    ]
+  },
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "becuase I remeber the diagram",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9593612551689148,
+      0.04063874110579491
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "becuase ",
+      "I ",
+      "remeber ",
+      "the ",
+      "diagram"
+    ],
+    "shap_values": [
+      -0.01825864613056183,
+      -0.010550364851951599,
+      -0.007464498281478882,
+      -0.004821404814720154,
+      0.007639184594154358
+    ]
+  },
+  {
+    "text": "Frequency is higher at 200Hz assumed.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6949677467346191,
+      0.3050321638584137
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Frequency ",
+      "is ",
+      "higher ",
+      "at ",
+      "200Hz ",
+      "assumed"
+    ],
+    "shap_values": [
+      -0.1309963706880808,
+      0.025789925828576088,
+      -0.15439244359731674,
+      0.018091775476932526,
+      -0.2186775952577591,
+      0.03263367712497711
+    ]
+  },
+  {
+    "text": "It has a different frequency so the magnitude would be in a different place on the frequency graph ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.07805562019348145,
+      0.9219443798065186
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "It ",
+      "has ",
+      "a ",
+      "different ",
+      "frequency ",
+      "so ",
+      "the ",
+      "magnitude ",
+      "would ",
+      "be ",
+      "in ",
+      "a ",
+      "different ",
+      "place ",
+      "on ",
+      "the ",
+      "frequency ",
+      "graph"
+    ],
+    "shap_values": [
+      -0.029385728877969086,
+      0.1309511539293453,
+      0.02695751585997641,
+      0.250063952524215,
+      0.16933768906164914,
+      0.051290314295329154,
+      -0.048064596485346556,
+      0.13137727440334857,
+      0.008672778028994799,
+      0.021504388423636556,
+      0.009773931582458317,
+      -0.005793757154606283,
+      0.06163080994156189,
+      0.008023067988688126,
+      0.015272558463038877,
+      0.006520175753394142,
+      0.13525786920217797,
+      -0.02843099628807977
+    ]
+  },
+  {
+    "text": "time scaling",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9946755766868591,
+      0.005324419587850571
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "time ",
+      "scaling"
+    ],
+    "shap_values": [
+      0.00423392653465271,
+      -0.0023753345012664795
+    ]
+  },
+  {
+    "text": "The frequency is really fast",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9880557656288147,
+      0.011944248341023922
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "is ",
+      "really ",
+      "fast"
+    ],
+    "shap_values": [
+      0.021079331636428833,
+      -0.025456905364990234,
+      4.9777328968048096e-05,
+      -0.012716539204120636,
+      0.012283116579055786
+    ]
+  },
+  {
+    "text": "fast",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9948358535766602,
+      0.005164123605936766
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9948358535766602,
+    "tokens": [
+      "fast"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "frequency doubles not magnitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6499351859092712,
+      0.35006487369537354
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "frequency ",
+      "doubles ",
+      "not ",
+      "magnitude"
+    ],
+    "shap_values": [
+      -0.10582967102527618,
+      -0.07225735485553741,
+      -0.09074847400188446,
+      -0.0740462988615036
+    ]
+  },
+  {
+    "text": "the amplitude is big",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9727668166160583,
+      0.027233192697167397
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "the ",
+      "amplitude ",
+      "is ",
+      "big"
+    ],
+    "shap_values": [
+      0.01685410737991333,
+      -0.03244951367378235,
+      -0.008062958717346191,
+      0.003608196973800659
+    ]
+  },
+  {
+    "text": "because only the frequency differs between x1 and x2.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8470061421394348,
+      0.15299375355243683
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "because ",
+      "only ",
+      "the ",
+      "frequency ",
+      "differs ",
+      "between ",
+      "x1 ",
+      "and ",
+      "x2"
+    ],
+    "shap_values": [
+      0.10418499447405338,
+      0.0007053706794977188,
+      -0.03064400888979435,
+      -0.10631663538515568,
+      0.0053720735013484955,
+      0.008886005729436874,
+      -0.0976269468665123,
+      -0.0001300424337387085,
+      -0.012317642569541931
+    ]
+  },
+  {
+    "text": "compression in the t axis causes an expansion in the frequency axis",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.07475406676530838,
+      0.9252459406852722
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "compression ",
+      "in ",
+      "the ",
+      "t ",
+      "axis ",
+      "causes ",
+      "an ",
+      "expansion ",
+      "in ",
+      "the ",
+      "frequency ",
+      "axis"
+    ],
+    "shap_values": [
+      0.2857748972601257,
+      0.03640807542251423,
+      -0.0245234917383641,
+      0.08171303803101182,
+      0.16015144798438996,
+      0.08773108979221433,
+      0.025843663490377367,
+      0.20014397602062672,
+      -0.010307213757187128,
+      -0.016723436303436756,
+      0.07112460408825427,
+      0.020726377493701875
+    ]
+  },
+  {
+    "text": "compression in the time domain increases the amplitude in the frequency domain",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6059935092926025,
+      0.3940065801143646
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "compression ",
+      "in ",
+      "the ",
+      "time ",
+      "domain ",
+      "increases ",
+      "the ",
+      "amplitude ",
+      "in ",
+      "the ",
+      "frequency ",
+      "domain"
+    ],
+    "shap_values": [
+      -0.1651619840413332,
+      0.013527845963835716,
+      0.12921815598383546,
+      -0.05680689075961709,
+      -0.08003913797438145,
+      -0.18400875106453896,
+      0.0799257168546319,
+      -0.1111070392653346,
+      0.045294925570487976,
+      0.08014678955078125,
+      -0.08359896019101143,
+      -0.05421414598822594
+    ]
+  },
+  {
+    "text": "Intensity of the signal is still the same, x2(t) just repeats more often so a higher frequency, therefore it has a different frequency to x1(t).",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.05472501739859581,
+      0.9452750086784363
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Intensity ",
+      "of ",
+      "the ",
+      "signal ",
+      "is ",
+      "still ",
+      "the ",
+      "same, ",
+      "x2(",
+      "t) ",
+      "just ",
+      "repeats ",
+      "more ",
+      "often ",
+      "so ",
+      "a ",
+      "higher ",
+      "frequency, ",
+      "therefore ",
+      "it ",
+      "has ",
+      "a ",
+      "different ",
+      "frequency ",
+      "to ",
+      "x1(",
+      "t"
+    ],
+    "shap_values": [
+      0.030652951099909842,
+      0.007940718671306968,
+      -0.03268201323226094,
+      0.034438767354004085,
+      0.015334714844357222,
+      0.015140604402404279,
+      -0.012774106580764055,
+      0.12859590479638427,
+      0.09107720345491543,
+      0.022252529219258577,
+      0.057149186672177166,
+      0.05914117017528042,
+      0.035178914142306894,
+      -0.0004617591039277613,
+      0.0018966937786899507,
+      0.023289856442715973,
+      0.0879731805762276,
+      0.13113208243157715,
+      0.0342150250216946,
+      0.014987415983341634,
+      0.007573052833322436,
+      -0.014496514515485615,
+      0.11605265160324052,
+      0.10222394281299785,
+      0.0070323863765224814,
+      0.023390944814309478,
+      -0.03586810256820172
+    ]
+  },
+  {
+    "text": "increased frequency makes shift to higher, and same magnitude",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.05317680910229683,
+      0.9468231201171875
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "increased ",
+      "frequency ",
+      "makes ",
+      "shift ",
+      "to ",
+      "higher, ",
+      "and ",
+      "same ",
+      "magnitude"
+    ],
+    "shap_values": [
+      0.23211822455050424,
+      0.20004210103070363,
+      -0.029172828537411988,
+      0.1836162902181968,
+      0.07468219555448741,
+      0.1934960501966998,
+      0.045195860555395484,
+      0.06209881999529898,
+      -0.022436506347730756
+    ]
+  },
+  {
+    "text": "df",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9949942231178284,
+      0.005005760118365288
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9949942231178284,
+    "tokens": [
+      "df"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "High frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9934626221656799,
+      0.006537321489304304
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "High ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.0018678903579711914,
+      0.0025135278701782227
+    ]
+  },
+  {
+    "text": "SAME FREQ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9826961159706116,
+      0.01730388216674328
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "SAME ",
+      "FREQ"
+    ],
+    "shap_values": [
+      -0.005116403102874756,
+      -0.005004465579986572
+    ]
+  },
+  {
+    "text": "Cause",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.993155300617218,
+      0.006844585295766592
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.993155300617218,
+    "tokens": [
+      "Cause"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Signal a has the highest frequency as it recurs the most often",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9182672500610352,
+      0.08173272758722305
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Signal ",
+      "a ",
+      "has ",
+      "the ",
+      "highest ",
+      "frequency ",
+      "as ",
+      "it ",
+      "recurs ",
+      "the ",
+      "most ",
+      "often"
+    ],
+    "shap_values": [
+      0.04374421760439873,
+      0.010702650994062424,
+      -0.0388680063188076,
+      0.030599210411310196,
+      -0.053317841142416,
+      -0.10260027274489403,
+      -0.0066257044672966,
+      0.018288269639015198,
+      0.01308208703994751,
+      -0.02979929745197296,
+      -0.022311143577098846,
+      0.06255609542131424
+    ]
+  },
+  {
+    "text": "x2 has a larger amplitude than x1",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7354869842529297,
+      0.2645129859447479
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "x2 ",
+      "has ",
+      "a ",
+      "larger ",
+      "amplitude ",
+      "than ",
+      "x1"
+    ],
+    "shap_values": [
+      -0.08806820213794708,
+      -0.023751989006996155,
+      -0.005829259753227234,
+      -0.0733795315027237,
+      -0.05401894450187683,
+      -0.017951801419258118,
+      0.005669727921485901
+    ]
+  },
+  {
+    "text": "higher frequency, same amplitude",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.169186070561409,
+      0.8308139443397522
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "higher ",
+      "frequency, ",
+      "same ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.09312046878039837,
+      0.3461080016568303,
+      0.34994654497131705,
+      0.03445601603016257
+    ]
+  },
+  {
+    "text": "second is approximately double the frequency of the first, which is shown in the magnitude spectrum",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.07315245270729065,
+      0.9268476366996765
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "second ",
+      "is ",
+      "approximately ",
+      "double ",
+      "the ",
+      "frequency ",
+      "of ",
+      "the ",
+      "first, ",
+      "which ",
+      "is ",
+      "shown ",
+      "in ",
+      "the ",
+      "magnitude ",
+      "spectrum"
+    ],
+    "shap_values": [
+      0.09386801434447989,
+      0.009297277603764087,
+      0.15678683063015342,
+      0.18682581861503422,
+      -0.03726826095953584,
+      0.17115452629514039,
+      0.022658845875412226,
+      -0.013926617568358779,
+      0.11777713475748897,
+      0.025422038743272424,
+      0.058324802899733186,
+      0.04687863541767001,
+      0.04744655208196491,
+      -0.013589099165983498,
+      0.05691929062595591,
+      -0.008911066397558898
+    ]
+  },
+  {
+    "text": "a",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9954949021339417,
+      0.0045051113702356815
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9954949021339417,
+    "tokens": [
+      "a"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "The higher the frequency the closer the magnitude of the signal becomes",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7909674048423767,
+      0.2090325951576233
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "The ",
+      "higher ",
+      "the ",
+      "frequency ",
+      "the ",
+      "closer ",
+      "the ",
+      "magnitude ",
+      "of ",
+      "the ",
+      "signal ",
+      "becomes"
+    ],
+    "shap_values": [
+      0.03724865987896919,
+      -0.07206223532557487,
+      -0.010241203010082245,
+      -0.07568278908729553,
+      0.033241406083106995,
+      -0.04870706796646118,
+      -0.002580419182777405,
+      -0.048273518681526184,
+      0.003912925720214844,
+      0.04694359004497528,
+      -0.062003470957279205,
+      -0.0036454573273658752
+    ]
+  },
+  {
+    "text": "x2(t) has the same duration, but a higher frequency, so the peaks will occur in the same place, but will have a greater amplitude.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.22661559283733368,
+      0.7733843922615051
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2(",
+      "t) ",
+      "has ",
+      "the ",
+      "same ",
+      "duration, ",
+      "but ",
+      "a ",
+      "higher ",
+      "frequency, ",
+      "so ",
+      "the ",
+      "peaks ",
+      "will ",
+      "occur ",
+      "in ",
+      "the ",
+      "same ",
+      "place, ",
+      "but ",
+      "will ",
+      "have ",
+      "a ",
+      "greater ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.030508678988553584,
+      0.0451374287949875,
+      0.035633074352517724,
+      -0.010280523914843798,
+      0.12171208241488785,
+      0.08730407746043056,
+      -0.020238769473508,
+      0.03828456692281179,
+      0.12484973619575612,
+      0.14800173192634247,
+      -0.004098894452909008,
+      -0.017443855467718095,
+      -0.004265027935616672,
+      0.02200457066646777,
+      0.018697237217566,
+      -0.0015634148730896413,
+      -0.039245184569153935,
+      0.13076095806900412,
+      0.0022948115365579724,
+      0.029085278161801398,
+      0.02276167826494202,
+      0.031250004831235856,
+      0.014762634120415896,
+      0.08569234580500051,
+      0.020948485820554197
+    ]
+  },
+  {
+    "text": "X2 has the same amplitude as x1, but a greater frequency, as it's period is smaller.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.03264624625444412,
+      0.9673538208007812
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "X2 ",
+      "has ",
+      "the ",
+      "same ",
+      "amplitude ",
+      "as ",
+      "x1, ",
+      "but ",
+      "a ",
+      "greater ",
+      "frequency, ",
+      "as ",
+      "it'",
+      "s ",
+      "period ",
+      "is ",
+      "smaller"
+    ],
+    "shap_values": [
+      0.03969489049632102,
+      0.010314107057638466,
+      -0.03248664422426373,
+      0.2778181581525132,
+      0.11238611041335389,
+      0.02264899871079251,
+      0.21418897656258196,
+      0.01801394741050899,
+      0.03628489829134196,
+      0.09271563298534602,
+      0.12166535982396454,
+      0.0003596771275624633,
+      -0.006805286626331508,
+      -0.03478180046658963,
+      0.013427824073005468,
+      -0.0042445731232874095,
+      0.08420469390694052
+    ]
+  },
+  {
+    "text": "higher rate of change resulting in a higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7274600863456726,
+      0.272539883852005
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "rate ",
+      "of ",
+      "change ",
+      "resulting ",
+      "in ",
+      "a ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.05882254242897034,
+      -0.10495255142450333,
+      0.05610269960016012,
+      -0.10843101050704718,
+      -0.027631156146526337,
+      0.012937657535076141,
+      0.00017110444605350494,
+      -0.05668194033205509,
+      0.021950840950012207
+    ]
+  },
+  {
+    "text": "higher frequency so further apart",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.32173407077789307,
+      0.6782658696174622
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "higher ",
+      "frequency ",
+      "so ",
+      "further ",
+      "apart"
+    ],
+    "shap_values": [
+      0.24994834885001183,
+      0.06396688427776098,
+      0.03284633590374142,
+      0.2765617767581716,
+      0.04775961092673242
+    ]
+  },
+  {
+    "text": "Signal 2 has a higher frequency component",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.41056373715400696,
+      0.5894362330436707
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Signal ",
+      "2 ",
+      "has ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "component"
+    ],
+    "shap_values": [
+      0.0391262355260551,
+      0.04604751314036548,
+      0.11011836270336062,
+      -0.02415125712286681,
+      0.199167285929434,
+      0.21227662719320506,
+      -0.0003314472269266844
+    ]
+  },
+  {
+    "text": "Because the frequency is higher and the magnitude is the same",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.11207301169633865,
+      0.8879270553588867
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Because ",
+      "the ",
+      "frequency ",
+      "is ",
+      "higher ",
+      "and ",
+      "the ",
+      "magnitude ",
+      "is ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      -0.051554741454310715,
+      0.01608181220944971,
+      0.24897322250762954,
+      0.054644930467475206,
+      0.15362158545758575,
+      0.07895518350414932,
+      -0.009079162031412125,
+      0.08458836446516216,
+      0.0411642887047492,
+      0.06596197508042678,
+      0.197386683546938
+    ]
+  },
+  {
+    "text": "As frequency of a signal increases, the transformation of the signal shifts the frequency away from zero. The amplitude is not affected. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.049260761588811874,
+      0.9507392048835754
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "As ",
+      "frequency ",
+      "of ",
+      "a ",
+      "signal ",
+      "increases, ",
+      "the ",
+      "transformation ",
+      "of ",
+      "the ",
+      "signal ",
+      "shifts ",
+      "the ",
+      "frequency ",
+      "away ",
+      "from ",
+      "zero. ",
+      "The ",
+      "amplitude ",
+      "is ",
+      "not ",
+      "affected"
+    ],
+    "shap_values": [
+      0.005487521295435727,
+      0.05027564300689846,
+      0.013509823358617723,
+      0.022588153718970716,
+      0.007513192598707974,
+      0.042789850034751,
+      -0.011827143607661128,
+      0.026566322427242994,
+      0.00938716356176883,
+      -0.023935886565595865,
+      0.07526137999957427,
+      0.11375036527169868,
+      -0.014399296720512211,
+      0.12177735147997737,
+      0.05041948170401156,
+      0.005625822697766125,
+      0.07481090381043032,
+      0.01842611556639895,
+      0.18831092934124172,
+      0.04610560368746519,
+      0.04641405172878876,
+      0.05913414427777752
+    ]
+  },
+  {
+    "text": "because frequency is doubled and amplitude stays the same",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0852062925696373,
+      0.9147937297821045
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "because ",
+      "frequency ",
+      "is ",
+      "doubled ",
+      "and ",
+      "amplitude ",
+      "stays ",
+      "the ",
+      "same"
+    ],
+    "shap_values": [
+      -0.12345102545805275,
+      0.2572144940495491,
+      0.03548300499096513,
+      0.2620348569471389,
+      0.027646653819829226,
+      0.16387147014029324,
+      0.06473187752999365,
+      0.021769139100797474,
+      0.19831034576054662
+    ]
+  },
+  {
+    "text": "I assumed that because its frequency is higher than x1(t), then the magnitude is closer to 0.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8791985511779785,
+      0.12080150097608566
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "I ",
+      "assumed ",
+      "that ",
+      "because ",
+      "its ",
+      "frequency ",
+      "is ",
+      "higher ",
+      "than ",
+      "x1(",
+      "t), ",
+      "then ",
+      "the ",
+      "magnitude ",
+      "is ",
+      "closer ",
+      "to ",
+      "0"
+    ],
+    "shap_values": [
+      0.05975763872265816,
+      0.025435999035835266,
+      0.025708528235554695,
+      0.07690110988914967,
+      -0.022949641570448875,
+      -0.046384720131754875,
+      -0.021420734003186226,
+      -0.04705612547695637,
+      0.015438772737979889,
+      -0.07321447879076004,
+      -0.07216913625597954,
+      0.015000861138105392,
+      0.01027880422770977,
+      -0.04606950096786022,
+      0.010662106797099113,
+      -0.0357921477407217,
+      -0.023948252201080322,
+      0.021137766540050507
+    ]
+  },
+  {
+    "text": "Frequency has no effect on the magnitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9088098406791687,
+      0.09119018912315369
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Frequency ",
+      "has ",
+      "no ",
+      "effect ",
+      "on ",
+      "the ",
+      "magnitude"
+    ],
+    "shap_values": [
+      -0.06416276842355728,
+      0.02168229967355728,
+      0.0008811652660369873,
+      -0.030452430248260498,
+      -0.02496972680091858,
+      0.012338489294052124,
+      0.0006758272647857666
+    ]
+  },
+  {
+    "text": "idk",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9943544268608093,
+      0.005645590368658304
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9943544268608093,
+    "tokens": [
+      "idk"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "signal 2 has a higher frequency but the same magnitude and signal 1",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06870776414871216,
+      0.9312922358512878
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "signal ",
+      "2 ",
+      "has ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "but ",
+      "the ",
+      "same ",
+      "magnitude ",
+      "and ",
+      "signal ",
+      "1"
+    ],
+    "shap_values": [
+      0.06058167904848233,
+      0.047273629636038095,
+      0.06282081251265481,
+      0.03844542970182374,
+      0.15145181061234325,
+      0.16121960093732923,
+      0.035154290264472365,
+      -0.004985459556337446,
+      0.13840138079831377,
+      0.09596217528451234,
+      0.07692076137755066,
+      0.07086166404769756,
+      -0.009998451714636758
+    ]
+  },
+  {
+    "text": "time domain plots are converted to the frequency domain",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.53251713514328,
+      0.4674828350543976
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "time ",
+      "domain ",
+      "plots ",
+      "are ",
+      "converted ",
+      "to ",
+      "the ",
+      "frequency ",
+      "domain"
+    ],
+    "shap_values": [
+      -0.09588591009378433,
+      -0.09973602741956711,
+      -0.023179497569799423,
+      -0.04345402494072914,
+      -0.054661840200424194,
+      -0.010979637503623962,
+      0.02596864104270935,
+      -0.16982591152191162,
+      0.011454358696937561
+    ]
+  },
+  {
+    "text": "Higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9944808483123779,
+      0.005519156809896231
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.012389302253723145,
+      0.014053165912628174
+    ]
+  },
+  {
+    "text": "The frequencies of the waves impact on the magnitude of the transformed signal",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8758590221405029,
+      0.12414098531007767
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "The ",
+      "frequencies ",
+      "of ",
+      "the ",
+      "waves ",
+      "impact ",
+      "on ",
+      "the ",
+      "magnitude ",
+      "of ",
+      "the ",
+      "transformed ",
+      "signal"
+    ],
+    "shap_values": [
+      0.054681841284036636,
+      -0.0567602775990963,
+      0.006490625441074371,
+      0.010593965649604797,
+      -0.08157073333859444,
+      -0.01662949100136757,
+      -0.0022462382912635803,
+      0.010913610458374023,
+      -0.0477588027715683,
+      -0.010956138372421265,
+      0.040166907012462616,
+      -0.011512324213981628,
+      -0.01237090677022934
+    ]
+  },
+  {
+    "text": "a compression in time domain means a stretch in the frequency domain spectra ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.12658022344112396,
+      0.8734197616577148
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "a ",
+      "compression ",
+      "in ",
+      "time ",
+      "domain ",
+      "means ",
+      "a ",
+      "stretch ",
+      "in ",
+      "the ",
+      "frequency ",
+      "domain ",
+      "spectra"
+    ],
+    "shap_values": [
+      0.07904466276522726,
+      0.20690324192401022,
+      0.04929358884692192,
+      0.10089692263863981,
+      0.1391836841357872,
+      0.06804558949079365,
+      0.00039451837074011564,
+      0.11198888660874218,
+      -0.01494274940341711,
+      -9.731296449899673e-05,
+      0.08250759216025472,
+      0.0587235763669014,
+      -0.01570028578862548
+    ]
+  },
+  {
+    "text": "the frequency increased, so the width in the magnitude spectrum increases",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7717230319976807,
+      0.22827692329883575
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "the ",
+      "frequency ",
+      "increased, ",
+      "so ",
+      "the ",
+      "width ",
+      "in ",
+      "the ",
+      "magnitude ",
+      "spectrum ",
+      "increases"
+    ],
+    "shap_values": [
+      0.09496375173330307,
+      0.006178967654705048,
+      -0.07342924177646637,
+      -0.06291118264198303,
+      0.051044669933617115,
+      -0.12407105509191751,
+      0.013630738481879234,
+      0.03815755806863308,
+      -0.07211444154381752,
+      -0.040270667523145676,
+      -0.05227304995059967
+    ]
+  },
+  {
+    "text": "higher frequency means higher amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.886023759841919,
+      0.11397624760866165
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency ",
+      "means ",
+      "higher ",
+      "amplitude"
+    ],
+    "shap_values": [
+      -0.010147273540496826,
+      -0.0328809916973114,
+      0.062134213745594025,
+      -0.09965913742780685,
+      -0.026240035891532898
+    ]
+  },
+  {
+    "text": "Because the peaks",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9945279955863953,
+      0.005471999291330576
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Because ",
+      "the ",
+      "peaks"
+    ],
+    "shap_values": [
+      -0.0059048086404800415,
+      0.006448820233345032,
+      0.001166999340057373
+    ]
+  },
+  {
+    "text": "T decrease",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.994441568851471,
+      0.005558457225561142
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "T ",
+      "decrease"
+    ],
+    "shap_values": [
+      -0.00035387277603149414,
+      0.001978456974029541
+    ]
+  },
+  {
+    "text": "not sure",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9941951632499695,
+      0.005804808344691992
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "not ",
+      "sure"
+    ],
+    "shap_values": [
+      -0.00666162371635437,
+      0.008039802312850952
+    ]
+  },
+  {
+    "text": "jkn ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9899234771728516,
+      0.010076533071696758
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9899234771728516,
+    "tokens": [
+      "jkn "
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "increased frequency and consistent amplitude",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.27070119976997375,
+      0.7292988300323486
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "increased ",
+      "frequency ",
+      "and ",
+      "consistent ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.29304048453923315,
+      0.25384503381792456,
+      0.007907295599579811,
+      0.10980076808482409,
+      0.05752233508974314
+    ]
+  },
+  {
+    "text": "The frequency of the x2(t) is much double that of x1(t) but with same aplitude and so therefore, in the magnitude spectra the peaks for frequency will be at 200 Hz.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.05172378197312355,
+      0.9482762217521667
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "The ",
+      "frequency ",
+      "of ",
+      "the ",
+      "x2(",
+      "t) ",
+      "is ",
+      "much ",
+      "double ",
+      "that ",
+      "of ",
+      "x1(",
+      "t) ",
+      "but ",
+      "with ",
+      "same ",
+      "aplitude ",
+      "and ",
+      "so ",
+      "therefore, ",
+      "in ",
+      "the ",
+      "magnitude ",
+      "spectra ",
+      "the ",
+      "peaks ",
+      "for ",
+      "frequency ",
+      "will ",
+      "be ",
+      "at ",
+      "200 ",
+      "Hz"
+    ],
+    "shap_values": [
+      -0.012182157573988661,
+      0.06332717006444,
+      -0.0027940799482166767,
+      -0.014809753047302365,
+      0.08449222036870196,
+      0.049915372917894274,
+      0.036761532130185515,
+      0.015694740519393235,
+      0.1009085426107049,
+      -0.017477020644582807,
+      0.0403263225123131,
+      0.12035211742816804,
+      0.04368310980110739,
+      0.01786907500354573,
+      0.061543634641566314,
+      0.1220554864994483,
+      0.08797162535483949,
+      0.010080642881803215,
+      0.008568749646656215,
+      0.03123737743590027,
+      0.0019279834814369678,
+      -0.022724710637703538,
+      0.034476981149055064,
+      0.003267888445407152,
+      -0.03870884038042277,
+      -0.037373453844338655,
+      0.014401496155187488,
+      0.0715490197762847,
+      0.018150515970773995,
+      -0.005839675315655768,
+      0.019158926773040246,
+      0.021282025593488168,
+      0.0013227735568458836
+    ]
+  },
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "fsamp would be greater and therefore they would be more spread out",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.15320222079753876,
+      0.8467977643013
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "fsamp ",
+      "would ",
+      "be ",
+      "greater ",
+      "and ",
+      "therefore ",
+      "they ",
+      "would ",
+      "be ",
+      "more ",
+      "spread ",
+      "out"
+    ],
+    "shap_values": [
+      0.120914755621925,
+      0.12545069446787238,
+      0.022541322163306177,
+      0.1857348916819319,
+      0.044342398177832365,
+      0.05089467950165272,
+      -0.010674944147467613,
+      0.045749941491521895,
+      0.09020474448334426,
+      0.05724303290480748,
+      0.09633588168071583,
+      0.010877453372813761
+    ]
+  },
+  {
+    "text": "decrease in period results in increase in frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.10472681373357773,
+      0.8952732086181641
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "decrease ",
+      "in ",
+      "period ",
+      "results ",
+      "in ",
+      "increase ",
+      "in ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.21527447970584035,
+      -0.0015779798850417137,
+      0.138258425751701,
+      0.06889711623080075,
+      0.0665029666852206,
+      0.20055300765670836,
+      0.09100979927461594,
+      0.10917248029727489
+    ]
+  },
+  {
+    "text": "Because it's the same as part a but at a higher frequency ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7022621035575867,
+      0.29773786664009094
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Because ",
+      "it'",
+      "s ",
+      "the ",
+      "same ",
+      "as ",
+      "part ",
+      "a ",
+      "but ",
+      "at ",
+      "a ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.09510272182524204,
+      0.04629780165851116,
+      -0.004000716842710972,
+      0.01191841159015894,
+      -0.1860005958005786,
+      -0.004249243997037411,
+      -0.06035743886604905,
+      -0.037786855828016996,
+      -0.07129949703812599,
+      -0.03462010249495506,
+      -0.04347783699631691,
+      -0.13468308746814728,
+      -0.08266142010688782
+    ]
+  },
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "T",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9936389327049255,
+      0.006361028645187616
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9936389327049255,
+    "tokens": [
+      "T"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "double the frequency, double the magnitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.8886528015136719,
+      0.11134728044271469
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "double ",
+      "the ",
+      "frequency, ",
+      "double ",
+      "the ",
+      "magnitude"
+    ],
+    "shap_values": [
+      0.09383194148540497,
+      0.03672541677951813,
+      -0.15883568674325943,
+      -0.05038531869649887,
+      0.0905778780579567,
+      -0.11607841402292252
+    ]
+  },
+  {
+    "text": "Frequency is increased",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9789169430732727,
+      0.021083012223243713
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Frequency ",
+      "is ",
+      "increased"
+    ],
+    "shap_values": [
+      -0.009736403822898865,
+      -0.009605273604393005,
+      0.005441635847091675
+    ]
+  },
+  {
+    "text": "higher frequency peaks should be at at higher frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.14775119721889496,
+      0.8522487282752991
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "higher ",
+      "frequency ",
+      "peaks ",
+      "should ",
+      "be ",
+      "at ",
+      "at ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.031244153855368495,
+      0.18737422372214496,
+      0.033191580325365067,
+      0.14334431802853942,
+      0.040668805828318,
+      0.08062425325624645,
+      0.058797839039471,
+      0.17285408329917118,
+      0.09696655801963061
+    ]
+  },
+  {
+    "text": "needs to have a higher frequency but also the same magnitude",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.05972607433795929,
+      0.9402739405632019
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "needs ",
+      "to ",
+      "have ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "but ",
+      "also ",
+      "the ",
+      "same ",
+      "magnitude"
+    ],
+    "shap_values": [
+      0.13187854026909918,
+      -0.019076779601164162,
+      0.01763667620252818,
+      0.05264181119855493,
+      0.21770243567880243,
+      0.2544353244593367,
+      0.06552028260193765,
+      0.04021201771683991,
+      0.02021138113923371,
+      0.13269363134168088,
+      0.019235706655308604
+    ]
+  },
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "T",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9936389327049255,
+      0.006361028645187616
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9936389327049255,
+    "tokens": [
+      "T"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "Closer period means higher frequency response",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.2601368725299835,
+      0.7398630976676941
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Closer ",
+      "period ",
+      "means ",
+      "higher ",
+      "frequency ",
+      "response"
+    ],
+    "shap_values": [
+      0.1017182117793709,
+      0.08792851609177887,
+      0.005946810124441981,
+      0.23787386226467788,
+      0.23387161968275905,
+      0.06534116482362151
+    ]
+  },
+  {
+    "text": "more samples per second mean higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7929139733314514,
+      0.20708604156970978
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "more ",
+      "samples ",
+      "per ",
+      "second ",
+      "mean ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.021814711391925812,
+      0.026239685714244843,
+      0.031777966767549515,
+      -0.170563492923975,
+      0.009665794670581818,
+      -0.09974690526723862,
+      0.02453865110874176
+    ]
+  },
+  {
+    "text": "idk",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9943544268608093,
+      0.005645590368658304
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9943544268608093,
+    "tokens": [
+      "idk"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "same amplitude as the first signal",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9047971367835999,
+      0.09520280361175537
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "same ",
+      "amplitude ",
+      "as ",
+      "the ",
+      "first ",
+      "signal"
+    ],
+    "shap_values": [
+      -0.16315275058150291,
+      -0.07711946591734886,
+      -0.014347061514854431,
+      0.10578752309083939,
+      0.04887808859348297,
+      0.011933818459510803
+    ]
+  },
+  {
+    "text": "blah blah",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9729623794555664,
+      0.02703757770359516
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "blah ",
+      "blah"
+    ],
+    "shap_values": [
+      -0.015241295099258423,
+      -0.004613310098648071
+    ]
+  },
+  {
+    "text": "x2(t) has the same amplitude as x1(t), but a greater frequency. Therefore, when they are both converted to the frequency domain, it will result in a frequency shift for x2, although the two signals will still have the same magnitude.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06448130309581757,
+      0.935518741607666
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2(",
+      "t) ",
+      "has ",
+      "the ",
+      "same ",
+      "amplitude ",
+      "as ",
+      "x1(",
+      "t), ",
+      "but ",
+      "a ",
+      "greater ",
+      "frequency. ",
+      "Therefore, ",
+      "when ",
+      "they ",
+      "are ",
+      "both ",
+      "converted ",
+      "to ",
+      "the ",
+      "frequency ",
+      "domain, ",
+      "it ",
+      "will ",
+      "result ",
+      "in ",
+      "a ",
+      "frequency ",
+      "shift ",
+      "for ",
+      "x2, ",
+      "although ",
+      "the ",
+      "two ",
+      "signals ",
+      "will ",
+      "still ",
+      "have ",
+      "the ",
+      "same ",
+      "magnitude"
+    ],
+    "shap_values": [
+      0.02521156263537705,
+      0.028116678120568395,
+      -0.0021974475821480155,
+      -0.008160748868249357,
+      0.09581547527341172,
+      0.06687009305460379,
+      0.0053240110573824495,
+      0.044742604572093114,
+      0.05945505917770788,
+      0.006001065275631845,
+      0.007998916081851349,
+      0.027091141085838898,
+      0.033805658685741945,
+      0.008062911563320086,
+      -0.01082936834427528,
+      -0.005527650093426928,
+      -0.0033133045362774283,
+      0.010348298907047138,
+      0.0434548502380494,
+      0.004575917992042378,
+      -0.011015697062248364,
+      0.02773234326741658,
+      0.04629226331599057,
+      -0.016022651339881122,
+      0.020042578515131027,
+      0.005309671687427908,
+      -0.012151482689660043,
+      0.0028859060839749873,
+      0.04291355045279488,
+      0.04855851730098948,
+      0.008766288665356115,
+      0.13303917009034194,
+      0.017694238835247234,
+      -0.011708051286404952,
+      0.003657913737697527,
+      1.8439895939081907e-06,
+      0.010325836687115952,
+      0.015039961988804862,
+      0.010637738450895995,
+      0.007359644107054919,
+      0.11101000689086504,
+      0.02952638649730943
+    ]
+  },
+  {
+    "text": "same magnitude but have higher frequency ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0655633881688118,
+      0.9344366192817688
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "same ",
+      "magnitude ",
+      "but ",
+      "have ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.2533835305366665,
+      0.1728052154649049,
+      0.06143743311986327,
+      0.04531294130720198,
+      0.29087304254062474,
+      0.10354608995839953
+    ]
+  },
+  {
+    "text": "?",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9927294850349426,
+      0.0072705186903476715
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9927294850349426,
+    "tokens": [
+      "?"
+    ],
+    "shap_values": [
+      0.0
+    ]
+  },
+  {
+    "text": "same mag twice the freq",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.24699103832244873,
+      0.753009021282196
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "same ",
+      "mag ",
+      "twice ",
+      "the ",
+      "freq"
+    ],
+    "shap_values": [
+      0.22944530728273094,
+      0.20177506399340928,
+      0.20519952836912125,
+      -0.0075576138915494084,
+      0.1169638226274401
+    ]
+  },
+  {
+    "text": "the graph matches the frequency domain",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.904667317867279,
+      0.09533271193504333
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "the ",
+      "graph ",
+      "matches ",
+      "the ",
+      "frequency ",
+      "domain"
+    ],
+    "shap_values": [
+      0.0007555857300758362,
+      -0.008940614759922028,
+      -0.0371878445148468,
+      -0.013611942529678345,
+      -0.044350117444992065,
+      0.015185266733169556
+    ]
+  },
+  {
+    "text": "they have the same amplitude just higher frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.1364062875509262,
+      0.8635937571525574
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "they ",
+      "have ",
+      "the ",
+      "same ",
+      "amplitude ",
+      "just ",
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.06104104989208281,
+      0.08095796988345683,
+      0.019607385504059494,
+      0.26659598865080625,
+      0.17270182515494525,
+      0.0691651429515332,
+      0.19593154930043966,
+      0.11249203269835562
+    ]
+  },
+  {
+    "text": "higher frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9940484166145325,
+      0.005951541941612959
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "higher ",
+      "frequency"
+    ],
+    "shap_values": [
+      -0.008380740880966187,
+      0.009612172842025757
+    ]
+  },
+  {
+    "text": "x2 appears to have a higher frequency than x1, which this magnitude plot represents.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0374523364007473,
+      0.9625476002693176
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "x2 ",
+      "appears ",
+      "to ",
+      "have ",
+      "a ",
+      "higher ",
+      "frequency ",
+      "than ",
+      "x1, ",
+      "which ",
+      "this ",
+      "magnitude ",
+      "plot ",
+      "represents"
+    ],
+    "shap_values": [
+      0.15905709436628968,
+      0.07638370722997934,
+      -0.010471140849404037,
+      0.009464556002058089,
+      0.0326248164055869,
+      0.14426073792856187,
+      0.16702281893230975,
+      -0.05397209199145436,
+      0.24771935841999948,
+      0.03838575026020408,
+      0.024514192366041243,
+      0.09542020654771477,
+      0.0072599954437464476,
+      0.020835970295593143
+    ]
+  },
+  {
+    "text": "Increase In frequency, but not amplitude ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.19452369213104248,
+      0.8054763674736023
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Increase ",
+      "In ",
+      "frequency, ",
+      "but ",
+      "not ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.20267327246256173,
+      0.05073459935374558,
+      0.3047998142428696,
+      0.04889973159879446,
+      0.09991445601917803,
+      0.09130555554293096
+    ]
+  },
+  {
+    "text": "The same frequency is the best frequency.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7519140839576721,
+      0.24808591604232788
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "The ",
+      "same ",
+      "frequency ",
+      "is ",
+      "the ",
+      "best ",
+      "frequency"
+    ],
+    "shap_values": [
+      0.0781288743019104,
+      -0.1004742681980133,
+      -0.10371530055999756,
+      -0.010329127311706543,
+      0.11712364479899406,
+      -0.051074426621198654,
+      -0.08010825514793396
+    ]
+  },
+  {
+    "text": "Because of amplitude",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.9882729649543762,
+      0.011727034114301205
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.9928169846534729,
+    "tokens": [
+      "Because ",
+      "of ",
+      "amplitude"
+    ],
+    "shap_values": [
+      0.007800251245498657,
+      -0.017313003540039062,
+      0.004968732595443726
+    ]
+  },
+  {
+    "text": "Due to the higher frequency the magnitude is further apart than the first transfor ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.19436617195606232,
+      0.8056337833404541
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "base_value": 0.007182912901043892,
+    "tokens": [
+      "Due ",
+      "to ",
+      "the ",
+      "higher ",
+      "frequency ",
+      "the ",
+      "magnitude ",
+      "is ",
+      "further ",
+      "apart ",
+      "than ",
+      "the ",
+      "first ",
+      "transfor"
+    ],
+    "shap_values": [
+      -0.01623971777735278,
+      0.02863088477170095,
+      -0.058937157155014575,
+      0.3014079424319789,
+      0.18090795236639678,
+      -0.02317596273496747,
+      0.03173932433128357,
+      0.04468978685326874,
+      0.15353037894237787,
+      0.11285486270207912,
+      -0.007114602078218013,
+      -0.03175243077566847,
+      0.027580998721532524,
+      0.05421995057258755
+    ]
+  }
+]

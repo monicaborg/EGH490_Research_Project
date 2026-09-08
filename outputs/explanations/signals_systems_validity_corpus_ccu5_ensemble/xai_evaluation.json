@@ -1,0 +1,40 @@
+{
+  "lime": {
+    "fidelity": {
+      "comprehensiveness": 0.4273910062294453,
+      "sufficiency": 0.6791251475783064,
+      "n_instances": 150,
+      "k": 5
+    },
+    "coverage": {
+      "coverage": 0.4066666666666667,
+      "n_covered": 61,
+      "n_total": 150,
+      "min_weight": 0.01
+    },
+    "stability": {
+      "mean_rank_correlation": 0.9999999999999998,
+      "n_instances": 1,
+      "n_repeats": 5
+    }
+  },
+  "shap": {
+    "fidelity": {
+      "comprehensiveness": 0.6729702324032163,
+      "sufficiency": 0.9192133121301109,
+      "n_instances": 150,
+      "k": 5
+    },
+    "coverage": {
+      "coverage": 0.49333333333333335,
+      "n_covered": 74,
+      "n_total": 150,
+      "min_weight": 0.01
+    },
+    "stability": {
+      "mean_rank_correlation": 0.9999999999999998,
+      "n_instances": 1,
+      "n_repeats": 5
+    }
+  }
+}

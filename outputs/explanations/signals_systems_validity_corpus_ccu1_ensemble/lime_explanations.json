@@ -1,0 +1,7554 @@
+[
+  {
+    "text": "Smaller period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0992269441485405,
+      0.9007730484008789
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Smaller",
+        0.32302331756341457
+      ],
+      [
+        "period",
+        -0.007952456168691405
+      ]
+    ]
+  },
+  {
+    "text": "A) Repeats itself twice in 1 second, thus the frequency = 2Hz. This is greater than b (1/2 Hz), c (1Hz) and d (also 1 Hz).",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002142007229849696,
+      0.9978580474853516
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "1",
+        0.0027283512005113956
+      ],
+      [
+        "1Hz",
+        0.0024208568317779927
+      ],
+      [
+        "second",
+        0.00234060902264273
+      ],
+      [
+        "Repeats",
+        0.002196709040070607
+      ],
+      [
+        "in",
+        0.002120661210843764
+      ],
+      [
+        "2",
+        0.0019088803440906444
+      ],
+      [
+        "than",
+        0.0019079304698968083
+      ],
+      [
+        "Hz",
+        0.0019009919884258372
+      ],
+      [
+        "2Hz",
+        0.0018285323414581616
+      ],
+      [
+        "and",
+        0.0017110903599039183
+      ],
+      [
+        "twice",
+        0.0014956256009739106
+      ],
+      [
+        "the",
+        0.001372727299163273
+      ],
+      [
+        "itself",
+        0.0013041841308378851
+      ],
+      [
+        "A",
+        0.0010988088788232708
+      ],
+      [
+        "is",
+        0.0010238580599797446
+      ],
+      [
+        "greater",
+        0.0010202884360070383
+      ],
+      [
+        "thus",
+        0.0009349605011156882
+      ],
+      [
+        "c",
+        0.0008151040212481136
+      ],
+      [
+        "frequency",
+        0.0008030704307752117
+      ],
+      [
+        "This",
+        -0.00024022713328999412
+      ]
+    ]
+  },
+  {
+    "text": "Because it has the greatest amount of oscillations within the period.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015023020096123219,
+      0.998497724533081
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.12444268254120695
+      ],
+      [
+        "period",
+        0.08706734919027509
+      ],
+      [
+        "amount",
+        0.07775489923919798
+      ],
+      [
+        "the",
+        0.05594393504434612
+      ],
+      [
+        "within",
+        0.04524492734223754
+      ],
+      [
+        "greatest",
+        0.039700238189107936
+      ],
+      [
+        "has",
+        0.021606962470174868
+      ],
+      [
+        "of",
+        0.019672460101252388
+      ],
+      [
+        "it",
+        0.01914010913220492
+      ],
+      [
+        "Because",
+        -0.0011007934622372754
+      ]
+    ]
+  },
+  {
+    "text": "Because it has the most oscillations",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0021192554850131273,
+      0.9978806972503662
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.3420512773599871
+      ],
+      [
+        "most",
+        0.27720163159137895
+      ],
+      [
+        "the",
+        0.1502246738910847
+      ],
+      [
+        "has",
+        0.12787708802471387
+      ],
+      [
+        "it",
+        0.06271446538576783
+      ],
+      [
+        "Because",
+        0.05176790725097732
+      ]
+    ]
+  },
+  {
+    "text": "sstuff",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7622293829917908,
+      0.23777063190937042
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "Most peaks/ wave cycles",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0037648193538188934,
+      0.996235191822052
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Most",
+        0.4485236844573929
+      ],
+      [
+        "cycles",
+        0.259120106957024
+      ],
+      [
+        "wave",
+        0.1919789485535259
+      ],
+      [
+        "peaks",
+        0.10973904936698821
+      ]
+    ]
+  },
+  {
+    "text": "casue",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7603633403778076,
+      0.23963667452335358
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "More cycles in 1 't'",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0025233144406229258,
+      0.9974766373634338
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.44271973073919196
+      ],
+      [
+        "More",
+        0.2735739903075043
+      ],
+      [
+        "in",
+        0.26679981168992145
+      ],
+      [
+        "1",
+        0.21714203278133834
+      ],
+      [
+        "t",
+        0.08839154230468
+      ]
+    ]
+  },
+  {
+    "text": "Fastest oscillation of all signals. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.004103308077901602,
+      0.9958966374397278
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Fastest",
+        0.42312318350332545
+      ],
+      [
+        "oscillation",
+        0.24848482738610536
+      ],
+      [
+        "of",
+        0.127746665965122
+      ],
+      [
+        "signals",
+        0.12225584423555821
+      ],
+      [
+        "all",
+        0.11692101490547467
+      ]
+    ]
+  },
+  {
+    "text": "most cycles per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.07629326730966568,
+      0.9237067103385925
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.3211660226416775
+      ],
+      [
+        "second",
+        0.2895346572440277
+      ],
+      [
+        "per",
+        0.1969764021993217
+      ],
+      [
+        "cycles",
+        0.17201296743388556
+      ]
+    ]
+  },
+  {
+    "text": "it has the highest rate of change",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6700298190116882,
+      0.32997021079063416
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "of",
+        -0.05471641388940164
+      ],
+      [
+        "rate",
+        0.03726243125963052
+      ],
+      [
+        "highest",
+        -0.024890159191677152
+      ],
+      [
+        "the",
+        -0.022692719664001347
+      ],
+      [
+        "change",
+        0.0213239049921421
+      ],
+      [
+        "has",
+        -0.012154352126799025
+      ],
+      [
+        "it",
+        -0.0074602446246255835
+      ]
+    ]
+  },
+  {
+    "text": "cause the waves are longer",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.34404125809669495,
+      0.6559586524963379
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "waves",
+        0.3852147622674862
+      ],
+      [
+        "longer",
+        0.32886034624491234
+      ],
+      [
+        "are",
+        0.25240239533787034
+      ],
+      [
+        "cause",
+        -0.047839360904654196
+      ],
+      [
+        "the",
+        0.03568814327678941
+      ]
+    ]
+  },
+  {
+    "text": "asdfghjkl;",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7253963351249695,
+      0.27460363507270813
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "Frequency is the inverse of period, and A has the shortest period. Frequency = number of cycles per time frame",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002568625146523118,
+      0.9974314570426941
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.020564554926266722
+      ],
+      [
+        "cycles",
+        0.019905279601356154
+      ],
+      [
+        "shortest",
+        0.016885297399183735
+      ],
+      [
+        "per",
+        0.014293967531559032
+      ],
+      [
+        "number",
+        0.012161599607041298
+      ],
+      [
+        "the",
+        0.012045086817759381
+      ],
+      [
+        "time",
+        0.011161325231528317
+      ],
+      [
+        "Frequency",
+        0.010973591164138399
+      ],
+      [
+        "frame",
+        0.010839360029469244
+      ],
+      [
+        "is",
+        0.01042133418860414
+      ],
+      [
+        "has",
+        0.008593911455744433
+      ],
+      [
+        "of",
+        0.005506600142138599
+      ],
+      [
+        "A",
+        0.0037491682982779243
+      ],
+      [
+        "and",
+        0.0012862285091047078
+      ],
+      [
+        "inverse",
+        0.0007413777879129717
+      ]
+    ]
+  },
+  {
+    "text": "Because f = 1/T ie: the smaller the period the higher the frequency ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002036338672041893,
+      0.9979636669158936
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.24186160469181828
+      ],
+      [
+        "smaller",
+        0.14300327584953484
+      ],
+      [
+        "period",
+        0.12875072722553582
+      ],
+      [
+        "higher",
+        0.06304825435037141
+      ],
+      [
+        "Because",
+        0.03803955257668886
+      ],
+      [
+        "frequency",
+        0.034207194273776095
+      ],
+      [
+        "1",
+        0.027955832310852288
+      ],
+      [
+        "T",
+        0.025494877871964697
+      ],
+      [
+        "ie",
+        0.02231441521802404
+      ],
+      [
+        "f",
+        0.00047124463096774247
+      ]
+    ]
+  },
+  {
+    "text": "more complete cycle in one period than the other",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0016254553338512778,
+      0.9983745217323303
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.1379456016330664
+      ],
+      [
+        "than",
+        0.11808578625336284
+      ],
+      [
+        "cycle",
+        0.10683735652934871
+      ],
+      [
+        "one",
+        0.09896268216309045
+      ],
+      [
+        "in",
+        0.07579090539182556
+      ],
+      [
+        "the",
+        0.06991276972023137
+      ],
+      [
+        "more",
+        0.06620054290212578
+      ],
+      [
+        "other",
+        0.06507712347246021
+      ],
+      [
+        "complete",
+        0.05987650065588288
+      ]
+    ]
+  },
+  {
+    "text": "f = 1/T where T is the period. Signal A has the smallest period therefore the larges frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0020566105376929045,
+      0.9979434013366699
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.08775702991398936
+      ],
+      [
+        "smallest",
+        0.06262559851075561
+      ],
+      [
+        "larges",
+        0.047657771742337963
+      ],
+      [
+        "the",
+        0.03629987922107516
+      ],
+      [
+        "where",
+        0.031008772135317674
+      ],
+      [
+        "has",
+        0.020596141996435918
+      ],
+      [
+        "Signal",
+        0.017381156413352267
+      ],
+      [
+        "T",
+        0.015230354063534422
+      ],
+      [
+        "frequency",
+        0.013849869281760038
+      ],
+      [
+        "1",
+        0.011512060155805994
+      ],
+      [
+        "therefore",
+        0.009061179624007954
+      ],
+      [
+        "is",
+        0.007810122248458456
+      ],
+      [
+        "A",
+        0.006419956004706297
+      ],
+      [
+        "f",
+        0.004492240772588119
+      ]
+    ]
+  },
+  {
+    "text": "frequency is 1/period. Therefore the shorter the period the higher the frequency. Signal (a) = 2Hz, Signal (b) = 0.5Hz, Signal (c) = 1Hz, Signal (d) = 1Hz.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0020834661554545164,
+      0.9979165196418762
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.008332253081636392
+      ],
+      [
+        "1Hz",
+        0.008211538624795728
+      ],
+      [
+        "period",
+        0.00800727200826087
+      ],
+      [
+        "2Hz",
+        0.007333623854722432
+      ],
+      [
+        "5Hz",
+        0.006708335678747795
+      ],
+      [
+        "higher",
+        0.005024441557619629
+      ],
+      [
+        "shorter",
+        0.005013136482734476
+      ],
+      [
+        "0",
+        0.003928903141932034
+      ],
+      [
+        "frequency",
+        0.002553879369923448
+      ],
+      [
+        "Signal",
+        -0.002224461983879473
+      ],
+      [
+        "b",
+        0.002059986556763145
+      ],
+      [
+        "Therefore",
+        0.0015893129194358541
+      ],
+      [
+        "1",
+        0.0010694000121996832
+      ],
+      [
+        "is",
+        0.0006682154431554576
+      ],
+      [
+        "d",
+        0.0006195628549546667
+      ],
+      [
+        "c",
+        -0.00019286855887839504
+      ],
+      [
+        "a",
+        -0.0001401859289507915
+      ]
+    ]
+  },
+  {
+    "text": "a take the least time to complete one cycle",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018846784951165318,
+      0.9981153011322021
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "least",
+        0.3338437105713397
+      ],
+      [
+        "cycle",
+        0.1610727212831089
+      ],
+      [
+        "time",
+        0.1457951036632889
+      ],
+      [
+        "the",
+        0.13395253563811793
+      ],
+      [
+        "one",
+        0.11207096260731388
+      ],
+      [
+        "a",
+        0.05541825956973093
+      ],
+      [
+        "complete",
+        0.04957513017960374
+      ],
+      [
+        "take",
+        -0.013227560583874965
+      ],
+      [
+        "to",
+        -0.0004689290370190734
+      ]
+    ]
+  },
+  {
+    "text": "It has the shortest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.011218361556529999,
+      0.9887816309928894
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.33256211658867746
+      ],
+      [
+        "shortest",
+        0.30750220525586675
+      ],
+      [
+        "the",
+        0.2179550328094112
+      ],
+      [
+        "has",
+        0.15007317454642857
+      ],
+      [
+        "It",
+        0.10584623113483403
+      ]
+    ]
+  },
+  {
+    "text": "The wave is the most compact so the period is smaller therefore the frequency is higher",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0022350186482071877,
+      0.9977650046348572
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.06654285780743394
+      ],
+      [
+        "period",
+        0.06533460156171456
+      ],
+      [
+        "smaller",
+        0.05632258071757165
+      ],
+      [
+        "most",
+        0.0496541721587473
+      ],
+      [
+        "is",
+        0.047290669220254176
+      ],
+      [
+        "The",
+        0.033818379307814124
+      ],
+      [
+        "compact",
+        0.022869878500705685
+      ],
+      [
+        "wave",
+        0.02061507905152613
+      ],
+      [
+        "therefore",
+        0.017452275812117807
+      ],
+      [
+        "so",
+        0.011579694393200037
+      ],
+      [
+        "higher",
+        0.00575294487822777
+      ],
+      [
+        "frequency",
+        0.005276687396328694
+      ]
+    ]
+  },
+  {
+    "text": "Because the first function oscillates the most and the shortest period when compared to the other functions.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018355626380071044,
+      0.9981644153594971
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillates",
+        0.03698057623302747
+      ],
+      [
+        "period",
+        0.03300014613691251
+      ],
+      [
+        "shortest",
+        0.024822854238526666
+      ],
+      [
+        "most",
+        0.0207912318896653
+      ],
+      [
+        "first",
+        0.02041377842958294
+      ],
+      [
+        "the",
+        0.020317383192172443
+      ],
+      [
+        "function",
+        0.017622818414947488
+      ],
+      [
+        "and",
+        0.01655729732806126
+      ],
+      [
+        "when",
+        0.013118402705196808
+      ],
+      [
+        "compared",
+        0.00955158060886253
+      ],
+      [
+        "functions",
+        0.007668719939556391
+      ],
+      [
+        "to",
+        0.004775849334015601
+      ],
+      [
+        "other",
+        0.0045811901309748245
+      ],
+      [
+        "Because",
+        0.0021129492323516135
+      ]
+    ]
+  },
+  {
+    "text": "Most number of complete waves in the time period.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002707700477913022,
+      0.9972923398017883
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Most",
+        0.08505812479373652
+      ],
+      [
+        "waves",
+        0.08296153058780519
+      ],
+      [
+        "period",
+        0.07075442081616007
+      ],
+      [
+        "in",
+        0.04927060050188679
+      ],
+      [
+        "time",
+        0.04143366928299093
+      ],
+      [
+        "number",
+        0.03739089746739896
+      ],
+      [
+        "the",
+        0.03708187350557065
+      ],
+      [
+        "of",
+        0.026207213304676128
+      ],
+      [
+        "complete",
+        0.023410127516986987
+      ]
+    ]
+  },
+  {
+    "text": "The period of the waveform is much narrower than others",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015242354711517692,
+      0.9984757900238037
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "waveform",
+        0.08838347850352839
+      ],
+      [
+        "narrower",
+        0.0844266838874491
+      ],
+      [
+        "period",
+        0.06546457277128419
+      ],
+      [
+        "The",
+        0.05286599814305845
+      ],
+      [
+        "than",
+        0.048880544701412995
+      ],
+      [
+        "much",
+        0.04872075155222845
+      ],
+      [
+        "others",
+        0.0403807782381631
+      ],
+      [
+        "the",
+        0.0253173783283718
+      ],
+      [
+        "of",
+        0.017139826640243574
+      ],
+      [
+        "is",
+        0.012758120652980116
+      ]
+    ]
+  },
+  {
+    "text": "more periods",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.4247715473175049,
+      0.5752284526824951
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.09888763362843249
+      ],
+      [
+        "more",
+        0.09862827412175154
+      ]
+    ]
+  },
+  {
+    "text": "It's wibbly wobbly timey wimey",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6622722148895264,
+      0.33772778511047363
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "timey",
+        -0.020002705439605615
+      ],
+      [
+        "wibbly",
+        -0.018029982593900668
+      ],
+      [
+        "wobbly",
+        -0.015062143432874408
+      ],
+      [
+        "wimey",
+        -0.013697070852603858
+      ],
+      [
+        "It",
+        -0.0026401345629287714
+      ],
+      [
+        "s",
+        -0.000556569422405373
+      ]
+    ]
+  },
+  {
+    "text": "Smallest period (T), and we know f = 1/T.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002364451764151454,
+      0.997635543346405
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Smallest",
+        0.45470791449222664
+      ],
+      [
+        "period",
+        0.07971854605438784
+      ],
+      [
+        "1",
+        0.07115768925081427
+      ],
+      [
+        "T",
+        0.045141744460071395
+      ],
+      [
+        "f",
+        0.026023189452393698
+      ],
+      [
+        "and",
+        0.01907239720396345
+      ],
+      [
+        "we",
+        -0.012445752880134034
+      ],
+      [
+        "know",
+        0.006376618753546643
+      ]
+    ]
+  },
+  {
+    "text": "Stuff",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7608757019042969,
+      0.23912428319454193
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "Smallest period gives highest frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.08605393022298813,
+      0.9139459729194641
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Smallest",
+        0.6393772810566373
+      ],
+      [
+        "period",
+        0.03633195436057798
+      ],
+      [
+        "gives",
+        0.030934596965043106
+      ],
+      [
+        "frequency",
+        -0.005944773447680914
+      ],
+      [
+        "highest",
+        -0.0035435576855438965
+      ]
+    ]
+  },
+  {
+    "text": "one period occurs in the smallest time frame in a than any other option.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0014942471170797944,
+      0.9985057711601257
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "in",
+        0.04449496851024082
+      ],
+      [
+        "time",
+        0.036695613896366865
+      ],
+      [
+        "period",
+        0.032839854507873634
+      ],
+      [
+        "smallest",
+        0.0319457144278104
+      ],
+      [
+        "frame",
+        0.02735625548793509
+      ],
+      [
+        "the",
+        0.02695359662805815
+      ],
+      [
+        "occurs",
+        0.02670571906495332
+      ],
+      [
+        "one",
+        0.023820631586169122
+      ],
+      [
+        "a",
+        0.01828211987128692
+      ],
+      [
+        "than",
+        0.017630626847359797
+      ],
+      [
+        "any",
+        0.0069130661418066374
+      ],
+      [
+        "other",
+        0.005791173305220022
+      ],
+      [
+        "option",
+        -0.0032773280541568105
+      ]
+    ]
+  },
+  {
+    "text": "the waveform has the smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0016937576001510024,
+      0.9983062744140625
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.20844219071183612
+      ],
+      [
+        "smallest",
+        0.1805839488987328
+      ],
+      [
+        "period",
+        0.17756028544659264
+      ],
+      [
+        "waveform",
+        0.14208557365425156
+      ],
+      [
+        "has",
+        0.09062508607046582
+      ]
+    ]
+  },
+  {
+    "text": "More peaks and troughs; more cycles than others",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015306331915780902,
+      0.998469352722168
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.10924848539123998
+      ],
+      [
+        "troughs",
+        0.09105846327853122
+      ],
+      [
+        "More",
+        0.07502115932785444
+      ],
+      [
+        "than",
+        0.07101916788986738
+      ],
+      [
+        "peaks",
+        0.06560983674742352
+      ],
+      [
+        "others",
+        0.0602398162772702
+      ],
+      [
+        "more",
+        0.03816259848012549
+      ],
+      [
+        "and",
+        0.010149638058720755
+      ]
+    ]
+  },
+  {
+    "text": "frequency=1/T therefore for fa=2 for fb=0.5 for fc=1 for fd=1 so we see fa>fb,fc,fd",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.006684094201773405,
+      0.9933158755302429
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "for",
+        0.09033406061411874
+      ],
+      [
+        "frequency",
+        0.060507412773344975
+      ],
+      [
+        "1",
+        0.05016464924290432
+      ],
+      [
+        "therefore",
+        0.04631595061091422
+      ],
+      [
+        "5",
+        0.03691274632915376
+      ],
+      [
+        "0",
+        0.029802722474004617
+      ],
+      [
+        "2",
+        0.02375340944733994
+      ],
+      [
+        "we",
+        0.02337246076391251
+      ],
+      [
+        "fd",
+        0.016021298419825882
+      ],
+      [
+        "so",
+        0.013104273759313806
+      ],
+      [
+        "fb",
+        0.01288926163707105
+      ],
+      [
+        "fa",
+        -0.00907047102492
+      ],
+      [
+        "see",
+        -0.007110806769260047
+      ],
+      [
+        "T",
+        0.006762245818982239
+      ],
+      [
+        "fc",
+        -0.003863889302429368
+      ]
+    ]
+  },
+  {
+    "text": "a was chosen because it has more times that it goes back to its original point which is its frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019163788529112935,
+      0.9980835914611816
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "times",
+        0.19049012504876858
+      ],
+      [
+        "more",
+        0.10500080035838508
+      ],
+      [
+        "its",
+        0.08496128078643123
+      ],
+      [
+        "chosen",
+        0.05905235272841794
+      ],
+      [
+        "a",
+        0.056802184182885795
+      ],
+      [
+        "it",
+        0.052222326838487355
+      ],
+      [
+        "original",
+        0.05145367759760928
+      ],
+      [
+        "point",
+        0.05011028756091455
+      ],
+      [
+        "which",
+        0.04713307473437314
+      ],
+      [
+        "has",
+        0.04557266428275856
+      ],
+      [
+        "frequency",
+        -0.03458059721173198
+      ],
+      [
+        "was",
+        0.022448443707462244
+      ],
+      [
+        "goes",
+        -0.018142761318692725
+      ],
+      [
+        "that",
+        0.01128706699356002
+      ],
+      [
+        "back",
+        -0.008369930806109758
+      ],
+      [
+        "because",
+        -0.007390338754205939
+      ],
+      [
+        "to",
+        0.00490438760583328
+      ],
+      [
+        "is",
+        0.0032342760213141856
+      ]
+    ]
+  },
+  {
+    "text": "the function in a completes more repetions of itself than any other in one second therefore it has higher frequency, a shorter period means a higher frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002069338457658887,
+      0.9979307055473328
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "in",
+        0.019824948212466605
+      ],
+      [
+        "period",
+        0.01710236750917845
+      ],
+      [
+        "repetions",
+        0.015376986777241253
+      ],
+      [
+        "shorter",
+        0.012835231912455888
+      ],
+      [
+        "a",
+        0.012325376278442964
+      ],
+      [
+        "completes",
+        0.012206709170550119
+      ],
+      [
+        "function",
+        0.012111634633591781
+      ],
+      [
+        "second",
+        0.011794626722664616
+      ],
+      [
+        "more",
+        0.010995444457763705
+      ],
+      [
+        "other",
+        0.010268806541242851
+      ],
+      [
+        "than",
+        0.005840335504083494
+      ],
+      [
+        "higher",
+        0.0058299438842657585
+      ],
+      [
+        "one",
+        0.005157685447241328
+      ],
+      [
+        "therefore",
+        0.003684269465586606
+      ],
+      [
+        "of",
+        0.0035757301888155076
+      ],
+      [
+        "itself",
+        0.003316999472746152
+      ],
+      [
+        "the",
+        0.0022194338047917387
+      ],
+      [
+        "it",
+        0.002021706633758697
+      ],
+      [
+        "has",
+        -0.0017365795850187093
+      ],
+      [
+        "frequency",
+        0.0006941697146561089
+      ]
+    ]
+  },
+  {
+    "text": "the signal completes two periods in 1 second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015978974988684058,
+      0.9984021186828613
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.1968052025171213
+      ],
+      [
+        "second",
+        0.1113682535686421
+      ],
+      [
+        "1",
+        0.07382555466908036
+      ],
+      [
+        "completes",
+        0.07299620800931343
+      ],
+      [
+        "in",
+        0.07125720096008972
+      ],
+      [
+        "two",
+        0.06391928488788144
+      ],
+      [
+        "the",
+        0.05973784031991364
+      ],
+      [
+        "signal",
+        0.0515753140120364
+      ]
+    ]
+  },
+  {
+    "text": "There are the highest amount of periods over the same time",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0026563499122858047,
+      0.9973437190055847
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.0823941941831405
+      ],
+      [
+        "time",
+        0.05724353894949831
+      ],
+      [
+        "the",
+        0.05425040812790304
+      ],
+      [
+        "amount",
+        0.051215554205921526
+      ],
+      [
+        "highest",
+        0.04242809767679216
+      ],
+      [
+        "There",
+        0.03797232840713049
+      ],
+      [
+        "same",
+        0.03684677232190943
+      ],
+      [
+        "of",
+        0.031646154327060944
+      ],
+      [
+        "are",
+        0.029534008607898118
+      ],
+      [
+        "over",
+        0.025339195590551478
+      ]
+    ]
+  },
+  {
+    "text": "smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09930736571550369,
+      0.9006926417350769
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.3708074184905042
+      ],
+      [
+        "period",
+        -0.09016745550310568
+      ]
+    ]
+  },
+  {
+    "text": "Because the period in wave a) is a lot smaller, therefore providing a higher frequency.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002082834718748927,
+      0.997917115688324
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.15290116775207016
+      ],
+      [
+        "smaller",
+        0.0945455065520484
+      ],
+      [
+        "in",
+        0.052846570654019875
+      ],
+      [
+        "a",
+        0.04800155913160606
+      ],
+      [
+        "wave",
+        0.035344640323247294
+      ],
+      [
+        "the",
+        0.029374837826329783
+      ],
+      [
+        "is",
+        0.027889103902666756
+      ],
+      [
+        "frequency",
+        -0.02665843243613713
+      ],
+      [
+        "providing",
+        -0.02541581318916779
+      ],
+      [
+        "lot",
+        0.012393640106848436
+      ],
+      [
+        "higher",
+        0.008875769562023185
+      ],
+      [
+        "Because",
+        0.008360579884196154
+      ],
+      [
+        "therefore",
+        -0.0060280228494222965
+      ]
+    ]
+  },
+  {
+    "text": "Since frequency is calculated by f = 1/P where P is the period, Signal A would have the highest frequency due to it having the smallest period.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0024026583414524794,
+      0.9975972771644592
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.07761763415097779
+      ],
+      [
+        "the",
+        0.044621610207029705
+      ],
+      [
+        "is",
+        0.040276053116333525
+      ],
+      [
+        "smallest",
+        0.03143567790964447
+      ],
+      [
+        "where",
+        0.02746479996584048
+      ],
+      [
+        "calculated",
+        0.023377366694021972
+      ],
+      [
+        "frequency",
+        0.023048844909136217
+      ],
+      [
+        "highest",
+        0.021282431759265932
+      ],
+      [
+        "1",
+        0.018063320319107238
+      ],
+      [
+        "would",
+        -0.0176493524784065
+      ],
+      [
+        "by",
+        0.011552920414537923
+      ],
+      [
+        "it",
+        0.009765463154464629
+      ],
+      [
+        "P",
+        0.009437422943174113
+      ],
+      [
+        "due",
+        -0.007711676400473147
+      ],
+      [
+        "Signal",
+        -0.007599214216342233
+      ],
+      [
+        "having",
+        0.006939209177578979
+      ],
+      [
+        "have",
+        0.0058476207358584015
+      ],
+      [
+        "A",
+        0.005575913278693439
+      ],
+      [
+        "Since",
+        0.004560154169085386
+      ],
+      [
+        "to",
+        -0.0037802605645059603
+      ]
+    ]
+  },
+  {
+    "text": "Signal (a) has the most oscillations in a single time period.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015027181943878531,
+      0.9984973073005676
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.03681275215449491
+      ],
+      [
+        "most",
+        0.029996458863382855
+      ],
+      [
+        "a",
+        0.02366008191600409
+      ],
+      [
+        "period",
+        0.022982238758287397
+      ],
+      [
+        "Signal",
+        0.01642826128677284
+      ],
+      [
+        "time",
+        0.01577245676805021
+      ],
+      [
+        "single",
+        0.014109951741962919
+      ],
+      [
+        "the",
+        0.013300052478573077
+      ],
+      [
+        "in",
+        0.01096433985141558
+      ],
+      [
+        "has",
+        0.009437000349991438
+      ]
+    ]
+  },
+  {
+    "text": "Smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09873282164335251,
+      0.9012672305107117
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Smallest",
+        0.3711123388210661
+      ],
+      [
+        "period",
+        -0.09013461724868571
+      ]
+    ]
+  },
+  {
+    "text": "repeats the most frequently ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0026721011381596327,
+      0.9973278641700745
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.5518651759675288
+      ],
+      [
+        "frequently",
+        0.26176146024796254
+      ],
+      [
+        "the",
+        0.26173479250444687
+      ],
+      [
+        "repeats",
+        0.25925450889534407
+      ]
+    ]
+  },
+  {
+    "text": "It has the smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.01715170405805111,
+      0.9828482270240784
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.3165925155367371
+      ],
+      [
+        "period",
+        0.2688081856572784
+      ],
+      [
+        "the",
+        0.2015163638399948
+      ],
+      [
+        "It",
+        0.09450619149911842
+      ],
+      [
+        "has",
+        0.06560370986463213
+      ]
+    ]
+  },
+  {
+    "text": "The function completes the most cycles per time division",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002095063915476203,
+      0.9979049563407898
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.09548297056193204
+      ],
+      [
+        "time",
+        0.08633968712654731
+      ],
+      [
+        "cycles",
+        0.07967544867238499
+      ],
+      [
+        "per",
+        0.04828375127935799
+      ],
+      [
+        "The",
+        0.046813894011061744
+      ],
+      [
+        "the",
+        0.04216786386930581
+      ],
+      [
+        "function",
+        0.03870502066689391
+      ],
+      [
+        "division",
+        0.02885789167452529
+      ],
+      [
+        "completes",
+        0.024128981729809783
+      ]
+    ]
+  },
+  {
+    "text": "Because it has the shortest period and frequency is 1/T",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0016539134085178375,
+      0.9983460903167725
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shortest",
+        0.24447665021012963
+      ],
+      [
+        "period",
+        0.19664540759725066
+      ],
+      [
+        "the",
+        0.07138748438627125
+      ],
+      [
+        "is",
+        0.05878240082002915
+      ],
+      [
+        "1",
+        0.0561332910042038
+      ],
+      [
+        "has",
+        0.05063234229512846
+      ],
+      [
+        "T",
+        0.03434652437225706
+      ],
+      [
+        "it",
+        0.02180503770200689
+      ],
+      [
+        "and",
+        0.01757542287512343
+      ],
+      [
+        "frequency",
+        0.01517181638625965
+      ],
+      [
+        "Because",
+        0.01306680652205181
+      ]
+    ]
+  },
+  {
+    "text": "because T= 1/f0",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6672737002372742,
+      0.3327263295650482
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "because",
+        -0.04237776765621482
+      ],
+      [
+        "f0",
+        -0.025251325250959567
+      ],
+      [
+        "1",
+        -0.019845135135420442
+      ],
+      [
+        "T",
+        -0.00445216797346114
+      ]
+    ]
+  },
+  {
+    "text": "most iterations per period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0023988236207515,
+      0.9976012110710144
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.37575458306751824
+      ],
+      [
+        "iterations",
+        0.36225721108252446
+      ],
+      [
+        "period",
+        0.30164994326455796
+      ],
+      [
+        "per",
+        0.11011829303257283
+      ]
+    ]
+  },
+  {
+    "text": "because",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7696728110313416,
+      0.23032720386981964
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "there are the most waves per unit of time ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018196217715740204,
+      0.9981803894042969
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.09387298800544529
+      ],
+      [
+        "time",
+        0.09272792001400595
+      ],
+      [
+        "per",
+        0.0634378631068924
+      ],
+      [
+        "waves",
+        0.06321611859774348
+      ],
+      [
+        "unit",
+        0.06203748437439454
+      ],
+      [
+        "the",
+        0.050337377249076734
+      ],
+      [
+        "there",
+        0.035371180559028395
+      ],
+      [
+        "are",
+        0.03427863891690545
+      ],
+      [
+        "of",
+        0.03403731783679277
+      ]
+    ]
+  },
+  {
+    "text": "Due to the response exhibiting the highest amount of cycles per unit T",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0017049029702320695,
+      0.9982951283454895
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.10337504770494994
+      ],
+      [
+        "amount",
+        0.07781270430999346
+      ],
+      [
+        "unit",
+        0.05974428263518704
+      ],
+      [
+        "highest",
+        0.05924170845953792
+      ],
+      [
+        "of",
+        0.04851311340272715
+      ],
+      [
+        "per",
+        0.037916852653270265
+      ],
+      [
+        "the",
+        0.03543577781680477
+      ],
+      [
+        "exhibiting",
+        0.02713138747525873
+      ],
+      [
+        "Due",
+        0.019609233738976467
+      ],
+      [
+        "T",
+        0.019526318730058324
+      ],
+      [
+        "to",
+        0.010501062640507985
+      ],
+      [
+        "response",
+        0.0038876721136465687
+      ]
+    ]
+  },
+  {
+    "text": "had all the peaks",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7356837391853333,
+      0.26431623101234436
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "all",
+        0.00886915324513547
+      ],
+      [
+        "peaks",
+        0.004391339897560042
+      ],
+      [
+        "the",
+        0.004194006919406182
+      ],
+      [
+        "had",
+        0.0010908373084882277
+      ]
+    ]
+  },
+  {
+    "text": "Maximum number of waveforms over a period of time",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019448883831501007,
+      0.9980551600456238
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "waveforms",
+        0.12381744411660775
+      ],
+      [
+        "period",
+        0.07554008407659667
+      ],
+      [
+        "of",
+        0.07365056320605431
+      ],
+      [
+        "time",
+        0.06398684519226683
+      ],
+      [
+        "Maximum",
+        0.055962564884498085
+      ],
+      [
+        "a",
+        0.04988182056922754
+      ],
+      [
+        "number",
+        0.03627963715679804
+      ],
+      [
+        "over",
+        0.022698205117712877
+      ]
+    ]
+  },
+  {
+    "text": "a has the smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018506381893530488,
+      0.9981493353843689
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.3239039542340784
+      ],
+      [
+        "period",
+        0.2565683670060818
+      ],
+      [
+        "the",
+        0.24941193050196295
+      ],
+      [
+        "a",
+        0.12604317934695272
+      ],
+      [
+        "has",
+        0.1179558369232062
+      ]
+    ]
+  },
+  {
+    "text": "more cycles per period ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.03490151837468147,
+      0.9650984406471252
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.5695825669432754
+      ],
+      [
+        "period",
+        0.25270149380252876
+      ],
+      [
+        "more",
+        0.06828860718182722
+      ],
+      [
+        "per",
+        0.025347233260763328
+      ]
+    ]
+  },
+  {
+    "text": "Because it's correct",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6767995357513428,
+      0.3232004940509796
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Because",
+        -0.03682360767098045
+      ],
+      [
+        "s",
+        -0.03667866067427846
+      ],
+      [
+        "it",
+        -0.013735335901517817
+      ],
+      [
+        "correct",
+        -0.0005559206303485632
+      ]
+    ]
+  },
+  {
+    "text": ".",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7561349868774414,
+      0.24386507272720337
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "a) because the signal past more many time from -1 to 1 in the same time period from the rest, ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001622120849788189,
+      0.9983778595924377
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.04136384801416723
+      ],
+      [
+        "time",
+        0.03952460241333735
+      ],
+      [
+        "many",
+        0.031043111383423104
+      ],
+      [
+        "the",
+        0.02654893324434892
+      ],
+      [
+        "1",
+        0.022170140419619885
+      ],
+      [
+        "from",
+        0.021068411673731833
+      ],
+      [
+        "because",
+        0.01720122837430397
+      ],
+      [
+        "more",
+        0.014996197440486452
+      ],
+      [
+        "in",
+        0.014391032166409622
+      ],
+      [
+        "same",
+        0.011462293241992173
+      ],
+      [
+        "a",
+        0.011121302962398091
+      ],
+      [
+        "to",
+        0.008045985075191107
+      ],
+      [
+        "past",
+        0.007910584377656384
+      ],
+      [
+        "rest",
+        -0.003088520321482393
+      ],
+      [
+        "signal",
+        0.002587781660373499
+      ]
+    ]
+  },
+  {
+    "text": "Most cycles per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.05168258771300316,
+      0.9483173489570618
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Most",
+        0.34638532759455654
+      ],
+      [
+        "second",
+        0.2656465140444771
+      ],
+      [
+        "per",
+        0.17024581935158994
+      ],
+      [
+        "cycles",
+        0.15809239738397227
+      ]
+    ]
+  },
+  {
+    "text": "1/T = f",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7214615941047668,
+      0.27853837609291077
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "f",
+        -0.022222336830400823
+      ],
+      [
+        "1",
+        -0.022179120929349705
+      ],
+      [
+        "T",
+        -0.012939492597829767
+      ]
+    ]
+  },
+  {
+    "text": "Due to the most amount of cycles in the time period. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015373782953247428,
+      0.9984626173973083
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.07492987716647607
+      ],
+      [
+        "most",
+        0.06841970965496175
+      ],
+      [
+        "period",
+        0.04877650620244854
+      ],
+      [
+        "time",
+        0.03894991301151315
+      ],
+      [
+        "amount",
+        0.03748122512581935
+      ],
+      [
+        "in",
+        0.03418805205585748
+      ],
+      [
+        "the",
+        0.028244817368514127
+      ],
+      [
+        "of",
+        0.019491623361595597
+      ],
+      [
+        "Due",
+        0.013533840456394521
+      ],
+      [
+        "to",
+        0.009779222354438562
+      ]
+    ]
+  },
+  {
+    "text": "It repeats the most frequently in the same amount of time as the others",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0028881917241960764,
+      0.9971117973327637
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.039786211488958764
+      ],
+      [
+        "most",
+        0.03937116495282669
+      ],
+      [
+        "frequently",
+        0.030780504498601154
+      ],
+      [
+        "time",
+        0.028643429229216925
+      ],
+      [
+        "amount",
+        0.026414078141233283
+      ],
+      [
+        "repeats",
+        0.023737884987740817
+      ],
+      [
+        "others",
+        0.021936005069846092
+      ],
+      [
+        "in",
+        0.01738848608845997
+      ],
+      [
+        "same",
+        0.016217528662843032
+      ],
+      [
+        "of",
+        0.014221461289446997
+      ],
+      [
+        "as",
+        0.00927209696743001
+      ],
+      [
+        "It",
+        0.0032802704841518723
+      ]
+    ]
+  },
+  {
+    "text": "a has the most oscillations per period f=1/t",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0017873798497021198,
+      0.9982126355171204
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.1450731508209604
+      ],
+      [
+        "most",
+        0.10334224447136889
+      ],
+      [
+        "period",
+        0.10066200347320778
+      ],
+      [
+        "the",
+        0.07125575102335582
+      ],
+      [
+        "per",
+        0.0337301698403709
+      ],
+      [
+        "f",
+        0.03315871080976149
+      ],
+      [
+        "a",
+        0.02806244282892747
+      ],
+      [
+        "has",
+        0.025191758799969932
+      ],
+      [
+        "1",
+        0.019782854986335516
+      ],
+      [
+        "t",
+        0.00954667418521218
+      ]
+    ]
+  },
+  {
+    "text": "The wave completes a cycle more regularly than the other options ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0022682929411530495,
+      0.9977316856384277
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "than",
+        0.1407508023522507
+      ],
+      [
+        "more",
+        0.11144782427264843
+      ],
+      [
+        "cycle",
+        0.07777562622951902
+      ],
+      [
+        "the",
+        0.06587784471501705
+      ],
+      [
+        "regularly",
+        0.06355765660685353
+      ],
+      [
+        "a",
+        0.056026366051161104
+      ],
+      [
+        "wave",
+        0.04892071331800838
+      ],
+      [
+        "completes",
+        0.043815291296163766
+      ],
+      [
+        "The",
+        0.04280696971520587
+      ],
+      [
+        "other",
+        0.041153497263506734
+      ],
+      [
+        "options",
+        0.0032570578237202078
+      ]
+    ]
+  },
+  {
+    "text": "Because it has 2 periods per 1t, in comparison to c and d which both have 1, and b which has half a period per t",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0015595875447615981,
+      0.9984404444694519
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.03103731391319814
+      ],
+      [
+        "periods",
+        0.02343646397989309
+      ],
+      [
+        "which",
+        0.0192677289362463
+      ],
+      [
+        "has",
+        0.018532102331676837
+      ],
+      [
+        "per",
+        0.017739949914970018
+      ],
+      [
+        "half",
+        0.01284789728723318
+      ],
+      [
+        "b",
+        0.009267357741544227
+      ],
+      [
+        "1t",
+        0.009077182113968196
+      ],
+      [
+        "2",
+        0.008538060699284467
+      ],
+      [
+        "have",
+        0.007737124927567447
+      ],
+      [
+        "1",
+        0.007169991090419741
+      ],
+      [
+        "and",
+        0.006892577697273843
+      ],
+      [
+        "both",
+        0.006166466648331642
+      ],
+      [
+        "comparison",
+        0.005092196077293878
+      ],
+      [
+        "c",
+        0.004814465621349184
+      ],
+      [
+        "to",
+        -0.004297192170599902
+      ],
+      [
+        "t",
+        0.0037368824501905766
+      ],
+      [
+        "it",
+        0.0037209668661984346
+      ],
+      [
+        "Because",
+        0.002659763982017287
+      ],
+      [
+        "in",
+        0.00255360521869041
+      ]
+    ]
+  },
+  {
+    "text": "NANANANNA",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7452324032783508,
+      0.25476759672164917
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "Because there is more cycles per second in a) than in any other",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0014422377571463585,
+      0.9985578060150146
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.06809659771765064
+      ],
+      [
+        "in",
+        0.06215454778339509
+      ],
+      [
+        "than",
+        0.043343875626348394
+      ],
+      [
+        "second",
+        0.0409939328374615
+      ],
+      [
+        "per",
+        0.029102878153155397
+      ],
+      [
+        "more",
+        0.027785290150388744
+      ],
+      [
+        "a",
+        0.026433847256259642
+      ],
+      [
+        "there",
+        0.026293119121470154
+      ],
+      [
+        "Because",
+        0.019391086508284232
+      ],
+      [
+        "any",
+        0.018438848004951755
+      ],
+      [
+        "is",
+        0.017039840146255102
+      ],
+      [
+        "other",
+        0.01202987125166781
+      ]
+    ]
+  },
+  {
+    "text": "most periods in the shortest time",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0038964170962572098,
+      0.9961035251617432
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.13074502295190943
+      ],
+      [
+        "shortest",
+        0.11658003729349486
+      ],
+      [
+        "most",
+        0.11185892876994476
+      ],
+      [
+        "time",
+        0.09594853448917938
+      ],
+      [
+        "the",
+        0.07679587327305884
+      ],
+      [
+        "in",
+        0.06921676570075862
+      ]
+    ]
+  },
+  {
+    "text": "shortest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09912378340959549,
+      0.9008762240409851
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shortest",
+        0.3231045458660817
+      ],
+      [
+        "period",
+        -0.007963762993259994
+      ]
+    ]
+  },
+  {
+    "text": "a has more cycles per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.029440542683005333,
+      0.9705594182014465
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.27523938695396544
+      ],
+      [
+        "second",
+        0.23308776148548382
+      ],
+      [
+        "per",
+        0.1730595796089735
+      ],
+      [
+        "a",
+        0.11593394322835766
+      ],
+      [
+        "has",
+        0.10872572805372532
+      ],
+      [
+        "more",
+        0.09960077923885335
+      ]
+    ]
+  },
+  {
+    "text": "Because there are two full periods within one unit of time. The other signals have one or less full periods per unit of time. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001533403410576284,
+      0.9984665513038635
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.045536992921712066
+      ],
+      [
+        "time",
+        0.02537071022744584
+      ],
+      [
+        "unit",
+        0.023662753108181462
+      ],
+      [
+        "less",
+        0.018325604018493123
+      ],
+      [
+        "per",
+        0.017561428632386376
+      ],
+      [
+        "within",
+        0.016366554353533982
+      ],
+      [
+        "of",
+        0.015987088104020063
+      ],
+      [
+        "are",
+        0.014213516014059971
+      ],
+      [
+        "one",
+        0.012266722970062894
+      ],
+      [
+        "there",
+        -0.011934211313782719
+      ],
+      [
+        "two",
+        0.011494911776694353
+      ],
+      [
+        "full",
+        0.01136393223707904
+      ],
+      [
+        "signals",
+        0.010828550895306746
+      ],
+      [
+        "Because",
+        0.009436391478265173
+      ],
+      [
+        "other",
+        0.00846521549921782
+      ],
+      [
+        "The",
+        0.007199180190538539
+      ],
+      [
+        "have",
+        -0.0031536306087188025
+      ],
+      [
+        "or",
+        0.0013003529205440128
+      ]
+    ]
+  },
+  {
+    "text": "the functions period is the smallest",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002467460697516799,
+      0.9975325465202332
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.24952433031890406
+      ],
+      [
+        "period",
+        0.23473304371197454
+      ],
+      [
+        "smallest",
+        0.23418992505872524
+      ],
+      [
+        "is",
+        0.12100938974426068
+      ],
+      [
+        "functions",
+        0.11665313328326993
+      ]
+    ]
+  },
+  {
+    "text": "Becauseasdfa",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7140483856201172,
+      0.2859515845775604
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "It has the most iterations of its period within a 1 second interval. The freq of a is 2Hz",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001594218541868031,
+      0.9984057545661926
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.029547031106222425
+      ],
+      [
+        "most",
+        0.023056597609717303
+      ],
+      [
+        "within",
+        0.02027710263937318
+      ],
+      [
+        "second",
+        0.020254870916523532
+      ],
+      [
+        "iterations",
+        0.017790271256451873
+      ],
+      [
+        "2Hz",
+        0.017285272133570704
+      ],
+      [
+        "1",
+        0.013750595173161675
+      ],
+      [
+        "It",
+        0.01288247861098986
+      ],
+      [
+        "the",
+        0.011091178398741724
+      ],
+      [
+        "of",
+        0.010632163049093181
+      ],
+      [
+        "a",
+        0.009652801212267408
+      ],
+      [
+        "has",
+        0.007264772280913996
+      ],
+      [
+        "interval",
+        0.00602986682557998
+      ],
+      [
+        "freq",
+        0.004976725237000243
+      ],
+      [
+        "its",
+        0.004886627570231555
+      ],
+      [
+        "is",
+        0.0028678551759590797
+      ],
+      [
+        "The",
+        -0.0007595046890730139
+      ]
+    ]
+  },
+  {
+    "text": "greatest number of periods",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0857829824090004,
+      0.9142169952392578
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.32244811290630365
+      ],
+      [
+        "greatest",
+        0.3079060649386241
+      ],
+      [
+        "number",
+        0.17272672672405456
+      ],
+      [
+        "of",
+        0.13023013436647296
+      ]
+    ]
+  },
+  {
+    "text": "Because f = 1/T and T is equal to 0.5. Therefore, It will be the ans.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0028700195252895355,
+      0.9971299767494202
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "equal",
+        0.17520147950095438
+      ],
+      [
+        "5",
+        0.1188587711151149
+      ],
+      [
+        "1",
+        0.10637131714276808
+      ],
+      [
+        "to",
+        0.09400984199724419
+      ],
+      [
+        "Therefore",
+        0.08805355985197616
+      ],
+      [
+        "0",
+        0.08312874218461062
+      ],
+      [
+        "is",
+        0.06357730958722055
+      ],
+      [
+        "T",
+        0.047716971817483855
+      ],
+      [
+        "and",
+        0.043965222436183685
+      ],
+      [
+        "the",
+        0.026044594742274642
+      ],
+      [
+        "f",
+        0.02366293549155528
+      ],
+      [
+        "ans",
+        0.022925171949827176
+      ],
+      [
+        "Because",
+        0.018824826364138302
+      ],
+      [
+        "will",
+        -0.01701009473228614
+      ],
+      [
+        "be",
+        0.005627521913577079
+      ],
+      [
+        "It",
+        0.0008513421920998158
+      ]
+    ]
+  },
+  {
+    "text": "A has the smallest period, T, which means, since frequency = 1/T, that the smallest period makes for the largest frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.00495857372879982,
+      0.9950414299964905
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.03166247218400513
+      ],
+      [
+        "period",
+        0.029917326586930228
+      ],
+      [
+        "the",
+        0.026507103361885786
+      ],
+      [
+        "1",
+        0.021459663242160743
+      ],
+      [
+        "largest",
+        0.019881535030723207
+      ],
+      [
+        "frequency",
+        0.016486485439725217
+      ],
+      [
+        "since",
+        0.009526253647655213
+      ],
+      [
+        "for",
+        0.0092224781387878
+      ],
+      [
+        "has",
+        0.007117038538897621
+      ],
+      [
+        "T",
+        0.004513589574381587
+      ],
+      [
+        "which",
+        0.0037329149377373343
+      ],
+      [
+        "A",
+        0.0031101733649460273
+      ],
+      [
+        "makes",
+        -0.0014881310731656406
+      ],
+      [
+        "means",
+        0.0007243700834043375
+      ],
+      [
+        "that",
+        0.000555861333211387
+      ]
+    ]
+  },
+  {
+    "text": "Most number of waves in a certain span of time / shortest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019239283865317702,
+      0.9980760216712952
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Most",
+        0.04755830557568425
+      ],
+      [
+        "period",
+        0.04476100470682528
+      ],
+      [
+        "time",
+        0.03731887562502678
+      ],
+      [
+        "waves",
+        0.03641783032743119
+      ],
+      [
+        "of",
+        0.032984015614126186
+      ],
+      [
+        "shortest",
+        0.02285231152930372
+      ],
+      [
+        "certain",
+        0.02022444819564698
+      ],
+      [
+        "in",
+        0.01991168150549394
+      ],
+      [
+        "span",
+        0.014034146694769324
+      ],
+      [
+        "number",
+        0.011733207457288638
+      ],
+      [
+        "a",
+        0.00967540344740157
+      ]
+    ]
+  },
+  {
+    "text": "a",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7607347369194031,
+      0.2392653375864029
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "Waves closer",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.3934718370437622,
+      0.6065281629562378
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Waves",
+        0.1111522829135009
+      ],
+      [
+        "closer",
+        0.10144511392754203
+      ]
+    ]
+  },
+  {
+    "text": "more pulses per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.04507703706622124,
+      0.9549229741096497
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "second",
+        0.43464452337178233
+      ],
+      [
+        "pulses",
+        0.30598528732469465
+      ],
+      [
+        "per",
+        0.22609868855962534
+      ],
+      [
+        "more",
+        0.06566871971293133
+      ]
+    ]
+  },
+  {
+    "text": "greater frequency = greater amount of periods in given time",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.003137451596558094,
+      0.9968625903129578
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.1065661901925791
+      ],
+      [
+        "time",
+        0.09259595021368239
+      ],
+      [
+        "in",
+        0.06629626925023405
+      ],
+      [
+        "given",
+        0.06611062824269068
+      ],
+      [
+        "of",
+        0.062409263125866796
+      ],
+      [
+        "amount",
+        0.049202048639875
+      ],
+      [
+        "greater",
+        0.042350934217741734
+      ],
+      [
+        "frequency",
+        0.01079076041023585
+      ]
+    ]
+  },
+  {
+    "text": "freq = 1/T period = 0.5 = 2Hz which is larger than the others.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002457552822306752,
+      0.9975424408912659
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "larger",
+        0.0641213305399246
+      ],
+      [
+        "period",
+        0.06027629096379244
+      ],
+      [
+        "2Hz",
+        0.05351252601831687
+      ],
+      [
+        "others",
+        0.032983021334835036
+      ],
+      [
+        "than",
+        0.031596216853258086
+      ],
+      [
+        "which",
+        0.03029460318530345
+      ],
+      [
+        "is",
+        0.026428501034774694
+      ],
+      [
+        "0",
+        0.02298100743368614
+      ],
+      [
+        "5",
+        0.020205876032819668
+      ],
+      [
+        "the",
+        0.018673082604527255
+      ],
+      [
+        "freq",
+        0.011906418392143028
+      ],
+      [
+        "1",
+        0.009234231632826577
+      ],
+      [
+        "T",
+        -0.0014657967988214744
+      ]
+    ]
+  },
+  {
+    "text": "highest number of waves per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09340395778417587,
+      0.9065960049629211
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "second",
+        0.17049232891323968
+      ],
+      [
+        "waves",
+        0.15981823911795973
+      ],
+      [
+        "per",
+        0.13272321422449893
+      ],
+      [
+        "number",
+        0.12955108283771402
+      ],
+      [
+        "highest",
+        0.12453646116886932
+      ],
+      [
+        "of",
+        0.07899005987986595
+      ]
+    ]
+  },
+  {
+    "text": "The waves are closer together, showing that it takes less time to complete one cycle, and frequency is equal to 1/T.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001628316007554531,
+      0.9983716607093811
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "equal",
+        0.041156243629272955
+      ],
+      [
+        "less",
+        0.03673911971743537
+      ],
+      [
+        "1",
+        0.02911893299727532
+      ],
+      [
+        "closer",
+        0.026286018022302748
+      ],
+      [
+        "frequency",
+        0.024340402004326262
+      ],
+      [
+        "are",
+        0.022421096550370785
+      ],
+      [
+        "together",
+        0.01797038215557664
+      ],
+      [
+        "waves",
+        0.016737905439026982
+      ],
+      [
+        "one",
+        0.016358190334095666
+      ],
+      [
+        "The",
+        0.016158036745114103
+      ],
+      [
+        "cycle",
+        0.014708015446329431
+      ],
+      [
+        "showing",
+        0.012781891344971636
+      ],
+      [
+        "time",
+        0.012716120705343012
+      ],
+      [
+        "T",
+        -0.011850742804402705
+      ],
+      [
+        "takes",
+        0.004322636300897
+      ],
+      [
+        "to",
+        -0.0023301557093194517
+      ],
+      [
+        "complete",
+        0.0022720639093797208
+      ],
+      [
+        "is",
+        0.0022272172895596324
+      ],
+      [
+        "that",
+        0.0018354364841742326
+      ],
+      [
+        "it",
+        -0.001639707835736196
+      ]
+    ]
+  },
+  {
+    "text": "More cycles occur within the same period than the other signals",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001333822961896658,
+      0.9986662268638611
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.05821882507364057
+      ],
+      [
+        "cycles",
+        0.05118537489429646
+      ],
+      [
+        "the",
+        0.0487685629691349
+      ],
+      [
+        "occur",
+        0.042296681937951434
+      ],
+      [
+        "within",
+        0.04046318597688104
+      ],
+      [
+        "than",
+        0.038449329482769086
+      ],
+      [
+        "same",
+        0.03272794668462958
+      ],
+      [
+        "More",
+        0.031388725742600064
+      ],
+      [
+        "signals",
+        0.024637174456586607
+      ],
+      [
+        "other",
+        0.017826205636632442
+      ]
+    ]
+  },
+  {
+    "text": "the more waves in a second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001969722332432866,
+      0.9980302453041077
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "waves",
+        0.30730847832191033
+      ],
+      [
+        "second",
+        0.23442721856195375
+      ],
+      [
+        "the",
+        0.18740194470928856
+      ],
+      [
+        "in",
+        0.17451204914751112
+      ],
+      [
+        "more",
+        0.13000358623662492
+      ],
+      [
+        "a",
+        0.08569909710975912
+      ]
+    ]
+  },
+  {
+    "text": "I counted the peaks between any 2 time points (ie between t=1 and t=2) and the one with the highest number of peaks will result in the highest frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018191999988630414,
+      0.9981808662414551
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "between",
+        0.01705844838480627
+      ],
+      [
+        "the",
+        0.0166781692372377
+      ],
+      [
+        "points",
+        0.015189622278369192
+      ],
+      [
+        "time",
+        0.014840935999192046
+      ],
+      [
+        "number",
+        0.01350042188826249
+      ],
+      [
+        "peaks",
+        0.01231097074494931
+      ],
+      [
+        "highest",
+        0.011279955051493864
+      ],
+      [
+        "t",
+        0.009738269860442813
+      ],
+      [
+        "2",
+        0.007750749945303317
+      ],
+      [
+        "will",
+        -0.00749087342609571
+      ],
+      [
+        "ie",
+        0.006516445671146996
+      ],
+      [
+        "with",
+        0.005339150524259757
+      ],
+      [
+        "counted",
+        0.0048745834202825996
+      ],
+      [
+        "result",
+        0.004839643743267738
+      ],
+      [
+        "and",
+        0.004194584105870369
+      ],
+      [
+        "1",
+        0.003896665348099897
+      ],
+      [
+        "one",
+        -0.0027120053920870442
+      ],
+      [
+        "frequency",
+        0.002162372857638804
+      ],
+      [
+        "of",
+        0.0019923803580351638
+      ],
+      [
+        "any",
+        0.0017294219368413793
+      ]
+    ]
+  },
+  {
+    "text": "f=1/t, where a has the smallest t",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002030978910624981,
+      0.9979689717292786
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.3319000246380569
+      ],
+      [
+        "where",
+        0.12699356600802372
+      ],
+      [
+        "the",
+        0.11165930456100642
+      ],
+      [
+        "has",
+        0.11130758006873681
+      ],
+      [
+        "a",
+        0.08526877705189932
+      ],
+      [
+        "t",
+        0.08048720458760714
+      ],
+      [
+        "f",
+        0.07484836181976409
+      ],
+      [
+        "1",
+        0.03433448636202267
+      ]
+    ]
+  },
+  {
+    "text": "tr",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7578983306884766,
+      0.2421017289161682
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "f=1/T, significantly more periods in the first example.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002898700535297394,
+      0.9971013069152832
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.1312232909366783
+      ],
+      [
+        "significantly",
+        0.08676866332529203
+      ],
+      [
+        "in",
+        0.07721460933340275
+      ],
+      [
+        "more",
+        0.06279157811750617
+      ],
+      [
+        "first",
+        0.033167033950462776
+      ],
+      [
+        "example",
+        0.03040184603227382
+      ],
+      [
+        "the",
+        0.020701224983833387
+      ],
+      [
+        "f",
+        0.013560061640311486
+      ],
+      [
+        "T",
+        0.00789639866605176
+      ],
+      [
+        "1",
+        0.0054298801954739675
+      ]
+    ]
+  },
+  {
+    "text": "It has the highest frequency because it has the smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002317100530490279,
+      0.9976828694343567
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.2326163361140568
+      ],
+      [
+        "period",
+        0.21805502025436416
+      ],
+      [
+        "the",
+        0.15490428032216474
+      ],
+      [
+        "highest",
+        0.047098807066773336
+      ],
+      [
+        "It",
+        0.04544993566555631
+      ],
+      [
+        "has",
+        0.04409826904369601
+      ],
+      [
+        "it",
+        0.030466708200637453
+      ],
+      [
+        "because",
+        -0.013098175161673409
+      ],
+      [
+        "frequency",
+        -0.011032199564696449
+      ]
+    ]
+  },
+  {
+    "text": "(a), because the wave has more completing periods than the other waves within 4 seconds. (One cycle is repeated alot more.)",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.00237334449775517,
+      0.9976267218589783
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "seconds",
+        0.016753581927238807
+      ],
+      [
+        "periods",
+        0.015445471862841764
+      ],
+      [
+        "waves",
+        0.01110011703472176
+      ],
+      [
+        "more",
+        0.009650736395215782
+      ],
+      [
+        "the",
+        0.009051779576771944
+      ],
+      [
+        "than",
+        0.008712054186632463
+      ],
+      [
+        "a",
+        0.007800933019438142
+      ],
+      [
+        "within",
+        0.007387534338927169
+      ],
+      [
+        "cycle",
+        0.006389312053181817
+      ],
+      [
+        "One",
+        0.005392720983195897
+      ],
+      [
+        "other",
+        0.0052635436635560875
+      ],
+      [
+        "completing",
+        0.005142745180825809
+      ],
+      [
+        "4",
+        0.005106429663435379
+      ],
+      [
+        "repeated",
+        0.004170823964985033
+      ],
+      [
+        "is",
+        0.0034506615429014103
+      ],
+      [
+        "wave",
+        0.0027382120687979043
+      ],
+      [
+        "alot",
+        0.0020096990236244824
+      ],
+      [
+        "has",
+        0.001808515816597211
+      ],
+      [
+        "because",
+        7.748511083081934e-05
+      ]
+    ]
+  },
+  {
+    "text": "f = 1/T",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7160778045654297,
+      0.28392213582992554
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "T",
+        -0.028655318959087992
+      ],
+      [
+        "f",
+        0.016547382843456564
+      ],
+      [
+        "1",
+        -0.0054511641749626
+      ]
+    ]
+  },
+  {
+    "text": "Frequency is 1/period. Graph A's period occurs more frequently than the other graphs, therefore have a greater frequency.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0028386134654283524,
+      0.9971613883972168
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.03303038006778533
+      ],
+      [
+        "frequently",
+        0.02389096441599034
+      ],
+      [
+        "than",
+        0.02040082405461076
+      ],
+      [
+        "more",
+        0.01812959305408231
+      ],
+      [
+        "occurs",
+        0.01755115329915529
+      ],
+      [
+        "graphs",
+        0.017103784971201134
+      ],
+      [
+        "s",
+        0.01434759563719328
+      ],
+      [
+        "other",
+        0.014172592418984586
+      ],
+      [
+        "a",
+        0.010751562035991764
+      ],
+      [
+        "the",
+        0.009115045164189275
+      ],
+      [
+        "therefore",
+        0.007896618024000344
+      ],
+      [
+        "have",
+        -0.007896616645015293
+      ],
+      [
+        "frequency",
+        0.006405944280145401
+      ],
+      [
+        "Graph",
+        0.005973088603509629
+      ],
+      [
+        "A",
+        0.005847270792165057
+      ],
+      [
+        "Frequency",
+        0.004857261578161781
+      ],
+      [
+        "1",
+        0.0035063581310717145
+      ],
+      [
+        "is",
+        -0.0009624455976600552
+      ],
+      [
+        "greater",
+        0.0007694632315911264
+      ]
+    ]
+  },
+  {
+    "text": "I believe that frequency means the most repeated versions of the signal that occur in a specified period of time",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002136885654181242,
+      0.9978631138801575
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.04468051506635856
+      ],
+      [
+        "most",
+        0.03913793707728658
+      ],
+      [
+        "time",
+        0.035414315966613256
+      ],
+      [
+        "versions",
+        0.027773512611692773
+      ],
+      [
+        "the",
+        0.024041066912113714
+      ],
+      [
+        "specified",
+        0.022058372476266224
+      ],
+      [
+        "repeated",
+        0.019998487467595808
+      ],
+      [
+        "occur",
+        0.019899932970895064
+      ],
+      [
+        "of",
+        0.017765624736216044
+      ],
+      [
+        "that",
+        0.01571073033902188
+      ],
+      [
+        "signal",
+        0.011534037913918323
+      ],
+      [
+        "believe",
+        -0.010054701116112343
+      ],
+      [
+        "means",
+        0.009254700118714944
+      ],
+      [
+        "in",
+        0.00857277179220252
+      ],
+      [
+        "a",
+        0.007189189178994408
+      ],
+      [
+        "frequency",
+        -0.00233090787589785
+      ],
+      [
+        "I",
+        -0.00012672374479405239
+      ]
+    ]
+  },
+  {
+    "text": "More cycles per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019918065518140793,
+      0.9980081915855408
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.42880768949306225
+      ],
+      [
+        "second",
+        0.3711252808704436
+      ],
+      [
+        "per",
+        0.2057925374494886
+      ],
+      [
+        "More",
+        0.18787572825853185
+      ]
+    ]
+  },
+  {
+    "text": "Frequency is defined as 1 over the period. a) has the highest frequency because it cycles through its period more than what the rest do ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0017150534549728036,
+      0.9982849955558777
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.11453162602721717
+      ],
+      [
+        "cycles",
+        0.0616528955547497
+      ],
+      [
+        "the",
+        0.05932613060009716
+      ],
+      [
+        "defined",
+        0.03243583199129906
+      ],
+      [
+        "as",
+        0.02558428653423546
+      ],
+      [
+        "more",
+        0.02345414708090867
+      ],
+      [
+        "than",
+        0.017789480200754115
+      ],
+      [
+        "1",
+        0.01589858429083691
+      ],
+      [
+        "a",
+        0.015065307239691473
+      ],
+      [
+        "highest",
+        0.014988024533778444
+      ],
+      [
+        "what",
+        -0.014573091090397857
+      ],
+      [
+        "Frequency",
+        0.013887629153386505
+      ],
+      [
+        "it",
+        -0.010688446006221167
+      ],
+      [
+        "because",
+        -0.00984380276008119
+      ],
+      [
+        "rest",
+        0.009274362233797412
+      ],
+      [
+        "its",
+        0.007039453542042655
+      ],
+      [
+        "over",
+        0.005630038344771716
+      ],
+      [
+        "do",
+        -0.002599690457749526
+      ],
+      [
+        "is",
+        -0.002362323160426527
+      ],
+      [
+        "through",
+        -0.00223939592995346
+      ]
+    ]
+  },
+  {
+    "text": "Because frequency is how many oscillations per second so the more oscillations you can see in a short amount of time, the higher the frequency.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.003661221591755748,
+      0.9963388442993164
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.037945756727745056
+      ],
+      [
+        "many",
+        0.026205409009593946
+      ],
+      [
+        "second",
+        0.023813512915047404
+      ],
+      [
+        "the",
+        0.02144432557552006
+      ],
+      [
+        "time",
+        0.019185720368156557
+      ],
+      [
+        "more",
+        0.018716286692667297
+      ],
+      [
+        "per",
+        0.015283860668162425
+      ],
+      [
+        "higher",
+        0.015050074161665665
+      ],
+      [
+        "amount",
+        0.014154931152019873
+      ],
+      [
+        "is",
+        0.007338721790696767
+      ],
+      [
+        "in",
+        0.0072402155505944905
+      ],
+      [
+        "see",
+        0.0065718257118437965
+      ],
+      [
+        "short",
+        0.006543766094129851
+      ],
+      [
+        "can",
+        0.005753142505582829
+      ],
+      [
+        "you",
+        -0.005033513934161527
+      ],
+      [
+        "how",
+        0.004946009011983557
+      ],
+      [
+        "a",
+        0.004770005109419591
+      ],
+      [
+        "so",
+        -0.003648048107536067
+      ],
+      [
+        "of",
+        0.0033632638842089274
+      ],
+      [
+        "Because",
+        -0.0024402734302552457
+      ]
+    ]
+  },
+  {
+    "text": "Highest number of peaks between 1 and 2 on time axis",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018808672903105617,
+      0.9981191158294678
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Highest",
+        0.11048244766614382
+      ],
+      [
+        "between",
+        0.06686062782511096
+      ],
+      [
+        "peaks",
+        0.06477014418982814
+      ],
+      [
+        "time",
+        0.06344125810286304
+      ],
+      [
+        "number",
+        0.04109179162842104
+      ],
+      [
+        "axis",
+        0.03996997175937273
+      ],
+      [
+        "of",
+        0.038435772511917154
+      ],
+      [
+        "2",
+        0.03219719838751377
+      ],
+      [
+        "and",
+        0.029813884095072195
+      ],
+      [
+        "1",
+        0.02193597870272651
+      ],
+      [
+        "on",
+        0.012775944743459685
+      ]
+    ]
+  },
+  {
+    "text": "this answer has the most periods in the shortest timeframe - there is two periods per 1 unit of t for a, whilst the c and d have one period per one unit of t, and b has half a period.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0017796867759898305,
+      0.9982202649116516
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.013104560182737677
+      ],
+      [
+        "periods",
+        0.012253010966463924
+      ],
+      [
+        "the",
+        0.00946785732080399
+      ],
+      [
+        "unit",
+        0.006831584282750556
+      ],
+      [
+        "one",
+        0.00661958349383764
+      ],
+      [
+        "most",
+        0.006480491489895033
+      ],
+      [
+        "of",
+        0.005721218728113936
+      ],
+      [
+        "is",
+        0.005410239410452103
+      ],
+      [
+        "per",
+        0.005339932639448
+      ],
+      [
+        "shortest",
+        0.004699163597420657
+      ],
+      [
+        "timeframe",
+        0.004514086521856343
+      ],
+      [
+        "this",
+        0.004501113556551327
+      ],
+      [
+        "in",
+        0.0043521742797591485
+      ],
+      [
+        "has",
+        0.0034725147065468227
+      ],
+      [
+        "have",
+        0.0033895013824839443
+      ],
+      [
+        "d",
+        -0.002921713982869837
+      ],
+      [
+        "for",
+        0.0028510102801875
+      ],
+      [
+        "1",
+        0.0026779516295374465
+      ],
+      [
+        "answer",
+        -0.00217132284720585
+      ],
+      [
+        "whilst",
+        0.0020433882528705653
+      ]
+    ]
+  },
+  {
+    "text": "a) has the greatest number of signal repetitions over the specific time period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0014072245685383677,
+      0.9985927939414978
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "repetitions",
+        0.046372115012206595
+      ],
+      [
+        "period",
+        0.03049344645950405
+      ],
+      [
+        "time",
+        0.02880062382798374
+      ],
+      [
+        "the",
+        0.027616349236070044
+      ],
+      [
+        "number",
+        0.02458895571399434
+      ],
+      [
+        "of",
+        0.018990915562411458
+      ],
+      [
+        "specific",
+        0.017722495143917563
+      ],
+      [
+        "greatest",
+        0.014071946656343698
+      ],
+      [
+        "has",
+        0.011325300189838213
+      ],
+      [
+        "a",
+        0.010750298356052323
+      ],
+      [
+        "over",
+        0.010129882578618351
+      ],
+      [
+        "signal",
+        0.007377036472183586
+      ]
+    ]
+  },
+  {
+    "text": "most occellations in a given period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002354525728151202,
+      0.9976455569267273
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "occellations",
+        0.17096999205239624
+      ],
+      [
+        "most",
+        0.13189971713906334
+      ],
+      [
+        "period",
+        0.11765794051505371
+      ],
+      [
+        "given",
+        0.10649069229732935
+      ],
+      [
+        "in",
+        0.07471820302667065
+      ],
+      [
+        "a",
+        0.060643186659960595
+      ]
+    ]
+  },
+  {
+    "text": "f = 1/T",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7160778045654297,
+      0.28392213582992554
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "T",
+        -0.02875010931210356
+      ],
+      [
+        "f",
+        0.0173298395477649
+      ],
+      [
+        "1",
+        -0.00548128141104094
+      ]
+    ]
+  },
+  {
+    "text": "higher frequency has a shorter distance",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.06494394689798355,
+      0.9350560307502747
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shorter",
+        0.4227196058746483
+      ],
+      [
+        "distance",
+        0.24772898352125952
+      ],
+      [
+        "has",
+        0.09785917206394587
+      ],
+      [
+        "a",
+        0.0926033045161119
+      ],
+      [
+        "higher",
+        0.03231596867854409
+      ],
+      [
+        "frequency",
+        0.005227635206936655
+      ]
+    ]
+  },
+  {
+    "text": "because the waves are shorter",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.004329159390181303,
+      0.9956707954406738
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shorter",
+        0.5736968151042638
+      ],
+      [
+        "waves",
+        0.23347823610313284
+      ],
+      [
+        "are",
+        0.17639927392774407
+      ],
+      [
+        "the",
+        0.11417930176199725
+      ],
+      [
+        "because",
+        0.016869993809551256
+      ]
+    ]
+  },
+  {
+    "text": "Frequency Period",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6842482686042786,
+      0.31575170159339905
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Frequency",
+        -0.028278761023411595
+      ],
+      [
+        "Period",
+        0.0025714793106553957
+      ]
+    ]
+  },
+  {
+    "text": "frequency is about the number of cycles per second. Comparing the graphs at any 1 second period clearly the first one has the highest frequency (2Hz by the looks) whereas c and d have 1Hz and b has 0.5Hz.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019229311728850007,
+      0.9980770945549011
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.006819415767436481
+      ],
+      [
+        "5Hz",
+        0.005734942708472077
+      ],
+      [
+        "second",
+        0.005206061216025728
+      ],
+      [
+        "0",
+        0.005017604047031933
+      ],
+      [
+        "number",
+        0.005015634432237287
+      ],
+      [
+        "first",
+        0.004653778914185341
+      ],
+      [
+        "highest",
+        0.0045896753307343
+      ],
+      [
+        "the",
+        0.004489623611976645
+      ],
+      [
+        "cycles",
+        0.004469004406414985
+      ],
+      [
+        "graphs",
+        0.004255443837465208
+      ],
+      [
+        "looks",
+        0.004125543523173139
+      ],
+      [
+        "1Hz",
+        0.003938014875513004
+      ],
+      [
+        "has",
+        0.0038739714713018993
+      ],
+      [
+        "clearly",
+        0.0035392332883750254
+      ],
+      [
+        "one",
+        0.0034959837849893364
+      ],
+      [
+        "2Hz",
+        0.003490142097308654
+      ],
+      [
+        "1",
+        0.003135606587852706
+      ],
+      [
+        "have",
+        -0.0025117003184083452
+      ],
+      [
+        "c",
+        -0.002503507451124131
+      ],
+      [
+        "Comparing",
+        0.0024915396479167047
+      ]
+    ]
+  },
+  {
+    "text": "It has the shortest period therefore the highest frequency.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019935625605285168,
+      0.9980064034461975
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shortest",
+        0.30477343262834256
+      ],
+      [
+        "period",
+        0.22342475461133723
+      ],
+      [
+        "the",
+        0.10615914109831448
+      ],
+      [
+        "frequency",
+        -0.09011867821900901
+      ],
+      [
+        "therefore",
+        0.051476830024136354
+      ],
+      [
+        "has",
+        0.04607982028007345
+      ],
+      [
+        "It",
+        0.03871257094434759
+      ],
+      [
+        "highest",
+        0.037776083581107865
+      ]
+    ]
+  },
+  {
+    "text": "most peaks in time period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0029332644771784544,
+      0.9970667362213135
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.23337813855455763
+      ],
+      [
+        "period",
+        0.18700584698197162
+      ],
+      [
+        "time",
+        0.1760960915011807
+      ],
+      [
+        "peaks",
+        0.1689614247923606
+      ],
+      [
+        "in",
+        0.12631475600436062
+      ]
+    ]
+  },
+  {
+    "text": "There are more periods between each time domain",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0039535705000162125,
+      0.9960463643074036
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.20038194105038906
+      ],
+      [
+        "time",
+        0.10280102175698169
+      ],
+      [
+        "more",
+        0.07959975937887913
+      ],
+      [
+        "each",
+        0.07579343579642135
+      ],
+      [
+        "between",
+        0.07279435950892414
+      ],
+      [
+        "There",
+        0.07168715884391302
+      ],
+      [
+        "are",
+        0.070458921600197
+      ],
+      [
+        "domain",
+        0.05012337221575505
+      ]
+    ]
+  },
+  {
+    "text": "For a given unit of time, signal a has the most repetitions. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019968703854829073,
+      0.9980031847953796
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "repetitions",
+        0.05905152892348341
+      ],
+      [
+        "most",
+        0.034114883187482264
+      ],
+      [
+        "a",
+        0.032742599158532844
+      ],
+      [
+        "given",
+        0.02919655942150754
+      ],
+      [
+        "For",
+        0.02919594836072924
+      ],
+      [
+        "time",
+        0.028359903187433
+      ],
+      [
+        "unit",
+        0.02505918294445154
+      ],
+      [
+        "the",
+        0.021970885751006478
+      ],
+      [
+        "has",
+        0.017668200610210155
+      ],
+      [
+        "of",
+        0.014502222413466236
+      ],
+      [
+        "signal",
+        0.010964514528036734
+      ]
+    ]
+  },
+  {
+    "text": "More frequency",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7472063899040222,
+      0.25279369950294495
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "More",
+        0.0032539650202853157
+      ],
+      [
+        "frequency",
+        0.0026587447433907324
+      ]
+    ]
+  },
+  {
+    "text": "most cycles in one period T ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.08029746264219284,
+      0.9197025299072266
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.18351798775104455
+      ],
+      [
+        "period",
+        0.14490954552760002
+      ],
+      [
+        "cycles",
+        0.14291847060107213
+      ],
+      [
+        "one",
+        0.10623752029994572
+      ],
+      [
+        "in",
+        0.10167713954775025
+      ],
+      [
+        "T",
+        0.022554554209165346
+      ]
+    ]
+  },
+  {
+    "text": "A) Cycles through two periods in 1 second.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018705939874053001,
+      0.9981293678283691
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.08080249370898304
+      ],
+      [
+        "Cycles",
+        0.07754240592647596
+      ],
+      [
+        "two",
+        0.047473113732379287
+      ],
+      [
+        "in",
+        0.043538236691177644
+      ],
+      [
+        "second",
+        0.04327497818873326
+      ],
+      [
+        "1",
+        0.039577914131344635
+      ],
+      [
+        "A",
+        0.037403462018543034
+      ],
+      [
+        "through",
+        0.018799494264566962
+      ]
+    ]
+  },
+  {
+    "text": "it repeats more often than the others over the same space",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001770635019056499,
+      0.9982293248176575
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.08814403407963699
+      ],
+      [
+        "repeats",
+        0.08740492573833075
+      ],
+      [
+        "space",
+        0.0826254683224689
+      ],
+      [
+        "often",
+        0.08160446962426797
+      ],
+      [
+        "than",
+        0.07782229649237686
+      ],
+      [
+        "others",
+        0.06261784079841252
+      ],
+      [
+        "more",
+        0.062067524664202636
+      ],
+      [
+        "same",
+        0.0611451303061448
+      ],
+      [
+        "over",
+        0.040386964951949926
+      ],
+      [
+        "it",
+        0.021553096519729458
+      ]
+    ]
+  },
+  {
+    "text": "To find frequency you do f=1/T. After doing this both option c and d have the same frequency. I took a guess in choosing option c ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6537002921104431,
+      0.3462996780872345
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "I",
+        0.1182115929863881
+      ],
+      [
+        "you",
+        0.07738429183648302
+      ],
+      [
+        "frequency",
+        -0.07648266410616038
+      ],
+      [
+        "took",
+        0.07497613607743082
+      ],
+      [
+        "guess",
+        0.05988547994974514
+      ],
+      [
+        "option",
+        -0.03613342470067269
+      ],
+      [
+        "f",
+        -0.031851981248384356
+      ],
+      [
+        "doing",
+        0.023700959767440955
+      ],
+      [
+        "choosing",
+        -0.02021624809743882
+      ],
+      [
+        "c",
+        -0.01822707323751357
+      ],
+      [
+        "same",
+        -0.0179354180321838
+      ],
+      [
+        "the",
+        -0.014749746675188946
+      ],
+      [
+        "have",
+        0.014695796850476856
+      ],
+      [
+        "and",
+        0.013012082140048564
+      ],
+      [
+        "d",
+        -0.012792673506125129
+      ],
+      [
+        "both",
+        -0.011865216434859686
+      ],
+      [
+        "in",
+        -0.011533049780827892
+      ],
+      [
+        "After",
+        0.01104864126239271
+      ],
+      [
+        "T",
+        -0.009705580117033236
+      ],
+      [
+        "1",
+        -0.009610869929306183
+      ]
+    ]
+  },
+  {
+    "text": "It hasa greater period between 0 to 1 second compared to the other signals. Using the frequency fromula f=1/T, a higher period would result in a higher frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.02680947817862034,
+      0.9731904864311218
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.07849604530901919
+      ],
+      [
+        "second",
+        0.048537184020484056
+      ],
+      [
+        "1",
+        0.02821617410849714
+      ],
+      [
+        "between",
+        0.02328756180998127
+      ],
+      [
+        "result",
+        -0.019600172778358262
+      ],
+      [
+        "greater",
+        0.015402775992353067
+      ],
+      [
+        "0",
+        0.015224426706689739
+      ],
+      [
+        "would",
+        -0.012647459171080185
+      ],
+      [
+        "T",
+        -0.012216222640608431
+      ],
+      [
+        "the",
+        0.011879514791682415
+      ],
+      [
+        "in",
+        0.01074359991052976
+      ],
+      [
+        "Using",
+        -0.010574962018245706
+      ],
+      [
+        "to",
+        0.009385586584480021
+      ],
+      [
+        "hasa",
+        0.00791628035671288
+      ],
+      [
+        "f",
+        -0.007407723360592125
+      ],
+      [
+        "signals",
+        -0.0064122254595534965
+      ],
+      [
+        "other",
+        -0.005767278655171357
+      ],
+      [
+        "It",
+        0.005750724010357273
+      ],
+      [
+        "fromula",
+        -0.00542401403167455
+      ],
+      [
+        "a",
+        -0.003296136235714177
+      ]
+    ]
+  },
+  {
+    "text": "It has the most iterations of the one period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0016843773191794753,
+      0.9983155727386475
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.12318756544159339
+      ],
+      [
+        "most",
+        0.09968286334071043
+      ],
+      [
+        "iterations",
+        0.09374280850564058
+      ],
+      [
+        "the",
+        0.07902289576238006
+      ],
+      [
+        "one",
+        0.0705797618997109
+      ],
+      [
+        "has",
+        0.0486175131412659
+      ],
+      [
+        "of",
+        0.046947581499705765
+      ],
+      [
+        "It",
+        0.03446960393329794
+      ]
+    ]
+  },
+  {
+    "text": "f=1/T, significantly more periods in the first example.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002898700535297394,
+      0.9971013069152832
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.1270987680499785
+      ],
+      [
+        "significantly",
+        0.07127801344698957
+      ],
+      [
+        "in",
+        0.06600841393230521
+      ],
+      [
+        "more",
+        0.058532296446238516
+      ],
+      [
+        "first",
+        0.040163255503116245
+      ],
+      [
+        "example",
+        0.030975686503784235
+      ],
+      [
+        "T",
+        0.02975547992318453
+      ],
+      [
+        "f",
+        0.027253970509086095
+      ],
+      [
+        "the",
+        0.015767951589480293
+      ],
+      [
+        "1",
+        0.004324499588700901
+      ]
+    ]
+  },
+  {
+    "text": "Smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09873282164335251,
+      0.9012672305107117
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Smallest",
+        0.3713946251419649
+      ],
+      [
+        "period",
+        -0.09012191801764423
+      ]
+    ]
+  },
+  {
+    "text": "There is a higher amount of oscillations of the wave per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0016392795369029045,
+      0.9983606934547424
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.10077174499215802
+      ],
+      [
+        "second",
+        0.0629779463854591
+      ],
+      [
+        "of",
+        0.04975622065445394
+      ],
+      [
+        "higher",
+        0.04266643913685533
+      ],
+      [
+        "amount",
+        0.0397019568989967
+      ],
+      [
+        "the",
+        0.0354208259424645
+      ],
+      [
+        "per",
+        0.03477723858227695
+      ],
+      [
+        "There",
+        0.024672635367121828
+      ],
+      [
+        "wave",
+        0.02192157016746741
+      ],
+      [
+        "is",
+        0.01736685465727885
+      ],
+      [
+        "a",
+        0.014752678295821293
+      ]
+    ]
+  },
+  {
+    "text": "It has the most periods over the given time interval",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0017324630171060562,
+      0.9982674717903137
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "the",
+        0.09026390902876769
+      ],
+      [
+        "periods",
+        0.0901036086828728
+      ],
+      [
+        "time",
+        0.07084352817072914
+      ],
+      [
+        "most",
+        0.06720660552846668
+      ],
+      [
+        "interval",
+        0.04948093274796159
+      ],
+      [
+        "given",
+        0.04256431151753477
+      ],
+      [
+        "It",
+        0.02858319926467735
+      ],
+      [
+        "over",
+        0.026091784535660044
+      ],
+      [
+        "has",
+        0.024863207015070367
+      ]
+    ]
+  },
+  {
+    "text": "more cycles per second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.07817559689283371,
+      0.9218243956565857
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.36766842040252445
+      ],
+      [
+        "second",
+        0.3493104070470234
+      ],
+      [
+        "per",
+        0.20083378305463673
+      ],
+      [
+        "more",
+        0.13850422041499738
+      ]
+    ]
+  },
+  {
+    "text": "The most cycles occur in the same amount of time.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0014008731814101338,
+      0.998599112033844
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.05987493126242282
+      ],
+      [
+        "most",
+        0.050027230260181535
+      ],
+      [
+        "amount",
+        0.04593652852372955
+      ],
+      [
+        "occur",
+        0.044032511236573264
+      ],
+      [
+        "The",
+        0.03614050964755287
+      ],
+      [
+        "time",
+        0.03609927518612609
+      ],
+      [
+        "in",
+        0.03369442858286902
+      ],
+      [
+        "of",
+        0.021097324653754333
+      ],
+      [
+        "the",
+        0.018198141217700362
+      ],
+      [
+        "same",
+        0.017602596332398673
+      ]
+    ]
+  },
+  {
+    "text": "It's Oscillating faster then the others. Also T = 1/f0 ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0059171705506742,
+      0.9940828680992126
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Oscillating",
+        0.2678054426046457
+      ],
+      [
+        "faster",
+        0.23012880463371083
+      ],
+      [
+        "then",
+        0.11713707136677257
+      ],
+      [
+        "others",
+        0.09568822685460268
+      ],
+      [
+        "1",
+        0.07229812821051158
+      ],
+      [
+        "s",
+        0.054042273448100905
+      ],
+      [
+        "the",
+        0.050235267139614306
+      ],
+      [
+        "Also",
+        0.039317733515114126
+      ],
+      [
+        "T",
+        0.030526183083061573
+      ],
+      [
+        "f0",
+        -0.006480928450093603
+      ],
+      [
+        "It",
+        0.0030346390154972797
+      ]
+    ]
+  },
+  {
+    "text": "Because it does ",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7235386371612549,
+      0.2764613926410675
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "does",
+        0.027401131087061194
+      ],
+      [
+        "Because",
+        0.02247904649306848
+      ],
+      [
+        "it",
+        0.0033102452211248466
+      ]
+    ]
+  },
+  {
+    "text": "shortest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09912378340959549,
+      0.9008762240409851
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shortest",
+        0.3231870432024213
+      ],
+      [
+        "period",
+        -0.007888504374926601
+      ]
+    ]
+  },
+  {
+    "text": "Wave a has the most cycles over the same period compared to the other waves. ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0014971435302868485,
+      0.998502790927887
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.041508169349605176
+      ],
+      [
+        "period",
+        0.040753077213104436
+      ],
+      [
+        "the",
+        0.03840362140728542
+      ],
+      [
+        "most",
+        0.03546845093105769
+      ],
+      [
+        "Wave",
+        0.020018120864511817
+      ],
+      [
+        "waves",
+        0.018342664640143006
+      ],
+      [
+        "has",
+        0.018029025601475526
+      ],
+      [
+        "compared",
+        0.014108548205889842
+      ],
+      [
+        "to",
+        0.013346047910315701
+      ],
+      [
+        "other",
+        0.01257920309583652
+      ],
+      [
+        "a",
+        0.011086424599979359
+      ],
+      [
+        "over",
+        0.011046260490033094
+      ],
+      [
+        "same",
+        0.007960480010246102
+      ]
+    ]
+  },
+  {
+    "text": "More oscillations in a single time period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018074852414429188,
+      0.9981924891471863
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "oscillations",
+        0.1791186192289649
+      ],
+      [
+        "period",
+        0.11036427402770892
+      ],
+      [
+        "single",
+        0.08439460607612846
+      ],
+      [
+        "in",
+        0.08203497591872139
+      ],
+      [
+        "time",
+        0.07405485459619746
+      ],
+      [
+        "More",
+        0.04672872882866992
+      ],
+      [
+        "a",
+        0.045923723933138164
+      ]
+    ]
+  },
+  {
+    "text": "It has 2 cycles in 1 period compared to the others which have 1 or 0.5.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001538124750368297,
+      0.998461902141571
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.05191394210331212
+      ],
+      [
+        "cycles",
+        0.05062120334689431
+      ],
+      [
+        "1",
+        0.031069719945891413
+      ],
+      [
+        "2",
+        0.030427986828261748
+      ],
+      [
+        "has",
+        0.025707300841235067
+      ],
+      [
+        "in",
+        0.02547737073378473
+      ],
+      [
+        "5",
+        0.021264073264509107
+      ],
+      [
+        "compared",
+        0.014685384522592531
+      ],
+      [
+        "0",
+        0.014547805189203377
+      ],
+      [
+        "or",
+        0.014258745347385669
+      ],
+      [
+        "have",
+        0.013775912403591455
+      ],
+      [
+        "which",
+        0.0119992422929296
+      ],
+      [
+        "It",
+        0.011547221552247033
+      ],
+      [
+        "to",
+        0.010659343138563902
+      ],
+      [
+        "the",
+        0.005442103018569348
+      ],
+      [
+        "others",
+        -0.00023939176360421996
+      ]
+    ]
+  },
+  {
+    "text": "A is the highest requency because it has the highest number of cycles per second.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019152285531163216,
+      0.9980847835540771
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "cycles",
+        0.09487446532349143
+      ],
+      [
+        "number",
+        0.08066709984465
+      ],
+      [
+        "second",
+        0.0782019344038717
+      ],
+      [
+        "per",
+        0.05086845166671493
+      ],
+      [
+        "of",
+        0.04234113759776941
+      ],
+      [
+        "highest",
+        0.028138514824723862
+      ],
+      [
+        "is",
+        0.024448463895020197
+      ],
+      [
+        "the",
+        0.023955594231907587
+      ],
+      [
+        "has",
+        0.02361571985398956
+      ],
+      [
+        "A",
+        0.011922331313339722
+      ],
+      [
+        "requency",
+        -0.004601383758054253
+      ],
+      [
+        "because",
+        -0.0031100222037024603
+      ],
+      [
+        "it",
+        -0.0009423365429134593
+      ]
+    ]
+  },
+  {
+    "text": "Because it has the most cycles per period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0014066811418160796,
+      0.9985933303833008
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.15569967413277708
+      ],
+      [
+        "cycles",
+        0.1512529056927105
+      ],
+      [
+        "most",
+        0.14753201139530087
+      ],
+      [
+        "the",
+        0.0902946132090896
+      ],
+      [
+        "per",
+        0.07125343722256276
+      ],
+      [
+        "Because",
+        0.05646398275935191
+      ],
+      [
+        "has",
+        0.038207381930714775
+      ],
+      [
+        "it",
+        0.02854792359770166
+      ]
+    ]
+  },
+  {
+    "text": "more period",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7578895688056946,
+      0.2421104460954666
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.006158472694756412
+      ],
+      [
+        "more",
+        0.005802904167756915
+      ]
+    ]
+  },
+  {
+    "text": "aaa",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7546415328979492,
+      0.24535852670669556
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "Frequency is how many time the signal repeat in a second.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.003209377871826291,
+      0.9967906475067139
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "many",
+        0.09380902105024173
+      ],
+      [
+        "time",
+        0.08500978762782964
+      ],
+      [
+        "second",
+        0.0831621452314981
+      ],
+      [
+        "repeat",
+        0.06020167405625568
+      ],
+      [
+        "in",
+        0.058086495580428665
+      ],
+      [
+        "signal",
+        0.05460733707212668
+      ],
+      [
+        "how",
+        0.05079055672508676
+      ],
+      [
+        "a",
+        0.032582788254237965
+      ],
+      [
+        "the",
+        0.032057306508615574
+      ],
+      [
+        "is",
+        0.01838907793126681
+      ],
+      [
+        "Frequency",
+        0.01590450821161884
+      ]
+    ]
+  },
+  {
+    "text": "a) has the shortest period, the most cycles per unit of time, therefore the highest frequency.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0013270042836666107,
+      0.9986729621887207
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shortest",
+        0.020923949237815757
+      ],
+      [
+        "period",
+        0.017719101484437446
+      ],
+      [
+        "cycles",
+        0.017554772698480516
+      ],
+      [
+        "time",
+        0.01394922912060938
+      ],
+      [
+        "most",
+        0.013192429892189737
+      ],
+      [
+        "the",
+        0.010083620002893406
+      ],
+      [
+        "per",
+        0.009889570798725357
+      ],
+      [
+        "unit",
+        0.006994900947442681
+      ],
+      [
+        "highest",
+        0.005901240449214636
+      ],
+      [
+        "therefore",
+        0.005581557254262517
+      ],
+      [
+        "a",
+        0.004020245148974422
+      ],
+      [
+        "of",
+        0.0038088443236486465
+      ],
+      [
+        "has",
+        0.0030756883177414794
+      ],
+      [
+        "frequency",
+        -0.00165097587961027
+      ]
+    ]
+  },
+  {
+    "text": "Most cycles per t",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002812531776726246,
+      0.9971874356269836
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "Most",
+        0.5724719983424831
+      ],
+      [
+        "cycles",
+        0.2230733727610008
+      ],
+      [
+        "t",
+        0.19150078549146807
+      ],
+      [
+        "per",
+        0.16587988640444148
+      ]
+    ]
+  },
+  {
+    "text": "Because 1 has a fundamental frequency of 2 because the period is 0.5 so that would mean that the frequency is 1/0.5 = 2",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001987355062738061,
+      0.9980126023292542
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "5",
+        0.05013623045705298
+      ],
+      [
+        "period",
+        0.04956846492594675
+      ],
+      [
+        "0",
+        0.031889362271531024
+      ],
+      [
+        "2",
+        0.029018755878434596
+      ],
+      [
+        "frequency",
+        0.02724783892476517
+      ],
+      [
+        "the",
+        0.026189926629070808
+      ],
+      [
+        "fundamental",
+        0.022757592692351745
+      ],
+      [
+        "of",
+        0.02110796591680902
+      ],
+      [
+        "1",
+        0.02104198213484124
+      ],
+      [
+        "is",
+        0.01801078026296
+      ],
+      [
+        "mean",
+        0.013400585591574758
+      ],
+      [
+        "has",
+        0.012873017465287025
+      ],
+      [
+        "a",
+        0.010233899215088134
+      ],
+      [
+        "Because",
+        0.010227349677104081
+      ],
+      [
+        "because",
+        -0.006959174918115303
+      ],
+      [
+        "would",
+        -0.006572903837919453
+      ],
+      [
+        "so",
+        -0.004739214136221788
+      ],
+      [
+        "that",
+        0.0011259700491859795
+      ]
+    ]
+  },
+  {
+    "text": "It has the most number of periods between t=0 and t=1",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0019116370240226388,
+      0.9980883598327637
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.07369008083868385
+      ],
+      [
+        "most",
+        0.05881854559150727
+      ],
+      [
+        "number",
+        0.04567280009367133
+      ],
+      [
+        "t",
+        0.0352522250034092
+      ],
+      [
+        "of",
+        0.030242257641391226
+      ],
+      [
+        "and",
+        0.026736069764453085
+      ],
+      [
+        "the",
+        0.025536861484967283
+      ],
+      [
+        "between",
+        0.025019212654215067
+      ],
+      [
+        "It",
+        0.019577472205756275
+      ],
+      [
+        "has",
+        0.0193668030275865
+      ],
+      [
+        "1",
+        0.017097565717496422
+      ],
+      [
+        "0",
+        0.016405379956464593
+      ]
+    ]
+  },
+  {
+    "text": "More periods / second",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002589978277683258,
+      0.9974100589752197
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "periods",
+        0.7227616182509368
+      ],
+      [
+        "second",
+        0.29681329924307354
+      ],
+      [
+        "More",
+        0.2239485270871185
+      ]
+    ]
+  },
+  {
+    "text": "has the shortest period, ",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0016691404161974788,
+      0.99833083152771
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "shortest",
+        0.38474469886673845
+      ],
+      [
+        "period",
+        0.25559742549844583
+      ],
+      [
+        "the",
+        0.20697541927711183
+      ],
+      [
+        "has",
+        0.1456450247248332
+      ]
+    ]
+  },
+  {
+    "text": "I just guessed",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7516667246818542,
+      0.24833326041698456
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "guessed",
+        0.003026575453859517
+      ],
+      [
+        "I",
+        0.0011148274603269106
+      ],
+      [
+        "just",
+        0.0004974538152273872
+      ]
+    ]
+  },
+  {
+    "text": "Signal repeats twice over a period of 1s whereas all others are less than that.",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0022002544719725847,
+      0.9977996945381165
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "period",
+        0.04438410667732038
+      ],
+      [
+        "1s",
+        0.039850951938563
+      ],
+      [
+        "others",
+        0.03299154451796644
+      ],
+      [
+        "less",
+        0.030092906734419285
+      ],
+      [
+        "twice",
+        0.027552096093422317
+      ],
+      [
+        "Signal",
+        0.02727040867135491
+      ],
+      [
+        "whereas",
+        0.026907968985841475
+      ],
+      [
+        "repeats",
+        0.02599838991256434
+      ],
+      [
+        "of",
+        0.022887781288141108
+      ],
+      [
+        "are",
+        0.016199975650025518
+      ],
+      [
+        "than",
+        0.015905282302311457
+      ],
+      [
+        "a",
+        0.014627251619970855
+      ],
+      [
+        "over",
+        0.011200559045593791
+      ],
+      [
+        "that",
+        0.006384867567894365
+      ],
+      [
+        "all",
+        -0.0019858566897470987
+      ]
+    ]
+  },
+  {
+    "text": "a) f = 2, b) f = 0.5 c) f = 1, d) f = 1",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.002998984418809414,
+      0.9970009922981262
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "1",
+        0.04919272344259742
+      ],
+      [
+        "2",
+        0.04505487524541847
+      ],
+      [
+        "5",
+        0.03254654647665873
+      ],
+      [
+        "0",
+        0.027241501851642678
+      ],
+      [
+        "b",
+        0.02643174742804786
+      ],
+      [
+        "d",
+        0.022183820035680004
+      ],
+      [
+        "c",
+        0.01824401529756653
+      ],
+      [
+        "a",
+        0.017532198452707568
+      ],
+      [
+        "f",
+        0.012541145649497331
+      ]
+    ]
+  },
+  {
+    "text": "the most waves",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.09307950735092163,
+      0.9069204926490784
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "most",
+        0.6492480379156979
+      ],
+      [
+        "waves",
+        0.24540597448061788
+      ],
+      [
+        "the",
+        0.13025241422764697
+      ]
+    ]
+  },
+  {
+    "text": "it has the smallest period, thus the highest frequency",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.0018459297716617584,
+      0.9981541037559509
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.23606252355894877
+      ],
+      [
+        "period",
+        0.19680758320289884
+      ],
+      [
+        "the",
+        0.10744028802039467
+      ],
+      [
+        "thus",
+        0.05496070215186797
+      ],
+      [
+        "it",
+        0.016689498473932734
+      ],
+      [
+        "has",
+        0.015586912598227224
+      ],
+      [
+        "highest",
+        0.009699944727560611
+      ],
+      [
+        "frequency",
+        -0.004210913610012663
+      ]
+    ]
+  },
+  {
+    "text": "(a) has the smallest period",
+    "predicted_label": 1,
+    "predicted_class_name": "correct",
+    "predicted_proba": [
+      0.001515019335784018,
+      0.9984849095344543
+    ],
+    "explained_class": 1,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "smallest",
+        0.29527311006640466
+      ],
+      [
+        "period",
+        0.21767416643640564
+      ],
+      [
+        "the",
+        0.1386396254582944
+      ],
+      [
+        "has",
+        0.10310765163469844
+      ],
+      [
+        "a",
+        0.09822054014231942
+      ]
+    ]
+  },
+  {
+    "text": "a",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.7607347369194031,
+      0.2392653375864029
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": []
+  },
+  {
+    "text": "high frequency means it occurs highly frequently. You can tell because of the way it is.",
+    "predicted_label": 0,
+    "predicted_class_name": "incorrect",
+    "predicted_proba": [
+      0.6394959092140198,
+      0.3605041205883026
+    ],
+    "explained_class": 0,
+    "class_names": [
+      "incorrect",
+      "correct"
+    ],
+    "feature_weights": [
+      [
+        "You",
+        0.0927559633384976
+      ],
+      [
+        "occurs",
+        -0.0586419915276524
+      ],
+      [
+        "highly",
+        -0.046332080098543685
+      ],
+      [
+        "way",
+        0.03427731508561573
+      ],
+      [
+        "of",
+        -0.0290339949290357
+      ],
+      [
+        "frequently",
+        -0.028766520973682007
+      ],
+      [
+        "it",
+        0.027281761551336537
+      ],
+      [
+        "tell",
+        0.024635607617607604
+      ],
+      [
+        "the",
+        -0.02148966231448443
+      ],
+      [
+        "high",
+        -0.019214327562879437
+      ],
+      [
+        "means",
+        -0.01614996902702162
+      ],
+      [
+        "can",
+        -0.012568240895552847
+      ],
+      [
+        "frequency",
+        0.011639870364087436
+      ],
+      [
+        "is",
+        0.010194654368926163
+      ],
+      [
+        "because",
+        0.007082075434844036
+      ]
+    ]
+  }
+]
