@@ -88,7 +88,84 @@ def _tokenise(text: str) -> list[str]:
     return text.split()
 
 
+import re as _re
+
+
 def _rebuild(words: Sequence[str]) -> str:
+    return " ".join(words)
+
+
+def _normalise_token(token: str) -> str:
+    """Normalise an explanation token for matching against whitespace-split text.
+
+    LIME tokens are already whitespace-split words — no change needed.
+    SHAP tokens from its Text masker can have trailing spaces, attached
+    punctuation, or sub-word fragments (e.g. "magnitude ", "observed,",
+    "fr qu"). This strips those artefacts so SHAP tokens match the same
+    word forms that _tokenise() produces from the raw response text.
+    """
+    # Strip surrounding whitespace
+    t = token.strip()
+    # Strip leading/trailing punctuation (but not internal, e.g. "f=1/T")
+    t = _re.sub(r"^[^\w]+|[^\w]+$", "", t)
+    return t.lower()
+
+
+def _normalise_top_words(top_words: set[str]) -> set[str]:
+    """Normalise a set of explanation tokens for fidelity word-matching."""
+    normalised = set()
+    for w in top_words:
+        n = _normalise_token(w)
+        if n:
+            normalised.add(n)
+    return normalised
+
+
+def _normalise_features(features: list[str]) -> list[tuple[str, ...]]:
+    """Normalise explanation features into tuples of clean word-tokens.
+
+    A unigram feature ("frequency") becomes ("frequency",); a bigram feature
+    ("higher frequency") becomes ("higher", "frequency"). Each word is cleaned
+    of punctuation/whitespace so it matches the response's tokenised words.
+    Empty results are dropped.
+    """
+    out: list[tuple[str, ...]] = []
+    for feat in features:
+        parts = [_normalise_token(p) for p in feat.split()]
+        parts = [p for p in parts if p]
+        if parts:
+            out.append(tuple(parts))
+    return out
+
+
+def _mark_important_positions(
+    words_norm: list[str], top_phrases: list[tuple[str, ...]]
+) -> list[bool]:
+    """Return a boolean mask over word positions belonging to a top feature.
+
+    Single-word features match individual positions. Multi-word (phrase)
+    features match contiguous spans — every word in a matched span is marked.
+    This lets comprehensiveness/sufficiency remove or keep whole phrases,
+    which is what bigram-mode attribution requires.
+    """
+    n = len(words_norm)
+    mask = [False] * n
+    # Sort phrases longest-first so multi-word spans are matched before their
+    # constituent single words, avoiding partial overlaps being missed.
+    for phrase in sorted(top_phrases, key=len, reverse=True):
+        plen = len(phrase)
+        if plen == 0:
+            continue
+        if plen == 1:
+            for i in range(n):
+                if words_norm[i] == phrase[0]:
+                    mask[i] = True
+        else:
+            for i in range(n - plen + 1):
+                if tuple(words_norm[i : i + plen]) == phrase:
+                    for j in range(i, i + plen):
+                        mask[j] = True
+    return mask
     return " ".join(words)
 
 
@@ -127,25 +204,33 @@ def compute_fidelity(
         label = exp.predicted_label
         original_conf = float(exp.predicted_proba[label])
 
-        # Identify the top-k important words (by magnitude) as a set.
-        top_words = {w for w, _ in exp.top_features(k, by_magnitude=True)}
+        # Identify the top-k important features (by magnitude). Features may be
+        # single words (unigram mode) or multi-word phrases (bigram mode), and
+        # SHAP tokens may carry trailing spaces / punctuation. Normalise each
+        # feature into a tuple of clean word-tokens so both single words and
+        # phrases can be matched against the response's word sequence.
+        raw_top = [w for w, _ in exp.top_features(k, by_magnitude=True)]
+        top_phrases = _normalise_features(raw_top)  # list[tuple[str,...]]
+        words_norm = [_normalise_token(w) for w in words]
 
-        # Comprehensiveness — remove the important words.
-        reduced = [w for w in words if w not in top_words]
+        # Mark which word positions belong to a top feature. For phrases, match
+        # contiguous spans; for single words, match individual positions.
+        important_mask = _mark_important_positions(words_norm, top_phrases)
+
+        # Comprehensiveness — remove the important words/phrases.
+        reduced = [w for w, imp in zip(words, important_mask) if not imp]
         if reduced:
             reduced_conf = float(model.predict_proba([_rebuild(reduced)])[0][label])
         else:
-            # Everything was important; removing all leaves nothing.
             reduced_conf = 0.0
         comp_drops.append(max(0.0, original_conf - reduced_conf))
 
-        # Sufficiency — keep only the important words.
-        kept = [w for w in words if w in top_words]
+        # Sufficiency — keep only the important words/phrases.
+        kept = [w for w, imp in zip(words, important_mask) if imp]
         if kept:
             kept_conf = float(model.predict_proba([_rebuild(kept)])[0][label])
         else:
             kept_conf = 0.0
-        # Small drop = high sufficiency, so report 1 - drop.
         suff_scores.append(1.0 - max(0.0, original_conf - kept_conf))
 
     n = len(comp_drops)

@@ -132,6 +132,7 @@ class ShapExplainer:
         class_names: Sequence[str],
         max_evals: int = 500,
         batch_size: int = 16,
+        ngram: int = 1,
     ) -> None:
         # Deferred imports so the package imports without shap installed.
         import shap
@@ -141,17 +142,44 @@ class ShapExplainer:
         self.class_names = list(class_names)
         self.max_evals = max_evals
         self.batch_size = batch_size
+        self.ngram = ngram
 
         # A Text masker segments on a regex and masks whole words/tokens.
-        # Using the model's own tokenizer would tie SHAP to transformer
-        # internals; the default word-level masker keeps it model-agnostic
-        # and produces human-readable token attributions.
-        self._masker = shap.maskers.Text(r"\W+")
+        # In bigram mode the text is presented in ~-joined overlapping-bigram
+        # form (see _to_bigram_form); splitting on whitespace then makes each
+        # ~-joined bigram one maskable unit, giving phrase-level attribution.
+        # _predict_proba reconstructs readable text before the model sees it.
+        if ngram >= 2:
+            self._masker = shap.maskers.Text(r"\s+")
+        else:
+            self._masker = shap.maskers.Text(r"\W+")
         self._explainer = shap.Explainer(
             self._predict_proba,
             self._masker,
             output_names=self.class_names,
         )
+
+    @staticmethod
+    def _to_bigram_form(text: str) -> str:
+        """Convert 'a b c' -> 'a~b b~c' (overlapping bigrams, ~-joined)."""
+        import re
+        words = [w for w in re.split(r"\s+", text.strip()) if w]
+        if len(words) < 2:
+            return text
+        return " ".join(f"{words[i]}~{words[i+1]}" for i in range(len(words) - 1))
+
+    @staticmethod
+    def _from_bigram_form(text: str) -> str:
+        """Reconstruct readable text from ~-joined overlapping bigrams."""
+        toks = text.split()
+        words: list[str] = []
+        for t in toks:
+            parts = t.split("~")
+            if not words:
+                words.extend(parts)
+            else:
+                words.append(parts[-1])
+        return " ".join(words)
 
     # ------------------------------------------------------------------ #
     # Prediction function passed to SHAP
@@ -161,14 +189,29 @@ class ShapExplainer:
         """Wrap the model's predict_proba for SHAP.
 
         SHAP may pass a numpy array of strings rather than a list, so coerce
-        to a plain list of str before calling the model.
+        to a plain list of str before calling the model. In bigram mode the
+        strings are in ~-joined form, so reconstruct readable text first.
         """
         texts = [str(t) for t in texts]
+        if self.ngram >= 2:
+            texts = [self._from_bigram_form(t) for t in texts]
         return self.model.predict_proba(texts)
 
     # ------------------------------------------------------------------ #
     # Public API
     # ------------------------------------------------------------------ #
+
+    def _token_count(self, text: str) -> int:
+        """Count tokens the way the active masker will segment them.
+
+        Unigram mode splits on \\W+ (word characters); bigram mode splits on
+        whitespace (the ~-joined bigrams). Used to guard against too-short
+        responses that crash SHAP's clustering.
+        """
+        import re
+        if self.ngram >= 2:
+            return len([t for t in re.split(r"\s+", text.strip()) if t])
+        return len([t for t in re.split(r"\W+", text.strip()) if t])
 
     def explain(
         self,
@@ -190,8 +233,28 @@ class ShapExplainer:
         target = predicted_label if explained_class is None else explained_class
 
         # SHAP expects a batch; pass a single-element list.
+        # In bigram mode, present SHAP the ~-joined overlapping-bigram form.
+        shap_input = self._to_bigram_form(text) if self.ngram >= 2 else text
+
+        # SHAP's partition masker builds a token clustering that fails on
+        # responses with fewer than 2 tokens (empty clustering array →
+        # "zero-size array to reduction" error). Return an empty explanation
+        # for these rather than crashing the batch; they are inherently
+        # unexplainable and excluded by coverage anyway.
+        if self._token_count(shap_input) < 2:
+            return ShapExplanation(
+                text=text,
+                predicted_label=predicted_label,
+                predicted_proba=proba,
+                class_names=self.class_names,
+                tokens=[text] if text else [],
+                shap_values=np.zeros(1 if text else 0),
+                base_value=float(proba[target]),
+                explained_class=target,
+            )
+
         shap_values = self._explainer(
-            [text],
+            [shap_input],
             max_evals=self.max_evals,
             batch_size=self.batch_size,
             silent=True,
@@ -202,6 +265,10 @@ class ShapExplainer:
         tokens = list(shap_values.data[0])
         values_for_class = np.array(shap_values.values[0][:, target])
         base = float(np.array(shap_values.base_values[0]).reshape(-1)[target])
+
+        # In bigram mode, convert ~-joined token labels to readable phrases.
+        if self.ngram >= 2:
+            tokens = [str(t).replace("~", " ") for t in tokens]
 
         return ShapExplanation(
             text=text,

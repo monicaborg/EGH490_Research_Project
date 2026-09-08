@@ -128,6 +128,7 @@ class LimeExplainer:
         num_samples: int = 1000,
         bow: bool = True,
         random_state: int = 20260413,
+        ngram: int = 1,
     ) -> None:
         # Deferred import so the package is importable without lime installed.
         from lime.lime_text import LimeTextExplainer
@@ -136,25 +137,78 @@ class LimeExplainer:
         self.class_names = list(class_names)
         self.num_samples = num_samples
         self.random_state = random_state
+        self.ngram = ngram
 
-        self._explainer = LimeTextExplainer(
-            class_names=self.class_names,
-            bow=bow,
-            random_state=random_state,
-        )
+        # Bigram mode uses a join/unjoin scheme. LIME can only perturb
+        # contiguous, removable tokens, so we present it overlapping bigrams
+        # joined with a rare separator (e.g. "shortest~period period~highest").
+        # LIME treats each joined bigram as one removable feature; our predict
+        # wrapper reconstructs readable text before the model sees it. This
+        # gives genuine phrase-level attribution without breaking LIME's
+        # indexed-string reconstruction (the naive unigram+bigram token list
+        # approach fails because bigram tokens don't map to source spans).
+        if ngram >= 2:
+            self._explainer = LimeTextExplainer(
+                class_names=self.class_names,
+                bow=False,
+                random_state=random_state,
+                split_expression=r"\s+",
+            )
+        else:
+            self._explainer = LimeTextExplainer(
+                class_names=self.class_names,
+                bow=bow,
+                random_state=random_state,
+            )
 
     # ------------------------------------------------------------------ #
     # Prediction function passed to LIME
     # ------------------------------------------------------------------ #
 
+    # ------------------------------------------------------------------ #
+    # Bigram join/unjoin helpers
+    # ------------------------------------------------------------------ #
+
+    @staticmethod
+    def _to_bigram_form(text: str) -> str:
+        """Convert 'a b c' -> 'a~b b~c' (overlapping bigrams, ~-joined).
+
+        LIME sees each ~-joined bigram as one removable token; the model
+        never sees this form (see _from_bigram_form).
+        """
+        import re
+        words = [w for w in re.split(r"\s+", text.strip()) if w]
+        if len(words) < 2:
+            return text
+        return " ".join(f"{words[i]}~{words[i+1]}" for i in range(len(words) - 1))
+
+    @staticmethod
+    def _from_bigram_form(text: str) -> str:
+        """Reconstruct readable text from ~-joined overlapping bigrams.
+
+        'a~b b~c' -> 'a b c'. When LIME removes a bigram token during
+        perturbation, the reconstruction naturally drops those words.
+        """
+        toks = text.split()
+        words: list[str] = []
+        for t in toks:
+            parts = t.split("~")
+            if not words:
+                words.extend(parts)
+            else:
+                words.append(parts[-1])
+        return " ".join(words)
+
     def _predict_proba(self, texts: list[str]) -> np.ndarray:
         """Wrap the model's predict_proba for LIME.
 
         LIME hands us a list of perturbed strings and expects an
-        ``(n, num_labels)`` probability array back. This is a thin pass-through
-        to the underlying model — the indirection exists only so we can log
-        or cache here later if needed.
+        ``(n, num_labels)`` probability array back. In bigram mode the
+        strings are in ~-joined form, so we reconstruct readable text
+        before the model sees them.
         """
+        if self.ngram >= 2:
+            texts = [self._from_bigram_form(t) for t in texts]
         return self.model.predict_proba(texts)
 
     # ------------------------------------------------------------------ #
@@ -185,8 +239,27 @@ class LimeExplainer:
         predicted_label = int(np.argmax(proba))
         target = predicted_label if explained_class is None else explained_class
 
+        # In bigram mode, present LIME the ~-joined overlapping-bigram form.
+        lime_input = self._to_bigram_form(text) if self.ngram >= 2 else text
+
+        # LIME cannot perturb a document with fewer than 2 tokens (it samples
+        # from randint(1, doc_size+1), which fails when doc_size < 2). Short
+        # responses (empty, single word, or a single bigram) are returned with
+        # empty feature weights rather than crashing the batch. These are
+        # inherently unexplainable and correctly excluded by coverage anyway.
+        token_count = len(lime_input.split())
+        if token_count < 2:
+            return LimeExplanation(
+                text=text,
+                predicted_label=predicted_label,
+                predicted_proba=proba,
+                class_names=self.class_names,
+                feature_weights=[],
+                explained_class=target,
+            )
+
         explanation = self._explainer.explain_instance(
-            text,
+            lime_input,
             self._predict_proba,
             labels=(target,),
             num_features=num_features,
@@ -194,6 +267,13 @@ class LimeExplainer:
         )
 
         feature_weights = explanation.as_list(label=target)
+
+        # In bigram mode, convert the ~-joined feature labels back to readable
+        # space-separated phrases (e.g. "shortest~period" -> "shortest period").
+        if self.ngram >= 2:
+            feature_weights = [
+                (feat.replace("~", " "), weight) for feat, weight in feature_weights
+            ]
 
         return LimeExplanation(
             text=text,

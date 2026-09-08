@@ -59,6 +59,10 @@ def parse_args(argv=None):
     p.add_argument("--task", default="validity", choices=["validity", "confidence"])
     p.add_argument("--n-samples", type=int, default=20,
                    help="How many responses to explain (sampled from the CSV)")
+    p.add_argument("--ccu", default=None,
+                   help="Restrict explained responses to a single CCU (e.g. ccu3). "
+                        "Without this, responses are sampled from the whole dataset, "
+                        "which will not match the CCU-specific ensemble being loaded.")
     p.add_argument("--seed", type=int, default=20260413)
     # Which techniques to run
     p.add_argument("--no-lime", action="store_true", help="Skip LIME")
@@ -76,6 +80,13 @@ def parse_args(argv=None):
                    help="Repeats per response for stability (LIME only)")
     # Output
     p.add_argument("--output-dir", default="outputs/explanations")
+    p.add_argument("--exclude-models", nargs="*", default=["electra"],
+                   choices=["electra", "roberta", "xlnet", "albert"],
+                   help="Models to exclude from the ensemble (default: electra, "
+                        "which underperforms). Pass with no values to include all.")
+    p.add_argument("--ngram", type=int, default=1, choices=[1, 2],
+                   help="Attribution granularity: 1=unigram (words), 2=bigram "
+                        "(overlapping word pairs). Run both separately to compare.")
     return p.parse_args(argv)
 
 
@@ -90,16 +101,22 @@ def load_single(checkpoint: str, num_labels: int, logger):
 
 
 def load_ensemble(checkpoint_dir: str, dataset_tag: str, task: str, fold: int,
-                  num_labels: int, logger):
-    """Build the four-model ensemble from per-fold checkpoints.
+                  num_labels: int, logger, exclude_models=None):
+    """Build the ensemble from per-fold checkpoints.
 
     Expects the directory layout produced by train_all_models.py with
     --save-models, i.e.:
         <checkpoint_dir>/<task>_<model>_fold<fold>_<tag>/final/
+
+    exclude_models: optional list of model keys to leave out of the ensemble
+    (e.g. ["electra"] to exclude the underperforming ELECTRA model).
     """
     from egh490.models import Ensemble, TransformerClassifier
 
-    model_keys = ["electra", "roberta", "xlnet", "albert"]
+    exclude = set(exclude_models or [])
+    model_keys = [k for k in ["electra", "roberta", "xlnet", "albert"] if k not in exclude]
+    if exclude:
+        logger.info("Excluding from ensemble: %s", sorted(exclude))
     classifiers = []
     for key in model_keys:
         run_name = f"{task}_{key}_fold{fold}_{dataset_tag}"
@@ -138,7 +155,22 @@ def main(argv=None):
 
     # ── Load responses ───────────────────────────────────────────────
     dm = DataModule(csv_path=args.csv, task=args.task, seed=args.seed)
-    all_texts, all_labels = dm.get_texts_and_labels(list(range(len(dm.texts))))
+    all_indices = list(range(len(dm.texts)))
+
+    # Restrict to a single CCU when requested. Without this the sample is
+    # drawn from the whole corpus, which would not correspond to the
+    # CCU-specific ensemble being loaded from --dataset-tag.
+    if args.ccu:
+        df = dm.get_dataframe()
+        if "ccuname" not in df.columns:
+            raise ValueError("--ccu given but the CSV has no 'ccuname' column")
+        mask = df["ccuname"].astype(str).str.strip().str.lower() == args.ccu.strip().lower()
+        all_indices = [i for i, keep in enumerate(mask.tolist()) if keep]
+        if not all_indices:
+            raise ValueError(f"No responses found for --ccu {args.ccu!r}")
+        logger.info("CCU filter: %s — %d responses available", args.ccu, len(all_indices))
+
+    all_texts, all_labels = dm.get_texts_and_labels(all_indices)
 
     # Sample a subset for explanation (XAI is slow; explaining the full
     # corpus is rarely necessary for analysis).
@@ -153,7 +185,7 @@ def main(argv=None):
     if args.ensemble:
         model = load_ensemble(
             args.checkpoint_dir, args.dataset_tag, args.task, args.fold,
-            num_labels, logger,
+            num_labels, logger, exclude_models=args.exclude_models,
         )
         tag = f"{args.dataset_tag}_ensemble"
     else:
@@ -163,6 +195,8 @@ def main(argv=None):
         tag = Path(args.checkpoint).parent.name or "single_model"
 
     out_dir = Path(args.output_dir) / tag
+    if args.ngram >= 2:
+        out_dir = out_dir.parent / f"{out_dir.name}_bigram"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     lime_explanations = []
@@ -174,7 +208,7 @@ def main(argv=None):
         logger.info("Running LIME (%d samples per explanation)...", args.lime_samples)
         lime_exp = LimeExplainer(
             model, class_names=class_names,
-            num_samples=args.lime_samples, random_state=args.seed,
+            num_samples=args.lime_samples, random_state=args.seed, ngram=args.ngram,
         )
         lime_explanations = lime_exp.explain_batch(texts)
         with open(out_dir / "lime_explanations.json", "w") as f:
@@ -186,7 +220,7 @@ def main(argv=None):
         from egh490.xai import ShapExplainer
         logger.info("Running SHAP (max_evals=%d)...", args.shap_max_evals)
         shap_exp = ShapExplainer(
-            model, class_names=class_names, max_evals=args.shap_max_evals,
+            model, class_names=class_names, max_evals=args.shap_max_evals, ngram=args.ngram,
         )
         shap_explanations = shap_exp.explain_batch(texts)
         with open(out_dir / "shap_explanations.json", "w") as f:
@@ -241,6 +275,7 @@ def main(argv=None):
             lime_exp = LimeExplainer(
                 model, class_names=class_names,
                 num_samples=args.lime_samples, random_state=args.seed,
+                ngram=args.ngram,
             )
             stab = compute_stability(
                 lambda t: lime_exp.explain(t),
@@ -254,6 +289,7 @@ def main(argv=None):
             logger.info("Computing stability for SHAP (%d repeats)...", args.stability_repeats)
             shap_exp = ShapExplainer(
                 model, class_names=class_names, max_evals=args.shap_max_evals,
+                ngram=args.ngram,
             )
             stab_shap = compute_stability(
                 lambda t: shap_exp.explain(t),

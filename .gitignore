@@ -46,6 +46,7 @@ ENV/
 nohup.out
 
 # Model checkpoints — large binary files, not committed
+outputs/archive/checkpoints/
 outputs/checkpoints/
 
 # Raw student data — never committed (provided to supervisors separately)
