@@ -268,7 +268,8 @@ def main(argv=None):
         # perturbation methods are enabled. LIME's random sampling makes this
         # the most important case; SHAP is near-deterministic but included for
         # completeness and direct comparability.
-        stab_texts = texts[: min(5, len(texts))]
+        substantive = [t for t in texts if len(t.split()) >= 6]
+        stab_texts = substantive[: min(5, len(substantive))] or texts[:5]
         if not args.no_lime and lime_explanations:
             from egh490.xai import LimeExplainer
             logger.info("Computing stability for LIME (%d repeats)...", args.stability_repeats)
