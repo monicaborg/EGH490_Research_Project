@@ -13,8 +13,8 @@
       "min_weight": 0.01
     },
     "stability": {
-      "mean_rank_correlation": 0.8400632781590793,
-      "n_instances": 4,
+      "mean_rank_correlation": 0.8352409650274819,
+      "n_instances": 5,
       "n_repeats": 5
     }
   },
@@ -33,7 +33,7 @@
     },
     "stability": {
       "mean_rank_correlation": 1.0,
-      "n_instances": 4,
+      "n_instances": 5,
       "n_repeats": 5
     }
   }

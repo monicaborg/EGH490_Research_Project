@@ -1,39 +1,39 @@
 {
   "lime": {
     "fidelity": {
-      "comprehensiveness": 0.34143416392616927,
-      "sufficiency": 0.5782306978603204,
+      "comprehensiveness": 0.451447095774735,
+      "sufficiency": 0.6616391824185848,
       "n_instances": 150,
       "k": 5
     },
     "coverage": {
-      "coverage": 0.5733333333333334,
-      "n_covered": 86,
+      "coverage": 0.6733333333333333,
+      "n_covered": 101,
       "n_total": 150,
       "min_weight": 0.01
     },
     "stability": {
-      "mean_rank_correlation": 0.800414598713003,
-      "n_instances": 4,
+      "mean_rank_correlation": 0.9999999999999998,
+      "n_instances": 1,
       "n_repeats": 5
     }
   },
   "shap": {
     "fidelity": {
-      "comprehensiveness": 0.7209760623176893,
-      "sufficiency": 0.9547300485769907,
+      "comprehensiveness": 0.7197705862671137,
+      "sufficiency": 0.9465184677640597,
       "n_instances": 150,
       "k": 5
     },
     "coverage": {
-      "coverage": 0.6,
-      "n_covered": 90,
+      "coverage": 0.68,
+      "n_covered": 102,
       "n_total": 150,
       "min_weight": 0.01
     },
     "stability": {
-      "mean_rank_correlation": 1.0,
-      "n_instances": 4,
+      "mean_rank_correlation": 0.9999999999999998,
+      "n_instances": 1,
       "n_repeats": 5
     }
   }

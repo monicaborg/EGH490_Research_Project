@@ -1,27 +1,8 @@
 {
   "lime": {
     "fidelity": {
-      "comprehensiveness": 0.28509228728245944,
-      "sufficiency": 0.5808037583529949,
-      "n_instances": 150,
-      "k": 5
-    },
-    "coverage": {
-      "coverage": 0.4666666666666667,
-      "n_covered": 70,
-      "n_total": 150,
-      "min_weight": 0.01
-    },
-    "stability": {
-      "mean_rank_correlation": 0.8573740680437901,
-      "n_instances": 4,
-      "n_repeats": 5
-    }
-  },
-  "shap": {
-    "fidelity": {
-      "comprehensiveness": 0.6576660474079351,
-      "sufficiency": 0.9490368899640937,
+      "comprehensiveness": 0.2723560542287305,
+      "sufficiency": 0.5456017484267552,
       "n_instances": 150,
       "k": 5
     },
@@ -32,8 +13,27 @@
       "min_weight": 0.01
     },
     "stability": {
-      "mean_rank_correlation": 0.9999999999999998,
-      "n_instances": 4,
+      "mean_rank_correlation": 0.7086630971367814,
+      "n_instances": 5,
+      "n_repeats": 5
+    }
+  },
+  "shap": {
+    "fidelity": {
+      "comprehensiveness": 0.7116690530131261,
+      "sufficiency": 0.9554835999011994,
+      "n_instances": 150,
+      "k": 5
+    },
+    "coverage": {
+      "coverage": 0.32666666666666666,
+      "n_covered": 49,
+      "n_total": 150,
+      "min_weight": 0.01
+    },
+    "stability": {
+      "mean_rank_correlation": 1.0,
+      "n_instances": 5,
       "n_repeats": 5
     }
   }

@@ -1,0 +1,127 @@
+{
+  "model_key": "ensemble_soft",
+  "members": [
+    "roberta",
+    "albert",
+    "xlnet"
+  ],
+  "task": "validity",
+  "ccu": "ccu5",
+  "dataset_tag": "signals_systems_validity_corpus_ccu5",
+  "n_folds": 5,
+  "label_names": [
+    "incorrect",
+    "correct"
+  ],
+  "folds": {
+    "1": {
+      "accuracy": 0.9466666666666667,
+      "f1_macro": 0.9205508474576272,
+      "precision": 0.9205508474576272,
+      "recall": 0.9205508474576272,
+      "n_test": 75,
+      "n_members": 3,
+      "confusion_matrix": [
+        [
+          57,
+          2
+        ],
+        [
+          2,
+          14
+        ]
+      ],
+      "auc": 0.9713983050847458
+    },
+    "2": {
+      "accuracy": 0.9066666666666666,
+      "f1_macro": 0.8503847249928754,
+      "precision": 0.8827543424317618,
+      "recall": 0.8268008474576272,
+      "n_test": 75,
+      "n_members": 3,
+      "confusion_matrix": [
+        [
+          57,
+          2
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "auc": 0.926906779661017
+    },
+    "3": {
+      "accuracy": 0.9466666666666667,
+      "f1_macro": 0.9166666666666667,
+      "precision": 0.939695550351288,
+      "recall": 0.8977754237288136,
+      "n_test": 75,
+      "n_members": 3,
+      "confusion_matrix": [
+        [
+          58,
+          1
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "auc": 0.9544491525423728
+    },
+    "4": {
+      "accuracy": 0.88,
+      "f1_macro": 0.8251748251748252,
+      "precision": 0.8326271186440678,
+      "recall": 0.8184584178498986,
+      "n_test": 75,
+      "n_members": 3,
+      "confusion_matrix": [
+        [
+          54,
+          4
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      "auc": 0.9574036511156188
+    },
+    "5": {
+      "accuracy": 0.9466666666666667,
+      "f1_macro": 0.9205508474576272,
+      "precision": 0.9416666666666667,
+      "recall": 0.9031440162271804,
+      "n_test": 75,
+      "n_members": 3,
+      "confusion_matrix": [
+        [
+          57,
+          1
+        ],
+        [
+          3,
+          14
+        ]
+      ],
+      "auc": 0.9888438133874239
+    }
+  },
+  "mean": {
+    "accuracy": 0.9253333333333332,
+    "f1_macro": 0.8866655823499243,
+    "precision": 0.9034589051102824,
+    "recall": 0.8733459105442295,
+    "auc": 0.9598003403582357
+  },
+  "std": {
+    "accuracy": 0.02745501370929867,
+    "f1_macro": 0.04072812608394456,
+    "precision": 0.041257442684638566,
+    "recall": 0.0421713505539767,
+    "auc": 0.020466566771701018
+  }
+}
