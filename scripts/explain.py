@@ -118,6 +118,7 @@ def load_ensemble(checkpoint_dir: str, dataset_tag: str, task: str, fold: int,
     if exclude:
         logger.info("Excluding from ensemble: %s", sorted(exclude))
     classifiers = []
+    loaded_keys = []
     for key in model_keys:
         run_name = f"{task}_{key}_fold{fold}_{dataset_tag}"
         path = Path(checkpoint_dir) / run_name / "final"
@@ -126,13 +127,19 @@ def load_ensemble(checkpoint_dir: str, dataset_tag: str, task: str, fold: int,
             continue
         logger.info("Loading %s from %s", key, path)
         classifiers.append(TransformerClassifier.load(str(path), num_labels=num_labels))
+        loaded_keys.append(key)
 
     if len(classifiers) < 2:
         raise RuntimeError(
             f"Ensemble needs at least 2 models; found {len(classifiers)}. "
             "Did you train with --save-models?"
         )
-    return Ensemble(classifiers, strategy="soft")
+    ens = Ensemble(classifiers, strategy="soft")
+    # Record which member is which, so downstream per-member outputs (e.g.
+    # attention extraction) can label them correctly even when a checkpoint
+    # was missing and skipped above.
+    ens.member_keys = loaded_keys
+    return ens
 
 
 # ------------------------------------------------------------------ #
@@ -227,17 +234,42 @@ def main(argv=None):
             json.dump([e.as_dict() for e in shap_explanations], f, indent=2)
         logger.info("Saved SHAP → %s", out_dir / "shap_explanations.json")
 
-    # ── Attention (single model only) ────────────────────────────────
-    if not args.no_attention and not args.ensemble:
+    # ── Attention ────────────────────────────────────────────────────
+    # Attention is read from inside a single transformer, so there is no
+    # single "ensemble attention": members differ in depth, head count and
+    # tokenisation, and averaging across them would fabricate a quantity
+    # with no architectural meaning. Instead, when explaining an ensemble
+    # we extract each member's attention separately and save it per model.
+    # This keeps attention honest about what it measures and additionally
+    # permits comparison of what different architectures attend to on the
+    # same responses.
+    if not args.no_attention:
         from egh490.xai import AttentionExtractor
-        logger.info("Extracting attention weights...")
-        attn = AttentionExtractor(model)
-        attn_results = attn.extract_batch(texts)
-        with open(out_dir / "attention.json", "w") as f:
-            json.dump([a.as_dict() for a in attn_results], f, indent=2)
-        logger.info("Saved attention → %s", out_dir / "attention.json")
-    elif not args.no_attention and args.ensemble:
-        logger.info("Skipping attention — not defined for an ensemble")
+
+        members = []
+        if args.ensemble:
+            classifiers = getattr(model, "classifiers", [])
+            # member_keys is set by load_ensemble and accounts for any
+            # checkpoints that were missing and skipped.
+            member_names = getattr(model, "member_keys",
+                                   [f"member{i+1}" for i in range(len(classifiers))])
+            members = list(zip(member_names, classifiers))
+        else:
+            members = [(Path(args.checkpoint).parent.name or "model", model)]
+
+        for name, clf in members:
+            try:
+                logger.info("Extracting attention weights (%s)...", name)
+                attn = AttentionExtractor(clf)
+                attn_results = attn.extract_batch(texts)
+                fname = f"attention_{name}.json" if args.ensemble else "attention.json"
+                with open(out_dir / fname, "w") as f:
+                    json.dump([a.as_dict() for a in attn_results], f, indent=2)
+                logger.info("Saved attention (%s) → %s", name, out_dir / fname)
+            except Exception as exc:
+                # XLNet in particular exposes attentions differently from
+                # BERT-family models; a failure here should not abort the run.
+                logger.warning("Attention extraction failed for %s: %s", name, exc)
 
     # ── Evaluation ───────────────────────────────────────────────────
     if not args.no_eval:
@@ -268,8 +300,7 @@ def main(argv=None):
         # perturbation methods are enabled. LIME's random sampling makes this
         # the most important case; SHAP is near-deterministic but included for
         # completeness and direct comparability.
-        substantive = [t for t in texts if len(t.split()) >= 6]
-        stab_texts = substantive[: min(5, len(substantive))] or texts[:5]
+        stab_texts = texts[: min(5, len(texts))]
         if not args.no_lime and lime_explanations:
             from egh490.xai import LimeExplainer
             logger.info("Computing stability for LIME (%d repeats)...", args.stability_repeats)
