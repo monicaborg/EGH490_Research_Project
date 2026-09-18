@@ -202,6 +202,12 @@ def main(argv=None):
         tag = Path(args.checkpoint).parent.name or "single_model"
 
     out_dir = Path(args.output_dir) / tag
+    # Separate directories per task: without this, a confidence run would
+    # overwrite a validity run's explanations for the same dataset tag.
+    # Validity keeps the original (unsuffixed) path for backward compatibility
+    # with explanations already generated.
+    if args.task != "validity":
+        out_dir = out_dir.parent / f"{out_dir.name}_{args.task}"
     if args.ngram >= 2:
         out_dir = out_dir.parent / f"{out_dir.name}_bigram"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -300,7 +306,8 @@ def main(argv=None):
         # perturbation methods are enabled. LIME's random sampling makes this
         # the most important case; SHAP is near-deterministic but included for
         # completeness and direct comparability.
-        stab_texts = texts[: min(5, len(texts))]
+        substantive = [t for t in texts if len(t.split()) >= 6]
+        stab_texts = substantive[: min(5, len(substantive))] or texts[: min(5, len(texts))] 
         if not args.no_lime and lime_explanations:
             from egh490.xai import LimeExplainer
             logger.info("Computing stability for LIME (%d repeats)...", args.stability_repeats)
