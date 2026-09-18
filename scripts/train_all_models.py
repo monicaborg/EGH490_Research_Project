@@ -53,25 +53,25 @@ MODEL_CONFIGS = [
     {
         "key":        "electra",
         "checkpoint": "google/electra-small-discriminator",
-        "batch_size": 16,
+        "batch_size": 8,   # Somers: batch 8 for all models
         "max_length": 256,
     },
     {
         "key":        "roberta",
         "checkpoint": "roberta-base",
-        "batch_size": 8,
+        "batch_size": 8,   # Somers: batch 8 ✓ (unchanged)
         "max_length": 256,
     },
     {
         "key":        "xlnet",
         "checkpoint": "xlnet-base-cased",
-        "batch_size": 4,
+        "batch_size": 8,   # Somers: batch 8 (was 4, memory-limited)
         "max_length": 128,
     },
     {
         "key":        "albert",
         "checkpoint": "albert-base-v2",
-        "batch_size": 16,
+        "batch_size": 8,   # Somers: batch 8 (was 16)
         "max_length": 256,
     },
 ]
@@ -98,6 +98,10 @@ def parse_args(argv=None):
     p.add_argument("--class-weighted", action="store_true",
                     help="Use inverse-frequency class weights in the loss "
                          "(helps prevent majority-class collapse on imbalanced CCUs)")
+    p.add_argument("--include-mcq", action="store_true",
+                    help="Pilot (Section 3.8): prepend the student's MCQ selection "
+                         "to the text seen by the model, e.g. '[MCQ: a] <response>'. "
+                         "Tests whether MCQ context helps resolve guess/slip cases.")
     p.add_argument("--seed",         type=int,   default=20260413)
     # Output
     p.add_argument("--output-dir",   default="outputs/checkpoints")
@@ -231,6 +235,9 @@ def fit_with_loss_curve(clf, training_cfg, train_texts, train_labels, eval_texts
         def on_log(self, args, state, control, logs=None, **kw):
             loss_cb.on_log(args, state, control, logs=logs, **kw)
 
+    # Standard Trainer, unless per-class loss weights are configured — then
+    # use a subclass that applies weighted cross-entropy. This is the
+    # standard remedy for majority-class collapse on imbalanced data.
     trainer_cls = HFTrainer
     if getattr(training_cfg, "class_weights", None) is not None:
         import torch
@@ -424,6 +431,7 @@ def main(argv=None):
         task=args.task,
         n_folds=args.n_folds,
         seed=args.seed,
+        include_mcq=args.include_mcq,
     )
     if getattr(args, "text_column", None):
         dm_kwargs["text_column"] = args.text_column
@@ -466,6 +474,10 @@ def main(argv=None):
     class_distribution = {dm.label_names[k]: v for k, v in sorted(label_counts.items())}
     logger.info("Class distribution (whole dataset): %s", class_distribution)
 
+    # Balanced class weights (sklearn-style: n_samples / (n_classes * count)),
+    # used only when --class-weighted is passed. Computed once from the whole
+    # dataset's distribution rather than per-fold, since fold-to-fold label
+    # ratios are very similar for stratified splits.
     class_weights = None
     if args.class_weighted:
         n_samples = sum(label_counts.values())

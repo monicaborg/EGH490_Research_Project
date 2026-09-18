@@ -31,7 +31,7 @@ from typing import Iterator
 import numpy as np
 import pandas as pd
 
-from egh490.data.schema import COL_TEXT, get_task_config
+from egh490.data.schema import COL_MCQ, COL_TEXT, get_task_config
 from egh490.utils.logging import get_logger
 
 logger = get_logger(__name__)
@@ -54,6 +54,16 @@ class DataModule:
     text_column
         Override the text column name if the real data uses a different
         header. Defaults to the value in ``schema.py``.
+    include_mcq
+        Pilot feature (Section 3.8 extension). When True, prepends the
+        student's MCQ selection to the text seen by the model, e.g.
+        ``"[MCQ: a] lower frequency have a higher magnitude..."``. Only
+        ``self.texts`` (what the model is trained on) is affected —
+        ``self._df[self.text_col]`` keeps the original, unmodified response
+        text, so downstream response-matching (explain.py,
+        evaluate_ensemble.py, mcq_mismatch_analysis.py) is unaffected.
+    mcq_column
+        Which column holds the MCQ selection. Defaults to schema's COL_MCQ.
     """
 
     def __init__(
@@ -63,11 +73,14 @@ class DataModule:
         n_folds: int = 5,
         seed: int = 20260413,
         text_column: str | None = None,
+        include_mcq: bool = False,
+        mcq_column: str | None = None,
     ) -> None:
         self.csv_path = Path(csv_path)
         self.task = task
         self.n_folds = n_folds
         self.seed = seed
+        self.include_mcq = include_mcq
 
         task_cfg = get_task_config(task)
         self.label_column = task_cfg["label_column"]
@@ -77,8 +90,26 @@ class DataModule:
         self.text_col = text_column or COL_TEXT
 
         self._df = self._load_and_validate()
-        self.texts: list[str] = self._df[self.text_col].tolist()
         self.labels: list[int] = self._df["_label"].tolist()
+
+        if include_mcq:
+            mcq_col = mcq_column or COL_MCQ
+            if mcq_col not in self._df.columns:
+                raise ValueError(
+                    f"--include-mcq given but column {mcq_col!r} not found "
+                    f"in {self.csv_path}. Available: {list(self._df.columns)}"
+                )
+            mcq_values = self._df[mcq_col].astype(str).str.strip().str.lower()
+            self.texts: list[str] = [
+                f"[MCQ: {mcq}] {text}"
+                for mcq, text in zip(mcq_values, self._df[self.text_col])
+            ]
+            logger.info(
+                "MCQ-augmented input enabled (column=%s). Example: %r",
+                mcq_col, self.texts[0] if self.texts else None,
+            )
+        else:
+            self.texts: list[str] = self._df[self.text_col].tolist()
 
         logger.info(
             "DataModule loaded: %d responses, task=%s, %d folds, labels=%s",
@@ -117,8 +148,15 @@ class DataModule:
         # Convert text to string (handles any numeric entries)
         df[self.text_col] = df[self.text_col].astype(str)
 
-        # Single-word responses retained — consistent with training on the
-        # full realistic distribution; all responses were manually annotated.
+        # Drop single-word responses per Somers et al. preprocessing
+        before = len(df)
+        df = df[df[self.text_col].str.strip().str.contains(r"\s", regex=True)].copy()
+        dropped = before - len(df)
+        if dropped > 0:
+            logger.info(
+                "Removed %d single-word responses (per Somers et al. preprocessing)",
+                dropped,
+            )
 
         # Encode labels
         unknown = set(df[self.label_column].unique()) - set(self.label_map.keys())
