@@ -2,10 +2,10 @@
 
 Codebase for the EGH490 capstone project, submitted as *Right Answer, Wrong
 Reason: Explainable AI for Conceptual Understanding Assessment in Engineering
-Education* (working title for eventual journal submission; project title
+Education* (working title; project title
 throughout the QUT capstone is *Explainable Automated Scoring of Conceptual
 Reasoning in Signals & Systems*). Monica Borg, n9802045, supervisors Dr Sam
-Cunningham-Nelson and Dr Wageeh Boles, QUT Faculty of Engineering, 2026.
+Cunningham and Dr Wageeh Boles, QUT Faculty of Engineering, 2026.
 
 This project replicates the transformer ensemble from Somers, Cunningham-Nelson
 & Boles (2021) on Signals & Systems MCQ free-text explanations and layers
@@ -86,7 +86,7 @@ hyperparameter configuration tested (learning rates 2e-5–3e-4, batch sizes
 rate. Reported for completeness but **excluded from the final ensemble**,
 which uses RoBERTa + ALBERT + XLNet.
 
-### Confidence (secondary task) — ensemble
+### Confidence — ensemble
 
 | CCU | Accuracy | AUC | Macro F1 |
 |-----|---------:|----:|---------:|
@@ -296,7 +296,7 @@ python scripts/export_educator_report.py \
   --explanations-dir outputs/explanations/signals_systems_validity_corpus_ccu1_ensemble \
   --ccu ccu1 --output outputs/educator_reports/ccu1_report.csv
 
-# 8. MCQ-vs-reasoning mismatch analysis (Section 3.8 framework)
+# 8. MCQ-vs-reasoning mismatch analysis 
 python scripts/mcq_mismatch_analysis.py \
   --csv data/raw/signals_systems_validity_corpus.csv --ccu ccu1 \
   --checkpoint-dir outputs/checkpoints \
@@ -411,26 +411,11 @@ dataset variants reached 455 GB during development).
 ## Ethics
 
 HREC approval #11077 (LR 2026-11077-29139, approved 24/04/2026, expires
-24/04/2031, CI: Dr Sam Cunningham-Nelson). `data/raw/` is gitignored and
+24/04/2031, CI: Dr Sam Cunningham). `data/raw/` is gitignored and
 guarded by a runtime check requiring `ETHICS_APPROVED=1` plus an approval
 reference on disk. The labelled corpus is shared with supervisors directly
 rather than through this repository.
 
-## What's next
-
-1. **Inter-rater review completion** — 3 of 6 CCUs returned (pooled κ = 0.722,
-   "substantial" agreement, disagreement traced to a single identified
-   annotation convention); CCU4–6 outstanding.
-2. **Full-scale MCQ-plus-text trial** — the two-CCU pilot (Appendix A17) was
-   inconclusive; a six-CCU, multi-model trial with a non-concatenative
-   feature encoding is the natural follow-up.
-3. **Threshold and ensemble-composition optimisation** — given the ensemble's
-   AUC advantage over the published baseline, tuning the decision threshold
-   or testing a two-model (RoBERTa + ALBERT) ensemble are cheap, no-retrain
-   experiments likely to recover much of the residual accuracy gap.
-4. **Deployment study** — whether exposing these explanations to educators or
-   students measurably changes teaching decisions or understanding.
-5. **Final report + oral defence.**
 
 ## References
 
