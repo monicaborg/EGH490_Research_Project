@@ -50,9 +50,9 @@ outputs/archive/checkpoints/
 outputs/checkpoints/
 
 # Raw student data — never committed (provided to supervisors separately)
-data/raw/signals_systems_validity_corpus.csv
-data/raw/Monica_Data_CCUS*.csv
-data/raw/Monica_Data_CCUS*.xlsx
+data/raw/*.csv
+data/raw/*.xlsx
+!data/raw/.gitkeep
 
 # Archived data — contains student data, not committed
 data/archive/
