@@ -1,11 +1,9 @@
 # EGH490_Research_Project
 
-Codebase for the EGH490 capstone project, submitted as *Right Answer, Wrong
-Reason: Explainable AI for Conceptual Understanding Assessment in Engineering
-Education* (working title; project title
-throughout the QUT capstone is *Explainable Automated Scoring of Conceptual
-Reasoning in Signals & Systems*). Monica Borg, n9802045, supervisors Dr Sam
-Cunningham and Dr Wageeh Boles, QUT Faculty of Engineering, 2026.
+Codebase for the EGH490 capstone project, *Explainable Automated Scoring of
+Conceptual Reasoning in Signals & Systems* (Monica Borg, n9802045, supervisors
+Dr Sam Cunningham-Nelson and Dr Wageeh Boles, QUT Faculty of Engineering,
+2026).
 
 This project replicates the transformer ensemble from Somers, Cunningham-Nelson
 & Boles (2021) on Signals & Systems MCQ free-text explanations and layers
@@ -24,13 +22,13 @@ from egh490.xai import LimeExplainer, ShapExplainer, AttentionExtractor
 from egh490.utils import set_global_seed, load_config, get_logger
 ```
 
-## Current status
+## Overview
 
 **62 passing tests. Both classification tasks (validity, confidence) trained
 and explained end-to-end across all six CCUs, both attribution granularities.
-Ensemble evaluated directly (not inferred from individual members). MCQ-plus-
-text combined-input pilot complete. Ethics approved (HREC #11077). Inter-rater
-review in progress (3 of 6 CCUs returned).**
+Ensemble evaluated directly via inference-only scoring. MCQ-plus-text
+combined-input pilot complete. Ethics approved (HREC #11077). Independent
+inter-rater review of the annotated corpus completed.**
 
 | Layer | What's built | Tests |
 |-------|-------------|-------|
@@ -86,7 +84,7 @@ hyperparameter configuration tested (learning rates 2e-5–3e-4, batch sizes
 rate. Reported for completeness but **excluded from the final ensemble**,
 which uses RoBERTa + ALBERT + XLNet.
 
-### Confidence — ensemble
+### Confidence (secondary task) — ensemble
 
 | CCU | Accuracy | AUC | Macro F1 |
 |-----|---------:|----:|---------:|
@@ -106,9 +104,10 @@ depends on the difficulty of the underlying concept.
 
 ### Key training findings
 
-- **Deduplication hurts.** Removing exact-duplicate responses cut the
-  training set by ~19% and consistently lowered accuracy (e.g. ALBERT CCU2:
-  90.7% deduplicated vs 93.4% full). The full corpus is retained.
+- **Deduplication hurts.** Removing exact-duplicate responses (identical text
+  and MCQ selection) cut the training set by ~19% and consistently lowered
+  accuracy (e.g. ALBERT CCU2: 90.7% deduplicated vs 93.4% full). The full
+  corpus is canonical.
 - **Single-word filtering removed.** An inherited preprocessing step silently
   dropped 723 responses; these are retained as part of the realistic response
   distribution.
@@ -120,8 +119,7 @@ depends on the difficulty of the underlying concept.
 - **MCQ-plus-text combined input — tested, inconclusive.** A two-CCU pilot
   (RoBERTa, CCU3 and CCU6) found no meaningful effect on CCU3 and a clear
   degradation on CCU6, most plausibly a fold-dependent shortcut on the
-  corpus's smallest, most volatile CCU rather than a genuine signal. Full-
-  scale, multi-model trial remains open.
+  corpus's smallest, most volatile CCU rather than a genuine signal.
 
 ## Results — explanation quality
 
@@ -191,13 +189,20 @@ Explanation pipelines:
 - **Attention** — supplementary qualitative visualisation only
   (Wiegreffe & Pinter 2019: plausible, not faithful).
 
-Analytical framework (Section 3.8 in the report): a four-category cross-
-tabulation of reasoning validity against MCQ correctness — genuine
-understanding, slip, guess, consistent misconception — used to audit whether
-classifier errors concentrate on the educationally significant "guess" case
-(invalid reasoning, correct MCQ; 30.5% of the corpus).
+Analytical framework: a four-category cross-tabulation of reasoning validity
+against MCQ correctness — genuine understanding, slip, guess, consistent
+misconception — used to audit whether classifier errors concentrate on the
+educationally significant "guess" case (invalid reasoning, correct MCQ; 30.5%
+of the corpus), building on the pointer framework and Concept Understanding
+Matrix of Cunningham-Nelson (2019).
 
 ## Repository layout
+
+This repository contains the codebase only. The annotated corpus, trained
+checkpoints, generated explanations, and all derived outputs are excluded
+(see Ethics and Reproducibility below) — every result reported here can be
+reproduced in trend and magnitude by cloning this repository and running the
+pipeline end to end (see Reproducibility for hardware-dependent caveats).
 
 ```
 EGH490_Research_Project/
@@ -213,14 +218,14 @@ EGH490_Research_Project/
 │   │   ├── base.py             TransformerClassifier (predict / predict_proba)
 │   │   ├── trainer.py          Fine-tuning, optional class-weighted loss
 │   │   └── ensemble.py         Soft/hard voting with confidence tie-breaking
-│   ├── xai/            Explanation generation and evaluation
+│   ├── xai/             Explanation generation and evaluation
 │   │   ├── lime_explainer.py   LIME, unigram + bigram modes
 │   │   ├── shap_explainer.py   SHAP Partition Explainer, unigram + bigram
 │   │   ├── attention.py        Attention weight extraction
 │   │   ├── evaluation.py       Fidelity, stability, coverage
 │   │   └── visualise.py        Token heatmaps, feature importance plots
-│   ├── evaluation/     Inter-rater agreement (Cohen's kappa)
-│   └── utils/          Seeding, logging, I/O, config loader, device
+│   ├── evaluation/      Inter-rater agreement (Cohen's kappa)
+│   └── utils/            Seeding, logging, I/O, config loader, device
 ├── scripts/
 │   ├── train_all_models.py        Train all models x folds x task for one CCU
 │   ├── explain.py                 Generate LIME/SHAP/attention + metrics
@@ -231,17 +236,9 @@ EGH490_Research_Project/
 │   ├── plot_xai.py                XAI figures from saved JSON
 │   ├── export_educator_report.py  Flat per-response CSV for educators
 │   └── compute_agreement.py       Cohen's kappa between two markers
-├── tests/              62 passing tests (unit + integration)
-├── data/
-│   ├── raw/            Real corpus — gitignored, ethics-restricted
-│   └── archive/        Superseded dataset variants
-└── outputs/
-    ├── metrics/            Per-CCU, per-task training results (JSON)
-    ├── explanations/       Per-CCU, per-task XAI outputs (JSON)
-    ├── figures/            Generated figures
-    ├── educator_reports/   Flattened per-response CSVs
-    ├── agreement/          Inter-rater agreement outputs
-    └── archive/            Superseded runs
+├── tests/               62 passing tests (unit + integration)
+├── data/                 Gitignored — corpus supplied by supervisors, see Ethics
+└── outputs/               Gitignored — regenerated by running the pipeline
 ```
 
 ## Quickstart
@@ -296,12 +293,15 @@ python scripts/export_educator_report.py \
   --explanations-dir outputs/explanations/signals_systems_validity_corpus_ccu1_ensemble \
   --ccu ccu1 --output outputs/educator_reports/ccu1_report.csv
 
-# 8. MCQ-vs-reasoning mismatch analysis 
+# 8. MCQ-vs-reasoning mismatch analysis (four-category framework)
 python scripts/mcq_mismatch_analysis.py \
   --csv data/raw/signals_systems_validity_corpus.csv --ccu ccu1 \
   --checkpoint-dir outputs/checkpoints \
   --dataset-tag signals_systems_validity_corpus_ccu1
 ```
+
+`data/raw/signals_systems_validity_corpus.csv` is not included in this
+repository (see Ethics); supervisors and examiners have received it directly.
 
 ## Key script options
 
@@ -316,8 +316,8 @@ scripts/train_all_models.py
   --lr FLOAT                Learning rate (default: 2e-5)
   --patience N              Early stopping patience (default: 2, 0 disables)
   --class-weighted          Inverse-frequency class weights in the loss
-  --include-mcq             Pilot: prepend student's MCQ selection to the
-                             text seen by the model (Section 3.8 extension)
+  --include-mcq             MCQ-plus-text pilot: prepend student's MCQ
+                             selection to the text seen by the model
   --save-models              Persist checkpoints for later XAI use
 
 scripts/evaluate_ensemble.py
@@ -345,7 +345,7 @@ scripts/mcq_mismatch_analysis.py
   --checkpoint-dir PATH / --dataset-tag TAG
   --models [NAMES]           Ensemble members (default excludes electra)
   (produces ground-truth and classifier-error cross-tabulations against
-  the four-category ground-truth framework — Section 3.8)
+  the four-category ground-truth framework)
 ```
 
 Batch sizes are set per model in `MODEL_CONFIGS` (ELECTRA 16, RoBERTa 8,
@@ -390,32 +390,33 @@ Training the full grid (4 models × 6 CCUs × 5 folds × 2 tasks) takes roughly
 Explanation generation is ~2–2.5 hours per CCU per task per attribution mode
 (LIME dominates at ~1,000 model evaluations per explained response).
 
-Checkpoints are large — `outputs/checkpoints/` is gitignored, and superseded
-checkpoint sets should be deleted rather than archived (a full set across all
-dataset variants reached 455 GB during development).
-
 ## Reproducibility
 
 - All random seeds fixed in `egh490/utils/seeding.py` (default 20260413).
 - Fixed seed means XAI response sampling is *identical* across task and
   granularity for a given CCU — the same 150 responses are explained whether
   running validity or confidence, unigram or bigram, enabling direct
-  same-response comparison (used throughout Section 4.6's figures).
+  same-response comparison.
 - Library versions pinned in `pyproject.toml`.
 - 5-fold stratified splits deterministic given a seed.
 - Label encoding: validity (incorrect=0, correct=1),
   confidence (low=0, high=1).
 - XAI outputs are serialised to JSON, so figures can be regenerated without
   re-running the (expensive) explanation step.
+- `data/` and `outputs/` are gitignored in full — every table, figure, and
+  metric reported in the final report is reproducible by running the
+  Quickstart commands above against the corpus supplied separately.
 
 ## Ethics
 
 HREC approval #11077 (LR 2026-11077-29139, approved 24/04/2026, expires
-24/04/2031, CI: Dr Sam Cunningham). `data/raw/` is gitignored and
-guarded by a runtime check requiring `ETHICS_APPROVED=1` plus an approval
-reference on disk. The labelled corpus is shared with supervisors directly
-rather than through this repository.
-
+24/04/2031, CI: Dr Sam Cunningham-Nelson). The annotated corpus, trained
+checkpoints, and all generated outputs (explanations, educator reports,
+agreement analyses) contain or are derived from student free-text and are
+therefore gitignored in full — none of `data/` or `outputs/` is committed to
+this repository. This data is shared with supervisors and examiners directly,
+governed by a runtime check requiring `ETHICS_APPROVED=1` plus an approval
+reference on disk.
 
 ## References
 

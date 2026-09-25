@@ -49,13 +49,11 @@ nohup.out
 outputs/archive/checkpoints/
 outputs/checkpoints/
 
-# Raw student data — never committed (provided to supervisors separately)
-data/raw/*.csv
-data/raw/*.xlsx
-!data/raw/.gitkeep
-
-# Archived data — contains student data, not committed
-data/archive/
+# All data and outputs — anything derived from student responses may embed
+# verbatim free-text and is ethics-restricted; never committed. Reproducible
+# by cloning and running the pipeline (see README Quickstart).
+data/
+outputs/
 
 # Temporary files
 *.tmp
