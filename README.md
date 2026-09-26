@@ -41,6 +41,40 @@ inter-rater review of the annotated corpus completed.**
 | Evaluation | Cohen's kappa inter-rater agreement; inference-only ensemble scoring | — |
 | **Total** | | **62** |
 
+## Results — a note on reproducibility before the numbers below
+
+The figures in this README (and in the accompanying report) are illustrative
+of the trends this project found — full corpus retention beats deduplication,
+AUC exceeds the published baseline more often than accuracy does, SHAP is
+more faithful than LIME, confidence explanations show higher coverage than
+validity — not fixed constants. **Re-running this pipeline will not reproduce
+these figures exactly**, for several compounding reasons:
+
+- **Training is not bit-deterministic across hardware or runs.** Fixed seeds
+  (`egh490/utils/seeding.py`) guarantee deterministic data splits and
+  sampling, but floating-point operations in GPU/MPS-accelerated training are
+  not guaranteed to reproduce identically across devices, or necessarily
+  across repeated runs on the same device. Figures reported here were
+  produced on Apple Silicon (MPS backend); different hardware, PyTorch
+  versions, or even a different run on the same machine will typically land
+  close in trend and magnitude but not to the exact decimal.
+- **A post-hoc reproducibility check on one CCU confirmed this directly.**
+  Retraining CCU2's ensemble independently reproduced classifier accuracy
+  within roughly 1–1.6 percentage points for RoBERTa, ALBERT, and the
+  ensemble; XLNet varied more (~5 points), consistent with its documented
+  training instability at small batch size. Explanation-quality metrics
+  (comprehensiveness, sufficiency) varied more than accuracy, since XAI
+  evaluation draws a fresh 150-response sample against a retrained model —
+  both sources of variation compound.
+- **The annotated corpus itself may still be revised.** Independent
+  inter-rater review (Section 4.3.1 of the report) surfaced a systematic
+  annotation-convention difference; any relabelling arising from this would
+  shift downstream numbers independent of anything in the pipeline itself.
+
+Treat every number below as **"this is what was found, and the direction and
+approximate scale is expected to hold"** — not as a value a re-run should be
+expected to match precisely.
+
 ## Results — classifier performance, full corpus
 
 Trained on the full 3,386-response corpus (no deduplication, no class
@@ -66,6 +100,8 @@ Somers' highest-accuracy/lowest-AUC combination on CCU1 is consistent with an
 imbalanced dataset rewarding majority-class prediction. Ensembling is not
 uniformly beneficial here — it beats its strongest individual member on only
 2 of 6 CCUs, tracking XLNet's per-CCU weakness (see per-model table below).
+This pattern (trailing accuracy, leading AUC) is the headline finding and is
+expected to be robust to re-runs even though exact figures will vary.
 
 ### Validity — per-model accuracy
 
@@ -81,8 +117,11 @@ uniformly beneficial here — it beats its strongest individual member on only
 ELECTRA-small failed to learn a usable decision boundary across every CCU and
 hyperparameter configuration tested (learning rates 2e-5–3e-4, batch sizes
 8 and 16), producing F1 around 0.45 with accuracy pinned to the majority-class
-rate. Reported for completeness but **excluded from the final ensemble**,
-which uses RoBERTa + ALBERT + XLNet.
+rate — this qualitative failure is expected to reproduce robustly, even
+though the exact accuracy figure may shift. ELECTRA is reported for
+completeness but **excluded from the final ensemble**, which uses
+RoBERTa + ALBERT + XLNet. XLNet showed the largest run-to-run variance of the
+three retained models in a post-hoc reproducibility check (see note above).
 
 ### Confidence (secondary task) — ensemble
 
@@ -100,14 +139,16 @@ Confidence is both more accurate and far more *consistent* across CCUs than
 validity (1.6-point accuracy spread vs 7.8 points) — consistent with
 confidence being carried by surface linguistic features (assertiveness,
 brevity, hedging) that behave uniformly regardless of topic, while validity
-depends on the difficulty of the underlying concept.
+depends on the difficulty of the underlying concept. This relative pattern
+(confidence higher and more consistent than validity) is the robust finding;
+absolute figures will vary by run.
 
 ### Key training findings
 
 - **Deduplication hurts.** Removing exact-duplicate responses (identical text
   and MCQ selection) cut the training set by ~19% and consistently lowered
-  accuracy (e.g. ALBERT CCU2: 90.7% deduplicated vs 93.4% full). The full
-  corpus is canonical.
+  accuracy (e.g. ALBERT CCU2: 90.7% deduplicated vs 93.4% full in the runs
+  reported here). The full corpus is canonical.
 - **Single-word filtering removed.** An inherited preprocessing step silently
   dropped 723 responses; these are retained as part of the realistic response
   distribution.
@@ -126,6 +167,10 @@ depends on the difficulty of the underlying concept.
 Explanations generated on the three-model ensemble, 150 sampled responses per
 CCU (fixed seed — identical sample across task/granularity, enabling direct
 same-response comparison), both unigram and bigram attribution, both tasks.
+As noted above, faithfulness metrics showed the largest run-to-run variance
+of anything reported in this project, since they compound model-training
+variance with fresh-sample variance; treat the values below as indicative of
+scale and direction, not fixed targets.
 
 | Metric | LIME (validity, uni/bi) | SHAP (validity, uni/bi) | LIME (confidence, uni/bi) | SHAP (confidence, uni/bi) |
 |--------|--------------------------|--------------------------|-----------------------------|-----------------------------|
@@ -146,7 +191,10 @@ same-response comparison), both unigram and bigram attribution, both tasks.
 - **SHAP is more faithful than LIME on every metric, every CCU, both tasks,
   both granularities**, and achieves perfect stability (1.000) throughout —
   the expected result of deterministic Shapley computation vs LIME's
-  stochastic sampling.
+  stochastic sampling. SHAP's perfect stability is itself hardware-independent
+  (it follows from the algorithm being near-deterministic, not from anything
+  device-specific), so this particular result is the most reliably
+  reproducible figure in the table above.
 - **Bigram attribution helps SHAP, hurts LIME.** Comprehensiveness rises for
   SHAP (+0.093 validity, +0.110 confidence) and falls for LIME; LIME's
   stability also degrades under bigram (validity 0.905→0.809; confidence
@@ -202,43 +250,53 @@ This repository contains the codebase only. The annotated corpus, trained
 checkpoints, generated explanations, and all derived outputs are excluded
 (see Ethics and Reproducibility below) — every result reported here can be
 reproduced in trend and magnitude by cloning this repository and running the
-pipeline end to end (see Reproducibility for hardware-dependent caveats).
+pipeline end to end (see the reproducibility note above for why exact figures
+will vary).
 
 ```
 EGH490_Research_Project/
 ├── configs/            YAML configs (data, model, training, xai)
-├── egh490/             Python package (flat layout)
-│   ├── data/           DataModule, schema, CSV loading, k-fold splits
-│   │   ├── schema.py           Column names, label mappings, task config
-│   │   ├── datamodule.py       Load CSV → encode labels → stratified k-fold;
-│   │   │                       optional MCQ-augmented input (include_mcq)
-│   │   ├── convert_raw_data.py Map marked export → pipeline schema
-│   │   └── prepare_datasets.py Build full / junk-filtered dataset variants
-│   ├── models/         Transformer wrapper, trainer, ensemble
-│   │   ├── base.py             TransformerClassifier (predict / predict_proba)
-│   │   ├── trainer.py          Fine-tuning, optional class-weighted loss
-│   │   └── ensemble.py         Soft/hard voting with confidence tie-breaking
-│   ├── xai/             Explanation generation and evaluation
-│   │   ├── lime_explainer.py   LIME, unigram + bigram modes
-│   │   ├── shap_explainer.py   SHAP Partition Explainer, unigram + bigram
-│   │   ├── attention.py        Attention weight extraction
-│   │   ├── evaluation.py       Fidelity, stability, coverage
-│   │   └── visualise.py        Token heatmaps, feature importance plots
-│   ├── evaluation/      Inter-rater agreement (Cohen's kappa)
-│   └── utils/            Seeding, logging, I/O, config loader, device
+├── egh490/              Python package (flat layout)
+│   ├── data/            DataModule, schema, CSV loading, k-fold splits
+│   │   ├── schema.py            Column names, label mappings, task config
+│   │   ├── datamodule.py        Load CSV → encode labels → stratified k-fold;
+│   │   │                        optional MCQ-augmented input (include_mcq)
+│   │   ├── convert_raw_data.py  Map marked export → pipeline schema
+│   │   └── prepare_datasets.py  Build full / junk-filtered dataset variants
+│   ├── models/          Transformer wrapper, trainer, ensemble
+│   │   ├── base.py              TransformerClassifier (predict / predict_proba)
+│   │   ├── trainer.py           Fine-tuning, optional class-weighted loss
+│   │   └── ensemble.py          Soft/hard voting with confidence tie-breaking
+│   ├── xai/              Explanation generation and evaluation
+│   │   ├── lime_explainer.py    LIME, unigram + bigram modes
+│   │   ├── shap_explainer.py    SHAP Partition Explainer, unigram + bigram
+│   │   ├── attention.py         Attention weight extraction
+│   │   ├── evaluation.py        Fidelity, stability, coverage
+│   │   └── visualise.py         Token heatmaps, feature importance plots
+│   ├── evaluation/       Inter-rater agreement (Cohen's kappa)
+│   └── utils/             Seeding, logging, I/O, config loader, device
 ├── scripts/
-│   ├── train_all_models.py        Train all models x folds x task for one CCU
-│   ├── explain.py                 Generate LIME/SHAP/attention + metrics
-│   ├── evaluate_ensemble.py       Inference-only ensemble scoring (no retrain)
-│   ├── mcq_mismatch_analysis.py   Validity x MCQ cross-tabulation and
-│   │                               classifier error breakdown by category
-│   ├── plot_results.py            Training result figures
-│   ├── plot_xai.py                XAI figures from saved JSON
-│   ├── export_educator_report.py  Flat per-response CSV for educators
-│   └── compute_agreement.py       Cohen's kappa between two markers
-├── tests/               62 passing tests (unit + integration)
-├── data/                 Gitignored — corpus supplied by supervisors, see Ethics
-└── outputs/               Gitignored — regenerated by running the pipeline
+│   ├── training/
+│   │   ├── train_all_models.py      Train all models x folds x task for one CCU
+│   │   └── benchmark_batch_sizes.py Per-model batch size / memory benchmarking
+│   ├── ensemble/
+│   │   └── evaluate_ensemble.py     Inference-only ensemble scoring (no retrain)
+│   ├── explanation/
+│   │   ├── explain.py               Generate LIME/SHAP/attention + metrics
+│   │   └── mcq_mismatch_analysis.py Validity x MCQ cross-tabulation and
+│   │                                 classifier error breakdown by category
+│   ├── plotting/
+│   │   ├── plot_results.py          Training result figures
+│   │   └── plot_xai.py              XAI figures from saved JSON
+│   ├── evaluation/
+│   │   └── compute_agreement.py     Cohen's kappa between two markers
+│   ├── reporting/
+│   │   └── export_educator_report.py  Flat per-response CSV for educators
+│   └── archive/                     Superseded scripts, kept for provenance
+├── tests/                62 passing tests (unit + integration)
+├── data/                  Gitignored — corpus supplied by supervisors, see Ethics
+└── outputs/                Gitignored — regenerated by running the pipeline
+    (metrics/<task>/<ccu>/, explanations/<unigram|bigram>/<task>/<ccu>/)
 ```
 
 ## Quickstart
@@ -254,47 +312,47 @@ pip install -e ".[dev]"
 pytest -v
 
 # 3. Train all four models on one CCU (validity, default task)
-python scripts/train_all_models.py \
+python scripts/training/train_all_models.py \
   --csv data/raw/signals_systems_validity_corpus.csv \
   --ccu ccu1 --models roberta albert electra xlnet --save-models
 
 # 3a. Same, for the confidence task
-python scripts/train_all_models.py \
+python scripts/training/train_all_models.py \
   --csv data/raw/signals_systems_validity_corpus.csv \
   --ccu ccu1 --task confidence --models roberta albert xlnet --save-models
 
 # 4. Score the ensemble directly (inference only, no retraining)
-python scripts/evaluate_ensemble.py \
+python scripts/ensemble/evaluate_ensemble.py \
   --csv data/raw/signals_systems_validity_corpus.csv --ccu ccu1 \
   --checkpoint-dir outputs/checkpoints \
   --dataset-tag signals_systems_validity_corpus_ccu1
 
 # 5. Generate explanations for that CCU (ensemble, excludes ELECTRA by default)
-python scripts/explain.py --ensemble \
+python scripts/explanation/explain.py --ensemble \
   --checkpoint-dir outputs/checkpoints \
   --dataset-tag signals_systems_validity_corpus_ccu1 \
   --csv data/raw/signals_systems_validity_corpus.csv \
   --ccu ccu1 --n-samples 150
 
 # 6. Same, with phrase-level (bigram) attribution
-python scripts/explain.py --ensemble \
+python scripts/explanation/explain.py --ensemble \
   --checkpoint-dir outputs/checkpoints \
   --dataset-tag signals_systems_validity_corpus_ccu1 \
   --csv data/raw/signals_systems_validity_corpus.csv \
   --ccu ccu1 --n-samples 150 --ngram 2
 
 # 7. Build figures and the educator-facing report
-python scripts/plot_xai.py \
-  --explanations-dir outputs/explanations/signals_systems_validity_corpus_ccu1_ensemble \
+python scripts/plotting/plot_xai.py \
+  --explanations-dir outputs/explanations/unigram/validity/ccu1 \
   --out-dir outputs/figures/xai_ccu1
 
-python scripts/export_educator_report.py \
+python scripts/reporting/export_educator_report.py \
   --csv data/raw/signals_systems_validity_corpus.csv \
-  --explanations-dir outputs/explanations/signals_systems_validity_corpus_ccu1_ensemble \
+  --explanations-dir outputs/explanations/unigram/validity/ccu1 \
   --ccu ccu1 --output outputs/educator_reports/ccu1_report.csv
 
 # 8. MCQ-vs-reasoning mismatch analysis (four-category framework)
-python scripts/mcq_mismatch_analysis.py \
+python scripts/explanation/mcq_mismatch_analysis.py \
   --csv data/raw/signals_systems_validity_corpus.csv --ccu ccu1 \
   --checkpoint-dir outputs/checkpoints \
   --dataset-tag signals_systems_validity_corpus_ccu1
@@ -302,11 +360,14 @@ python scripts/mcq_mismatch_analysis.py \
 
 `data/raw/signals_systems_validity_corpus.csv` is not included in this
 repository (see Ethics); supervisors and examiners have received it directly.
+Note that results from running the commands above will not exactly match the
+figures reported in this README or the accompanying report — see the
+reproducibility note under Results.
 
 ## Key script options
 
 ```
-scripts/train_all_models.py
+scripts/training/train_all_models.py
   --csv PATH                CSV file
   --ccu NAME                Train on one CCU only (ccu1–ccu6)
   --task {validity,confidence}  Which annotated task (default: validity)
@@ -320,7 +381,7 @@ scripts/train_all_models.py
                              selection to the text seen by the model
   --save-models              Persist checkpoints for later XAI use
 
-scripts/evaluate_ensemble.py
+scripts/ensemble/evaluate_ensemble.py
   --csv PATH / --ccu NAME / --task {validity,confidence}
   --checkpoint-dir PATH      Where per-fold checkpoints live
   --dataset-tag TAG          Which CCU's checkpoints to load
@@ -328,7 +389,7 @@ scripts/evaluate_ensemble.py
   (inference-only — reconstructs training folds, soft-votes saved
   checkpoints on each fold's held-out set; no retraining)
 
-scripts/explain.py
+scripts/explanation/explain.py
   --ensemble                Explain the ensemble rather than one model
   --checkpoint PATH         Single-model checkpoint (without --ensemble)
   --checkpoint-dir PATH     Where per-fold checkpoints live
@@ -340,7 +401,7 @@ scripts/explain.py
   --ngram {1,2}             Word-level (1) or phrase-level (2) attribution
   --no-lime / --no-shap / --no-attention / --no-eval
 
-scripts/mcq_mismatch_analysis.py
+scripts/explanation/mcq_mismatch_analysis.py
   --csv PATH / --ccu NAME
   --checkpoint-dir PATH / --dataset-tag TAG
   --models [NAMES]           Ensemble members (default excludes electra)
@@ -350,9 +411,9 @@ scripts/mcq_mismatch_analysis.py
 
 Batch sizes are set per model in `MODEL_CONFIGS` (ELECTRA 16, RoBERTa 8,
 XLNet 4, ALBERT 16), chosen from memory benchmarking on Apple Silicon.
-Output paths and checkpoint/explanation directory names are task-namespaced
-(e.g. `..._ensemble` for validity, `..._ensemble_confidence` for confidence)
-so a confidence run never overwrites validity results, or vice versa.
+Output paths are structured as `metrics/<task>/<ccu>/` and
+`explanations/<unigram|bigram>/<task>/<ccu>/`, so validity/confidence and
+unigram/bigram runs never overwrite one another.
 
 ## Data schema
 
@@ -371,8 +432,8 @@ The pipeline expects a CSV with these columns:
 | `confidence` | high / low | **Label (task 2)** |
 
 Column names are defined once in `egh490/data/schema.py`.
-`scripts/prepare_datasets.py` converts the marked spreadsheet export into
-this schema.
+`scripts/training/prepare_datasets.py` converts the marked spreadsheet export
+into this schema.
 
 ## Memory and hardware
 
@@ -388,15 +449,22 @@ Tested on MacBook (Apple Silicon, 16 GB RAM):
 Training the full grid (4 models × 6 CCUs × 5 folds × 2 tasks) takes roughly
 70–80 hours on this hardware; XLNet at batch 4 dominates that total.
 Explanation generation is ~2–2.5 hours per CCU per task per attribution mode
-(LIME dominates at ~1,000 model evaluations per explained response).
+(LIME dominates at ~1,000 model evaluations per explained response). Timings
+will differ on other hardware.
 
 ## Reproducibility
 
 - All random seeds fixed in `egh490/utils/seeding.py` (default 20260413).
+- Fixed seeds guarantee deterministic data splits and sampling, but **not**
+  bit-identical model outputs across hardware — floating-point operations in
+  GPU/MPS-accelerated training are not guaranteed to reproduce identically
+  across devices or repeated runs. See the Results section above for a
+  worked example of the scale of variation observed in practice.
 - Fixed seed means XAI response sampling is *identical* across task and
   granularity for a given CCU — the same 150 responses are explained whether
   running validity or confidence, unigram or bigram, enabling direct
-  same-response comparison.
+  same-response comparison — but this identical-sampling property holds
+  regardless of the model-weight variation described above.
 - Library versions pinned in `pyproject.toml`.
 - 5-fold stratified splits deterministic given a seed.
 - Label encoding: validity (incorrect=0, correct=1),
@@ -404,8 +472,9 @@ Explanation generation is ~2–2.5 hours per CCU per task per attribution mode
 - XAI outputs are serialised to JSON, so figures can be regenerated without
   re-running the (expensive) explanation step.
 - `data/` and `outputs/` are gitignored in full — every table, figure, and
-  metric reported in the final report is reproducible by running the
-  Quickstart commands above against the corpus supplied separately.
+  metric reported in the final report is reproducible **in trend and
+  magnitude** by running the Quickstart commands above against the corpus
+  supplied separately, not necessarily to the exact decimal.
 
 ## Ethics
 
