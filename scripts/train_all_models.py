@@ -312,6 +312,7 @@ def save_metrics(
     dataset_tag:            str,
     model_key:              str,
     task:                   str,
+    ccu:                    str,
     checkpoint:             str,
     batch_size:             int,
     fold_metrics:           dict[int, dict],
@@ -360,9 +361,9 @@ def save_metrics(
         "std":                stds,
     }
 
-    tag_dir = metrics_dir / dataset_tag
+    tag_dir = metrics_dir / task / (ccu or "all_ccus")
     tag_dir.mkdir(parents=True, exist_ok=True)
-    path = tag_dir / f"{model_key}_{task}_results.json"
+    path = tag_dir / f"{model_key}_results.json"
     with open(path, "w") as f:
         json.dump(result, f, indent=2)
     return path
@@ -609,6 +610,7 @@ def main(argv=None):
             dataset_tag=dataset_tag,
             model_key=cfg["key"],
             task=args.task,
+            ccu=args.ccu,
             checkpoint=cfg["checkpoint"],
             batch_size=cfg["batch_size"],
             fold_metrics=fold_metrics,

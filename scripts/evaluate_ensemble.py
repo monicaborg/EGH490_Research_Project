@@ -159,9 +159,9 @@ def main(argv=None):
         "std": std,
     }
 
-    out_dir = Path(args.metrics_dir) / args.dataset_tag
+    out_dir = Path(args.metrics_dir) / args.task / (args.ccu or "all_ccus")
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f"ensemble_{args.task}_results.json"
+    out_path = out_dir / "ensemble_results.json"
     out_path.write_text(json.dumps(out, indent=2))
 
     logger.info("=" * 60)

@@ -45,10 +45,6 @@ ENV/
 *.log
 nohup.out
 
-# Model checkpoints — large binary files, not committed
-outputs/archive/checkpoints/
-outputs/checkpoints/
-
 # All data and outputs — anything derived from student responses may embed
 # verbatim free-text and is ethics-restricted; never committed. Reproducible
 # by cloning and running the pipeline (see README Quickstart).

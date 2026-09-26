@@ -28,10 +28,10 @@ Skip SHAP (faster, LIME only)::
 
 Output
 ------
-    outputs/explanations/<tag>/lime_explanations.json
-    outputs/explanations/<tag>/shap_explanations.json
-    outputs/explanations/<tag>/attention.json
-    outputs/explanations/<tag>/xai_evaluation.json
+    outputs/explanations/<unigram|bigram>/<task>/<ccu>/lime_explanations.json
+    outputs/explanations/<unigram|bigram>/<task>/<ccu>/shap_explanations.json
+    outputs/explanations/<unigram|bigram>/<task>/<ccu>/attention_<model>.json
+    outputs/explanations/<unigram|bigram>/<task>/<ccu>/xai_evaluation.json
 """
 
 from __future__ import annotations
@@ -201,15 +201,14 @@ def main(argv=None):
         model = load_single(args.checkpoint, num_labels, logger)
         tag = Path(args.checkpoint).parent.name or "single_model"
 
-    out_dir = Path(args.output_dir) / tag
-    # Separate directories per task: without this, a confidence run would
-    # overwrite a validity run's explanations for the same dataset tag.
-    # Validity keeps the original (unsuffixed) path for backward compatibility
-    # with explanations already generated.
-    if args.task != "validity":
-        out_dir = out_dir.parent / f"{out_dir.name}_{args.task}"
-    if args.ngram >= 2:
-        out_dir = out_dir.parent / f"{out_dir.name}_bigram"
+    # Output structure: explanations/<unigram|bigram>/<task>/<ccu>/
+    # Single-model runs get an extra segment (the checkpoint's model name) so
+    # they never collide with an ensemble run for the same task/CCU/mode.
+    ngram_label = "bigram" if args.ngram >= 2 else "unigram"
+    ccu_label = args.ccu or "all_ccus"
+    out_dir = Path(args.output_dir) / ngram_label / args.task / ccu_label
+    if not args.ensemble:
+        out_dir = out_dir / tag
     out_dir.mkdir(parents=True, exist_ok=True)
 
     lime_explanations = []
