@@ -64,6 +64,9 @@ class DataModule:
         evaluate_ensemble.py, mcq_mismatch_analysis.py) is unaffected.
     mcq_column
         Which column holds the MCQ selection. Defaults to schema's COL_MCQ.
+    drop_single_word
+        If True, remove single-word responses (Somers et al. preprocessing).
+        Defaults to False: all annotated responses are retained.
     """
 
     def __init__(
@@ -75,12 +78,14 @@ class DataModule:
         text_column: str | None = None,
         include_mcq: bool = False,
         mcq_column: str | None = None,
+        drop_single_word: bool = False,
     ) -> None:
         self.csv_path = Path(csv_path)
         self.task = task
         self.n_folds = n_folds
         self.seed = seed
         self.include_mcq = include_mcq
+        self.drop_single_word = drop_single_word
 
         task_cfg = get_task_config(task)
         self.label_column = task_cfg["label_column"]
@@ -148,15 +153,20 @@ class DataModule:
         # Convert text to string (handles any numeric entries)
         df[self.text_col] = df[self.text_col].astype(str)
 
-        # Drop single-word responses per Somers et al. preprocessing
-        before = len(df)
-        df = df[df[self.text_col].str.strip().str.contains(r"\s", regex=True)].copy()
-        dropped = before - len(df)
-        if dropped > 0:
-            logger.info(
-                "Removed %d single-word responses (per Somers et al. preprocessing)",
-                dropped,
-            )
+        # Single-word responses are RETAINED by default: they were manually
+        # annotated and form part of the realistic response distribution
+        # (removing them drops ~723 of 3,386 responses and lowers validity
+        # accuracy; see Appendix on the retraining comparison). Somers et al.
+        # preprocessing can be reproduced with drop_single_word=True.
+        if self.drop_single_word:
+            before = len(df)
+            df = df[df[self.text_col].str.strip().str.contains(r"\s", regex=True)].copy()
+            dropped = before - len(df)
+            if dropped > 0:
+                logger.info(
+                    "Removed %d single-word responses (drop_single_word=True)",
+                    dropped,
+                )
 
         # Encode labels
         unknown = set(df[self.label_column].unique()) - set(self.label_map.keys())
